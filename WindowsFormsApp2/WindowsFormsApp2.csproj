@@ -192,6 +192,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activiti2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activiti2Form.Designer.cs">
+      <DependentUpon>Activiti2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivityForm.Designer.cs">
+      <DependentUpon>ActivityForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddressForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +219,12 @@
     </Compile>
     <Compile Include="EditAddressForm.Designer.cs">
       <DependentUpon>EditAddressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCancel.Designer.cs">
+      <DependentUpon>FormCancel.cs</DependentUpon>
     </Compile>
     <Compile Include="HistoryCustomer2Form.cs">
       <SubType>Form</SubType>
@@ -295,6 +313,12 @@
     <Compile Include="StatisticForm.Designer.cs">
       <DependentUpon>StatisticForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCActiviti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCActiviti.Designer.cs">
+      <DependentUpon>UCActiviti.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCAddress.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -355,6 +379,12 @@
     <Compile Include="UCWorker.Designer.cs">
       <DependentUpon>UCWorker.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCWorkerCancel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWorkerCancel.Designer.cs">
+      <DependentUpon>UCWorkerCancel.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCWorkerYT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -376,6 +406,12 @@
       <DependentUpon>Work2Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Worker.cs" />
+    <Compile Include="WorkerCancelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerCancelForm.Designer.cs">
+      <DependentUpon>WorkerCancelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkerDAO.cs" />
     <Compile Include="WorkerForm.cs">
       <SubType>Form</SubType>
@@ -389,11 +425,20 @@
     <Compile Include="WorkForm.Designer.cs">
       <DependentUpon>WorkForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Activiti2Form.resx">
+      <DependentUpon>Activiti2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivityForm.resx">
+      <DependentUpon>ActivityForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddressForm.resx">
       <DependentUpon>AddressForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditAddressForm.resx">
       <DependentUpon>EditAddressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCancel.resx">
+      <DependentUpon>FormCancel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HistoryCustomer2Form.resx">
       <DependentUpon>HistoryCustomer2Form.cs</DependentUpon>
@@ -447,6 +492,9 @@
     <EmbeddedResource Include="StatisticForm.resx">
       <DependentUpon>StatisticForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCActiviti.resx">
+      <DependentUpon>UCActiviti.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCAddress.resx">
       <DependentUpon>UCAddress.cs</DependentUpon>
     </EmbeddedResource>
@@ -477,6 +525,9 @@
     <EmbeddedResource Include="UCWorker.resx">
       <DependentUpon>UCWorker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCWorkerCancel.resx">
+      <DependentUpon>UCWorkerCancel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCWorkerYT.resx">
       <DependentUpon>UCWorkerYT.cs</DependentUpon>
     </EmbeddedResource>
@@ -485,6 +536,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Work2Form.resx">
       <DependentUpon>Work2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerCancelForm.resx">
+      <DependentUpon>WorkerCancelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkerForm.resx">
       <DependentUpon>WorkerForm.cs</DependentUpon>

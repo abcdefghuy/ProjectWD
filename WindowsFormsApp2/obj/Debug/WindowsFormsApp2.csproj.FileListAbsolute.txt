@@ -1093,3 +1093,9 @@ D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\bin\Debug\Guna.Charts.WinForms.dll
 D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\bin\Debug\Guna.Charts.WinForms.xml
 D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.StatisticForm.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Activiti2Form.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ActivityForm.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormCancel.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UCActiviti.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UCWorkerCancel.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.WorkerCancelForm.resources

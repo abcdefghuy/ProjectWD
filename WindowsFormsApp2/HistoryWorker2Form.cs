@@ -57,7 +57,7 @@ namespace WindowsFormsApp2
 
         private void btn_danhgia_Click(object sender, EventArgs e)
         {
-            UserDAO.Danhgia_Worker((int)rating.Value, txb_danhgia.Text, workerID, userID,madat);          
+            UserDAO.Danhgia_Worker((int)rating.Value, txb_danhgia.Text, workerID, userID,madattho);          
             //them vao anh danh gia    
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
             string queryString = "Insert Into ImgDanhGia Values(@userid, @workerid, @congviec, @image)";

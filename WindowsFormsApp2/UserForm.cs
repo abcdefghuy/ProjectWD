@@ -71,13 +71,14 @@ namespace WindowsFormsApp2
         //
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            OpenForm(new OrderWorkerForm());
+            ActivityForm.userID = userID_lbl.Text;
+            OpenForm(new ActivityForm());
         }
 
         private void UserForm_Load(object sender, EventArgs e)
         {
             UserID = userID_lbl.Text;
-            guna2Button1.Visible = false;
+            
         }
     }
 }

@@ -60,5 +60,11 @@ namespace WindowsFormsApp2
             HistoryCustomer2Form f = new HistoryCustomer2Form(UserID, WorkerID, Cv);
             f.ShowDialog();
         }
+
+        private void btn_chitiet_Click(object sender, EventArgs e)
+        {
+            HistoryCustomer2Form f = new HistoryCustomer2Form(UserID, WorkerID, Cv);
+            f.ShowDialog();
+        }
     }
 }

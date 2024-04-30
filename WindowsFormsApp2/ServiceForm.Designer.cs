@@ -73,7 +73,10 @@
             this.flContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.cbtn_doanhthu = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.cbtn_congviecBook = new Guna.UI2.WinForms.Guna2CheckBox();
             this.btn_toptho = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_xemdshuy = new Guna.UI2.WinForms.Guna2Button();
             this.panelMain.SuspendLayout();
             this.panelPage2.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
@@ -386,12 +389,15 @@
             this.panelPage2.Controls.Add(this.flContainer);
             this.panelPage2.Location = new System.Drawing.Point(64, 32);
             this.panelPage2.Name = "panelPage2";
-            this.panelPage2.Size = new System.Drawing.Size(1015, 645);
+            this.panelPage2.Size = new System.Drawing.Size(1015, 688);
             this.panelPage2.TabIndex = 3;
             // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.btn_xemdshuy);
+            this.guna2ShadowPanel1.Controls.Add(this.cbtn_congviecBook);
+            this.guna2ShadowPanel1.Controls.Add(this.cbtn_doanhthu);
             this.guna2ShadowPanel1.Controls.Add(this.btn_toptho);
             this.guna2ShadowPanel1.Controls.Add(this.btn_5);
             this.guna2ShadowPanel1.Controls.Add(this.btn_4);
@@ -418,7 +424,7 @@
             this.guna2ShadowPanel1.Radius = 10;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(233, 595);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(233, 632);
             this.guna2ShadowPanel1.TabIndex = 4;
             // 
             // btn_5
@@ -708,7 +714,7 @@
             this.flContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
             this.flContainer.Location = new System.Drawing.Point(268, 47);
             this.flContainer.Name = "flContainer";
-            this.flContainer.Size = new System.Drawing.Size(744, 595);
+            this.flContainer.Size = new System.Drawing.Size(744, 632);
             this.flContainer.TabIndex = 0;
             // 
             // guna2Elipse2
@@ -719,6 +725,42 @@
             // 
             this.guna2Elipse3.BorderRadius = 15;
             this.guna2Elipse3.TargetControl = this.flContainer;
+            // 
+            // cbtn_doanhthu
+            // 
+            this.cbtn_doanhthu.AutoSize = true;
+            this.cbtn_doanhthu.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbtn_doanhthu.CheckedState.BorderRadius = 0;
+            this.cbtn_doanhthu.CheckedState.BorderThickness = 0;
+            this.cbtn_doanhthu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbtn_doanhthu.Location = new System.Drawing.Point(17, 580);
+            this.cbtn_doanhthu.Name = "cbtn_doanhthu";
+            this.cbtn_doanhthu.Size = new System.Drawing.Size(121, 17);
+            this.cbtn_doanhthu.TabIndex = 67;
+            this.cbtn_doanhthu.Text = "Doanh thu cao nhất";
+            this.cbtn_doanhthu.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbtn_doanhthu.UncheckedState.BorderRadius = 0;
+            this.cbtn_doanhthu.UncheckedState.BorderThickness = 0;
+            this.cbtn_doanhthu.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbtn_doanhthu.CheckedChanged += new System.EventHandler(this.cbtn_doanhthu_CheckedChanged);
+            // 
+            // cbtn_congviecBook
+            // 
+            this.cbtn_congviecBook.AutoSize = true;
+            this.cbtn_congviecBook.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbtn_congviecBook.CheckedState.BorderRadius = 0;
+            this.cbtn_congviecBook.CheckedState.BorderThickness = 0;
+            this.cbtn_congviecBook.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbtn_congviecBook.Location = new System.Drawing.Point(17, 604);
+            this.cbtn_congviecBook.Name = "cbtn_congviecBook";
+            this.cbtn_congviecBook.Size = new System.Drawing.Size(132, 17);
+            this.cbtn_congviecBook.TabIndex = 68;
+            this.cbtn_congviecBook.Text = "Được book nhiều nhất";
+            this.cbtn_congviecBook.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbtn_congviecBook.UncheckedState.BorderRadius = 0;
+            this.cbtn_congviecBook.UncheckedState.BorderThickness = 0;
+            this.cbtn_congviecBook.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbtn_congviecBook.CheckedChanged += new System.EventHandler(this.cbtn_congviecBook_CheckedChanged);
             // 
             // btn_toptho
             // 
@@ -731,17 +773,32 @@
             this.btn_toptho.ForeColor = System.Drawing.Color.Black;
             this.btn_toptho.Location = new System.Drawing.Point(17, 368);
             this.btn_toptho.Name = "btn_toptho";
-            this.btn_toptho.Size = new System.Drawing.Size(140, 56);
+            this.btn_toptho.Size = new System.Drawing.Size(90, 56);
             this.btn_toptho.TabIndex = 66;
             this.btn_toptho.Text = "Top thợ được yêu thích nhất";
             this.btn_toptho.Click += new System.EventHandler(this.btn_toptho_Click);
+            // 
+            // btn_xemdshuy
+            // 
+            this.btn_xemdshuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xemdshuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xemdshuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_xemdshuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_xemdshuy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_xemdshuy.ForeColor = System.Drawing.Color.White;
+            this.btn_xemdshuy.Location = new System.Drawing.Point(129, 368);
+            this.btn_xemdshuy.Name = "btn_xemdshuy";
+            this.btn_xemdshuy.Size = new System.Drawing.Size(83, 56);
+            this.btn_xemdshuy.TabIndex = 69;
+            this.btn_xemdshuy.Text = "Tho bi huy";
+            this.btn_xemdshuy.Click += new System.EventHandler(this.btn_xemdshuy_Click);
             // 
             // ServiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(1091, 689);
+            this.ClientSize = new System.Drawing.Size(1125, 723);
             this.Controls.Add(this.panelPage2);
             this.Controls.Add(this.panelMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -802,6 +859,9 @@
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator6;
         private Guna.UI2.WinForms.Guna2TextBox txb_timkiem;
+        private Guna.UI2.WinForms.Guna2CheckBox cbtn_congviecBook;
+        private Guna.UI2.WinForms.Guna2CheckBox cbtn_doanhthu;
+        private Guna.UI2.WinForms.Guna2Button btn_xemdshuy;
         private Guna.UI2.WinForms.Guna2Button btn_toptho;
     }
 }
