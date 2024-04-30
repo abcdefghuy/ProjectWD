@@ -1,5 +1,4 @@
 ﻿using Guna.UI2.WinForms;
-using ServiceStack;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,12 +11,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class UCHistoryWorker : UserControl
+    public partial class UCActiviti : UserControl
     {
         private string workerID;
         private string userID;
         private string cv;
-        private string madat;
+        private string ma;
         public Label Lbl_TrangThai
         {
             get => lbl_trangthai; set => lbl_trangthai = value;
@@ -37,7 +36,7 @@ namespace WindowsFormsApp2
         }
         public Guna2RatingStar Rating
         {
-            get => rating; set => rating= value;
+            get => rating; set => rating = value;
         }
         public Guna2PictureBox Ptb_avt
         {
@@ -46,27 +45,21 @@ namespace WindowsFormsApp2
         public string WorkerID { get => workerID; set => workerID = value; }
         public string UserID { get => userID; set => userID = value; }
         public string Cv { get => cv; set => cv = value; }
-        public string MaDat { get => madat; set => madat = value; }
+        public string Ma { get => ma; set => ma = value; }
 
-        public UCHistoryWorker()
+        public UCActiviti()
         {
             InitializeComponent();
         }
 
-        private void UCHistoryWorker_Click(object sender, EventArgs e)
+        private void UCActiviti_Load(object sender, EventArgs e)
         {
-            HistoryWorker2Form form = new HistoryWorker2Form(userID, workerID, cv,madat);
-            form.ShowDialog();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void btn_chitiet_Click(object sender, EventArgs e)
         {
-            HistoryWorker2Form form = new HistoryWorker2Form(userID, workerID, cv, madat);
+            Activiti2Form form = new Activiti2Form(userID, workerID, cv, ma);
             form.ShowDialog();
         }
     }

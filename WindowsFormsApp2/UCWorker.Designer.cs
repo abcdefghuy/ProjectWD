@@ -38,6 +38,7 @@
             this.ptb_avt = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbl_tiencong = new System.Windows.Forms.Label();
             this.lbl_kinhnghiem = new System.Windows.Forms.Label();
+            this.btn_chitiet = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,11 +118,27 @@
             this.lbl_kinhnghiem.TabIndex = 5;
             this.lbl_kinhnghiem.Text = "Kinh Nghiệm";
             // 
+            // btn_chitiet
+            // 
+            this.btn_chitiet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_chitiet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_chitiet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_chitiet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_chitiet.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_chitiet.ForeColor = System.Drawing.Color.White;
+            this.btn_chitiet.Location = new System.Drawing.Point(44, 263);
+            this.btn_chitiet.Name = "btn_chitiet";
+            this.btn_chitiet.Size = new System.Drawing.Size(107, 36);
+            this.btn_chitiet.TabIndex = 18;
+            this.btn_chitiet.Text = "Chi tiet";
+            this.btn_chitiet.Click += new System.EventHandler(this.btn_chitiet_Click);
+            // 
             // UCWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_chitiet);
             this.Controls.Add(this.rating);
             this.Controls.Add(this.ptb_avt);
             this.Controls.Add(this.lblRating);
@@ -131,7 +148,7 @@
             this.Controls.Add(this.lblName);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "UCWorker";
-            this.Size = new System.Drawing.Size(218, 273);
+            this.Size = new System.Drawing.Size(218, 303);
             this.Load += new System.EventHandler(this.UCWorker_Load);
             this.Click += new System.EventHandler(this.UCWorker_Click);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).EndInit();
@@ -150,5 +167,6 @@
         private Guna.UI2.WinForms.Guna2RatingStar rating;
         private System.Windows.Forms.Label lbl_kinhnghiem;
         private System.Windows.Forms.Label lbl_tiencong;
+        private Guna.UI2.WinForms.Guna2Button btn_chitiet;
     }
 }

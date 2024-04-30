@@ -63,5 +63,13 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void btn_chitiet_Click(object sender, EventArgs e)
+        {
+            InfoWorkerForm f = new InfoWorkerForm();
+            f.WorkerID = workerID;
+            f.Cv = cv;
+            f.Show();
+        }
     }
 }
