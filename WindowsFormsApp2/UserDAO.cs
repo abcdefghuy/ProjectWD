@@ -90,7 +90,7 @@ namespace WindowsFormsApp2
         //Load lich su danh sách thợ
         public static List<UCHistoryWorker> Load_Worker(string userID)
         {
-            string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec " +
+            string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec, MaDatTho " +
                                                 "From CongViec inner join WorkerInfoDB on CongViec.WorkerID=WorkerInfoDB.WorkerID " +
                                                 "Where UserID='{0}' and TrangThai!='Cho nhan'", userID);
             return ppConnection.load_Tim_Kiem_Tho(queryStr, userID);
@@ -281,14 +281,14 @@ namespace WindowsFormsApp2
             return comments;
         }
         //load lich su tho
-        public static Worker History_Worker(string workerID, string userID,string cv)
+        public static Worker History_Worker(string maDatHang)
         {
             Worker worker = new Worker();
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
             try
             {
                 conn.Open();
-                string queryString = string.Format("Select WorkerInfoDB.WorkerID, HoTen, ThanhToan, NgayLamViec, CongViec.Rate, DanhGia From WorkerInfoDB, CongViec Where WorkerinfoDB.WorkerID=CongViec.WorkerID and WorkerInfoDB.WorkerID='{0}' and CongViec.UserID='{1}' and CongViec.MaCongViec='{2}'", workerID, userID,cv);
+                string queryString = string.Format("Select WorkerInfoDB.WorkerID, HoTen, ThanhToan, NgayLamViec, CongViec.Rate, DanhGia From WorkerInfoDB, CongViec Where WorkerinfoDB.WorkerID=CongViec.WorkerID and MaDatTho='{0}'", maDatHang);
                 SqlCommand cmd = new SqlCommand(queryString, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
@@ -311,25 +311,26 @@ namespace WindowsFormsApp2
             return worker;
         }
         //Danh gia tho
-        public static void Danhgia_Worker(int rate, string danhgia, string workerID, string userID)
+        public static void Danhgia_Worker(int rate, string danhgia,string workerID,string userID, string madat)
         {
-            int thanhtoan = ThanhToan_Worker(workerID, userID);
+            int thanhtoan = ThanhToan_Worker(workerID,userID,madat);
             string queryString = string.Format("Update CongViec Set Rate='{0}', DanhGia='{1}', TrangThai = 'Da hoan thanh', ThanhToan = '{4}' "+
-                                                    " Where WorkerID='{2}' and UserID = '{3}'", rate, danhgia, workerID, userID,thanhtoan);
+                                                    " Where MaDatTho='{2}'", rate, danhgia,madat,thanhtoan);
             ppConnection.ThucThi(queryString);
-
         }
 
         //Order tho
         public static void Order_Worker(string userID, string congviec, DateTime ngaylamviec, string giolamviec, string ghichi, string workerID, string diachi, string giatien)
         {
+            string uniqueOrderID = GenerateUniqueOrderID(ngaylamviec);
+
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
 
             try
             {
                 conn.Open();
-                string queryString = string.Format("Insert Into CongViec Values('{0}', '{1}', '{2}', '{3}', '{4}','Cho nhan', 0, 0, '{5}', ' ', '{6}', '{7}')",
-                                                    userID, congviec, ngaylamviec.Date, giolamviec, ghichi, workerID, diachi, giatien);
+                string queryString = string.Format("Insert Into CongViec Values('{0}', '{1}', '{2}', '{3}', '{4}','Cho nhan', 0, 0, '{5}', ' ', '{6}', '{7}','{8}')",
+                                                    userID, congviec, ngaylamviec.Date, giolamviec, ghichi, workerID, diachi, giatien,uniqueOrderID);
                 SqlCommand cmd = new SqlCommand(queryString, conn);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
@@ -375,7 +376,7 @@ namespace WindowsFormsApp2
         // tìm kiếm theo tên thợ trong form lịch sử
         public static List<UCHistoryWorker> Timkiem_Ten(string userID, string tentho)
         {
-            string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec " +
+            string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec,MaDatTho " +
                                                 "From CongViec inner join WorkerInfoDB on CongViec.WorkerID=WorkerInfoDB.WorkerID " +
                                                 "Where CongViec.UserID='{0}' and TrangThai!='Cho nhan' and HoTen Like '%{1}%'", userID, tentho);
 
@@ -385,7 +386,7 @@ namespace WindowsFormsApp2
         // Tìm kiếm theo ngày làm việc trong form lịch sử
         public static List<UCHistoryWorker> Timkiem_Ngay(string userID, DateTime startDay, DateTime endDay)
         {
-            string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec " +
+            string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec,MaDatTho " +
                                                 "From CongViec inner join WorkerInfoDB on CongViec.WorkerID=WorkerInfoDB.WorkerID " +
                                                 "Where CongViec.UserID='{0}' and TrangThai!='Cho nhan' and NgayLamViec Between '{1}' and '{2}'", userID, startDay.Date, endDay.Date);
 
@@ -446,12 +447,12 @@ namespace WindowsFormsApp2
         // Lọc theo trạng thái công việc
         public static List<UCHistoryWorker> DaHoanThanh(string userID, string trangthai)
         {
-            string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec " +
+            string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec,MaDatTho " +
                                                 "From CongViec inner join WorkerInfoDB on CongViec.WorkerID=WorkerInfoDB.WorkerID " +
                                                 "Where CongViec.UserID='{0}' and TrangThai='{1}'", userID, trangthai);
             return ppConnection.load_Tim_Kiem_Tho(queryStr, userID);
         }
-        public static int ThanhToan_Worker(string workerID,string  userID)
+        public static int ThanhToan_Worker(string workerID,string  userID,string maDat)
         {
             int gio=0;
             int tien=0;
@@ -459,7 +460,7 @@ namespace WindowsFormsApp2
             try
             {
                 conn.Open();
-                string query = string.Format("Select GioLamViec, TienCong from CongViec where UserID='{0}' and WorkerID='{1}'", userID, workerID);
+                string query = string.Format("Select GioLamViec, TienCong from CongViec where UserID='{0}' and WorkerID='{1}' and MaDattho='{2}'", userID, workerID,maDat);
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
@@ -489,6 +490,25 @@ Where CongViec = '{0}') as A, (SELECT WorkerID_YT, Count(WorkerID_YT) as SoLan F
 Where A.WorkerID = Q.WorkerID_YT", tho);
 
             return ppConnection.DanhSachTho(queryStr, tho);
+        }
+        static string GenerateUniqueOrderID(DateTime ngaydat)
+        {
+            // Lấy thời gian hiện tại
+            DateTime now = ngaydat;
+
+            // Lấy các thành phần ngày, tháng, năm
+            int day = now.Day;
+            int month = now.Month;
+            int year = now.Year;
+
+            // Tạo một phần ngẫu nhiên
+            Random random = new Random();
+            int randomNumber = random.Next(1000, 9999); // Số ngẫu nhiên từ 1000 đến 9999
+
+            // Kết hợp thời gian và số ngẫu nhiên để tạo mã đơn đặt thợ
+            string uniqueOrderID = string.Format("{0:yyyyMMdd}{1}{2}{3}", now, day, month, year);
+
+            return uniqueOrderID;
         }
 
 

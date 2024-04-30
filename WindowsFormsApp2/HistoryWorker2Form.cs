@@ -18,9 +18,11 @@ namespace WindowsFormsApp2
         private string workerID;
         private string userID;
         private string cv;
+        private string madattho;
         public string WorkerID { get => workerID; set => workerID = value; }
         public string UserID { get => userID; set => userID = value; }
         public string Cv { get => cv; set => cv = value; }
+        public string MaDatTho { get => madattho; set => madattho = value; }
 
         private List<Image> selectedImages = new List<Image>();
         public HistoryWorker2Form()
@@ -28,11 +30,12 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        public HistoryWorker2Form(string userID, string workerID, string congviec)
+        public HistoryWorker2Form(string userID, string workerID, string congviec,string ma)
         {
             UserID = userID;
             WorkerID = workerID;
             Cv = congviec;
+            MaDatTho=ma;
             InitializeComponent();
         }
         private void btnClose_Click(object sender, EventArgs e)
@@ -43,7 +46,7 @@ namespace WindowsFormsApp2
         private void HistoryWorker2Form_Load(object sender, EventArgs e)
         {
             //Load data worker
-            Worker worker = UserDAO.History_Worker(workerID, userID,cv);
+            Worker worker = UserDAO.History_Worker(MaDatTho);
             lbl_name.Text = "Họ tên: " + worker.Hoten;
             lbl_thanhtoan.Text = "Đã thanh toán: " + worker.Cv.Thanhtoan;
             lbl_date.Text = "Ngày làm việc: " + (worker.Cv.NgayLamViec.ToString("dd/MM/yyyy"));
@@ -54,7 +57,7 @@ namespace WindowsFormsApp2
 
         private void btn_danhgia_Click(object sender, EventArgs e)
         {
-            UserDAO.Danhgia_Worker((int)rating.Value, txb_danhgia.Text, workerID, userID);          
+            UserDAO.Danhgia_Worker((int)rating.Value, txb_danhgia.Text, workerID, userID,madat);          
             //them vao anh danh gia    
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
             string queryString = "Insert Into ImgDanhGia Values(@userid, @workerid, @congviec, @image)";
