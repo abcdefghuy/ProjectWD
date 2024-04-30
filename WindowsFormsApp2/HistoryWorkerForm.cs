@@ -96,6 +96,7 @@ namespace WindowsFormsApp2
                     flContainer.Controls.Add(uc);
                 }
             }
+            HistoryWorkerForm_Load(sender, e);
         }
 
         private void cb_thoYT_CheckedChanged(object sender, EventArgs e)

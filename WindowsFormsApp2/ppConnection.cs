@@ -131,6 +131,7 @@ namespace WindowsFormsApp2
                     uc.UserID = userID;
                     uc.WorkerID = reader.GetString(0);
                     uc.Cv=reader.GetString(7);
+                    uc.MaDat=reader.GetString(8);
                     uc.LblName.Text = "Họ tên: " + reader.GetString(5);
                     uc.Rating.Value = reader.GetInt32(4);
                     uc.LblTienThanhtoan.Text = "Đã thanh toán: " + reader.GetString(3);

@@ -17,6 +17,7 @@ namespace WindowsFormsApp2
         private string workerID;
         private string userID;
         private string cv;
+        private string madat;
         public Label Lbl_TrangThai
         {
             get => lbl_trangthai; set => lbl_trangthai = value;
@@ -45,6 +46,7 @@ namespace WindowsFormsApp2
         public string WorkerID { get => workerID; set => workerID = value; }
         public string UserID { get => userID; set => userID = value; }
         public string Cv { get => cv; set => cv = value; }
+        public string MaDat { get => madat; set => madat = value; }
 
         public UCHistoryWorker()
         {
@@ -53,7 +55,7 @@ namespace WindowsFormsApp2
 
         private void UCHistoryWorker_Click(object sender, EventArgs e)
         {
-            HistoryWorker2Form form = new HistoryWorker2Form(userID, workerID, cv);
+            HistoryWorker2Form form = new HistoryWorker2Form(userID, workerID, cv,madat);
             form.ShowDialog();
         }
 
