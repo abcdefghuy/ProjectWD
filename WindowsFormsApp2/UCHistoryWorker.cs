@@ -66,8 +66,18 @@ namespace WindowsFormsApp2
 
         private void btn_chitiet_Click(object sender, EventArgs e)
         {
-            HistoryWorker2Form form = new HistoryWorker2Form(userID, workerID, cv, madat);
-            form.ShowDialog();
+            if(lbl_trangthai.Text != "Trạng thái: Da huy")
+            {
+                HistoryWorker2Form form = new HistoryWorker2Form(userID, workerID, cv, madat);
+                form.ShowDialog();
+            }
+            else
+            {
+                WorkerDeni f = new WorkerDeni(userID, workerID, cv, madat);
+                f.Role = "User";
+                f.ShowDialog(); 
+            }
+            
         }
     }
 }

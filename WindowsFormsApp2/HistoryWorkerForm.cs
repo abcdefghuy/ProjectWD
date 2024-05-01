@@ -45,7 +45,6 @@ namespace WindowsFormsApp2
             }
             else
             {
-
                 List<UCHistoryWorker> workerList = UserDAO.Load_Worker(userID);
                 foreach (UCHistoryWorker uc in workerList)
                 {

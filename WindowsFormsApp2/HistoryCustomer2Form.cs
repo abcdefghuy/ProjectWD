@@ -43,19 +43,22 @@ namespace WindowsFormsApp2
 
         private void HistoryCustomer2Form_Load(object sender, EventArgs e)
         {
-            User user = WorkerDAO.History_User(userID, workerID, cv,ma);
-            lbl_name.Text = "Họ tên: " + user.Hoten;
-            lbl_thanhtoan.Text = "Đã thanh toán: " + user.Congviec.Thanhtoan;
-            lbl_date.Text = "Ngày làm việc: " + (user.Congviec.NgayLamViec.ToString("dd/MM/yyyy"));
-            rating.Value = user.Congviec.Rate;
-            txb_danhgia.Text = user.Congviec.DanhGia;
-            lbl_congviec.Text = "Công việc: " + cv;
-            //Load ảnh đánh giá của khách
-            List<PictureBox> commentImage = WorkerDAO.CommentImage(userID, workerID, cv,ma);
-            foreach(PictureBox pictureBox in commentImage)
-            {
-                panelPicture.Controls.Add(pictureBox);
-            }
+            
+                User user = WorkerDAO.History_User(userID, workerID, cv, ma);
+                lbl_name.Text = "Họ tên: " + user.Hoten;
+                lbl_thanhtoan.Text = "Đã thanh toán: " + user.Congviec.Thanhtoan;
+                lbl_date.Text = "Ngày làm việc: " + (user.Congviec.NgayLamViec.ToString("dd/MM/yyyy"));
+                rating.Value = user.Congviec.Rate;
+                txb_danhgia.Text = user.Congviec.DanhGia;
+                lbl_congviec.Text = "Công việc: " + cv;
+                //Load ảnh đánh giá của khách
+                List<PictureBox> commentImage = WorkerDAO.CommentImage(userID, workerID, cv, ma);
+                foreach (PictureBox pictureBox in commentImage)
+                {
+                    panelPicture.Controls.Add(pictureBox);
+                }
+            
+            
         }
     }
 }

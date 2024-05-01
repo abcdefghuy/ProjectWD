@@ -1100,3 +1100,4 @@ D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UCA
 D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UCWorkerCancel.resources
 D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.WorkerCancelForm.resources
 D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UCDayFree.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.WorkerDeni.resources

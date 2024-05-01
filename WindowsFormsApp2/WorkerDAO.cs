@@ -27,13 +27,14 @@ namespace WindowsFormsApp2
         // tạo worker mới
         public static void New_Worker(Worker worker,string password)
         {
-            string sqlStr = string.Format("INSERT INTO WorkerInfoDB VALUES ('{0}','{1}', '', '1/1/2000', '{2}', '{3}', '{4}', '', '', 0, null)", worker.Id, worker.Hoten, worker.Sdt, worker.Email, password);
+            string sqlStr = string.Format("INSERT INTO WorkerInfoDB VALUES ('{0}','{1}', '', '1/1/2000', '{2}', '{3}', '{4}', 'Nam', '', 0, null)", worker.Id, worker.Hoten, worker.Sdt, worker.Email, password);
             ppConnection.ThucThi(sqlStr);
         }
         // Edit thông tin
         public static void Edit_Info(Worker worker) 
         {
             string sqlStr = string.Format("Update WorkerInfoDB Set HoTen='{0}', DiaChi='{1}', NgaySinh='{2}', SDT='{3}', Email='{4}', GioiTinh='{5}', CCCD='{6}' Where WorkerID='{7}'", worker.Hoten, worker.Diachi, worker.Ngaysinh, worker.Sdt, worker.Email, worker.Gioitinh, worker.Cccd, worker.Id);
+            ppConnection.ThucThi(sqlStr);
         }
         //tim kiem theo ten user
         public static List<UCHistoryCustomer> Timkiem_Ten(string workerID, string username)
@@ -186,6 +187,36 @@ namespace WindowsFormsApp2
             }
             return user;
         }
+        //tho hien thong tin bi huy tu khach hang
+        public static User Deni_user(string maDatHang)
+        {
+            User u = new User();
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
+            try
+            {
+                conn.Open();
+                string queryString = string.Format("Select A.UserID , Hoten,CongViec.NgayLamViec,LyDoHuy  from (Select UserInfoDB.UserID , Hoten, LyDoHuy from UserInfoDB " +
+                    "inner join DSThoBiHuy on UserInfoDB.UserID = DSThoBiHuy.UserID where MaDon='{0}') as A \r\n" +
+                    "inner join CongViec on A.UserID=CongViec.UserID where CongViec.MaDatTho='{1}'", maDatHang, maDatHang);
+                SqlCommand cmd = new SqlCommand(queryString, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    u.Hoten = reader[1].ToString();
+                    u.Congviec.NgayLamViec = reader.GetDateTime(2);
+                    u.Congviec.DanhGia = reader[3].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return u;
+        }
         // hien thông báo
         public static List<UCNotifica> Load_ThongBao(string workerID)
         {
@@ -319,7 +350,7 @@ namespace WindowsFormsApp2
         public static List<PictureBox> CommentImage(string userID, string workerID, string cv,string ma)
         {
             List<PictureBox> pictureBoxes = new List<PictureBox>();
-            string queryStr = string.Format("Select * From ImgDanhGia Where UserID = '{0}' and WorkerID = '{1}' and MaCongViec = '{2}' and MaDon='{3}'", userID, workerID, cv,ma);
+            string queryStr = string.Format("Select * From ImgDanhGia Where UserID = '{0}' and WorkerID = '{1}' and MaCongViec = '{2}' and MaDon= '{3}' ", userID, workerID, cv,ma);
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
             conn.Open();
             try

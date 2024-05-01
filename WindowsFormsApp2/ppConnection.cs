@@ -24,11 +24,11 @@ namespace WindowsFormsApp2
                 string sqlStr = sqlString;
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
                 if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Thanh cong");
+                    MessageBox.Show("Da thuc hien hanh dong thanh cong");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("That bai" + ex);
+                MessageBox.Show("thuc hien hanh dong that bai" + ex);
             }
             finally
             {
@@ -92,17 +92,14 @@ namespace WindowsFormsApp2
                     uc.Lbl_TrangThai.Text = "Trạng thái: " + reader[2].ToString();
                     uc.Cv = reader.GetString(7);
                     uc.Ma=reader.GetString(8);
-                    if (reader.IsDBNull(6))
-                    {
-                        //
-                    }
-                    else
+                    if (!reader.IsDBNull(6))
                     {
                         object value = reader[6];
                         byte[] avt = (byte[])value;
                         MemoryStream ms = new MemoryStream(avt);
                         uc.Ptb_avt.Image = Image.FromStream(ms);
                     }
+                    
                     userList.Add(uc);
                 }
                 reader.Close();
@@ -140,17 +137,14 @@ namespace WindowsFormsApp2
                     uc.LblNgay.Text = "Ngày làm việc: " + (reader.GetDateTime(1)).ToString("dd/MM/yyyy");
                     uc.Cv = reader[7].ToString();
                     uc.Lbl_TrangThai.Text = "Trạng thái: " + reader[2].ToString();
-                    if (reader.IsDBNull(6))
-                    {
-                        //
-                    }
-                    else
+                    if (!reader.IsDBNull(6))
                     {
                         object value = reader[6];
                         byte[] avt = (byte[])value;
                         MemoryStream ms = new MemoryStream(avt);
                         uc.Ptb_avt.Image = Image.FromStream(ms);
                     }
+                    
                     workerList.Add(uc);
                 }
                 reader.Close();
@@ -183,17 +177,15 @@ namespace WindowsFormsApp2
                     uc.LblKinhnghiem.Text = "Kinh nghiệm: " + reader.GetString(3);
                     uc.LblTiencong.Text = "Tiền công: " + reader.GetString(4);
                     uc.Rating.Value = reader.GetInt32(5);
-                    if (reader.IsDBNull(6))
-                    {
-                        //
-                    }
-                    else
+                    uc.MoTa.Text= reader.GetString(7);
+                    if (!reader.IsDBNull(6))
                     {
                         object value = reader[6];
                         byte[] avt = (byte[])value;
                         MemoryStream ms = new MemoryStream(avt);
                         uc.Ptb_avt.Image = Image.FromStream(ms);
                     }
+                    
                     workerList.Add(uc);
                 }
                 reader.Close();

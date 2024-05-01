@@ -419,6 +419,12 @@
       <DependentUpon>WorkerCancelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkerDAO.cs" />
+    <Compile Include="WorkerDeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerDeni.Designer.cs">
+      <DependentUpon>WorkerDeni.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -548,6 +554,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WorkerCancelForm.resx">
       <DependentUpon>WorkerCancelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerDeni.resx">
+      <DependentUpon>WorkerDeni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkerForm.resx">
       <DependentUpon>WorkerForm.cs</DependentUpon>
