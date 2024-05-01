@@ -53,9 +53,9 @@
             // 
             // PanelContain
             // 
-            this.PanelContain.Location = new System.Drawing.Point(251, 56);
+            this.PanelContain.Location = new System.Drawing.Point(236, 30);
             this.PanelContain.Name = "PanelContain";
-            this.PanelContain.Size = new System.Drawing.Size(1091, 689);
+            this.PanelContain.Size = new System.Drawing.Size(1118, 715);
             this.PanelContain.TabIndex = 0;
             // 
             // btnClose
@@ -69,7 +69,7 @@
             this.btnClose.ImageRotate = 0F;
             this.btnClose.ImageSize = new System.Drawing.Size(20, 20);
             this.btnClose.IndicateFocus = true;
-            this.btnClose.Location = new System.Drawing.Point(1307, 5);
+            this.btnClose.Location = new System.Drawing.Point(1316, -3);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.Image = global::WindowsFormsApp2.Properties.Resources.close2;
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(30, 30);
@@ -272,7 +272,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1354, 757);
+            this.ClientSize = new System.Drawing.Size(1366, 757);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.PanelContain);
             this.Controls.Add(this.btnClose);

@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using Org.BouncyCastle.Asn1.Pkcs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -65,8 +66,18 @@ namespace WindowsFormsApp2
 
         private void btn_chitiet_Click(object sender, EventArgs e)
         {
-            HistoryCustomer2Form f = new HistoryCustomer2Form(UserID, WorkerID, Cv, Ma);
-            f.ShowDialog();
+            if (lbl_trangthai.Text != "Trạng thái: Da huy")
+            {
+                HistoryCustomer2Form f = new HistoryCustomer2Form(UserID, WorkerID, Cv, Ma);
+                f.ShowDialog();
+            }
+            else
+            {
+                WorkerDeni f = new WorkerDeni(userID, workerID, cv, Ma);
+                f.Role = "Worker";
+                f.ShowDialog();
+            }
+                
         }
     }
 }

@@ -53,45 +53,63 @@ namespace WindowsFormsApp2
             rating.Value = worker.Cv.Rate;
             txb_danhgia.Text = worker.Cv.DanhGia;
             lbl_congviec.Text = "Công việc: " + cv;
+            if (worker.Cv.Thanhtoan != "0")
+            {
+                btnAddPicture.Visible = false;
+
+                btn_danhgia.Visible=false;
+                rating.ReadOnly = true;
+                List<PictureBox> commentImage = WorkerDAO.CommentImage(userID, workerID, cv, madattho);
+                foreach (PictureBox pictureBox in commentImage)
+                {
+                    flContainer.Controls.Add(pictureBox);
+                }
+            }
+
         }
 
         private void btn_danhgia_Click(object sender, EventArgs e)
         {
-            UserDAO.Danhgia_Worker((int)rating.Value, txb_danhgia.Text, workerID, userID,madattho);          
-            //them vao anh danh gia    
-            SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
-            string queryString = "Insert Into ImgDanhGia Values(@userid, @workerid, @congviec, @img, @madon)";
-            //string queryString = string.Format("Insert into ImgDanhGia Values('{0}','{1}','{2}',{3})",userID,workerID,cv, imageByteArray);
-            conn.Open();
-            foreach (Image image in selectedImages)
+            int thanhtoan = UserDAO.ThanhToan_Worker(workerID, userID, madattho);
+            DialogResult result = MessageBox.Show("Xác nhận thanh toán: " + thanhtoan.ToString() + "VND", "Xác nhận", MessageBoxButtons.OK);
+
+            // Kiểm tra xem người dùng đã nhấp vào nút OK chưa
+            if (result == DialogResult.OK)
             {
-                try
+                UserDAO.Danhgia_Worker((int)rating.Value, txb_danhgia.Text, workerID, userID, madattho);
+                //them vao anh danh gia    
+                SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
+                string queryString = "Insert Into ImgDanhGia Values(@userid, @workerid, @congviec, @img, @madon)";
+                //string queryString = string.Format("Insert into ImgDanhGia Values('{0}','{1}','{2}',{3})",userID,workerID,cv, imageByteArray);
+                conn.Open();
+                foreach (Image image in selectedImages)
                 {
-                    byte[] imageByteArray = ImageToByteArray(image);
-                    SqlCommand cmd = new SqlCommand(queryString, conn);
-                    cmd.Parameters.AddWithValue("@userid", userID);
-                    cmd.Parameters.AddWithValue("@workerid", workerID);
-                    cmd.Parameters.AddWithValue("@congviec", cv);
-                    cmd.Parameters.AddWithValue("@madon", madattho);
-                    cmd.Parameters.AddWithValue("@img", imageByteArray);
-                    if (cmd.ExecuteNonQuery() > 0)
+                    try
                     {
+                        byte[] imageByteArray = ImageToByteArray(image);
+                        SqlCommand cmd = new SqlCommand(queryString, conn);
+                        cmd.Parameters.AddWithValue("@userid", userID);
+                        cmd.Parameters.AddWithValue("@workerid", workerID);
+                        cmd.Parameters.AddWithValue("@congviec", cv);
+                        cmd.Parameters.AddWithValue("@madon", madattho);
+                        cmd.Parameters.AddWithValue("@img", imageByteArray);
+                        if (cmd.ExecuteNonQuery() > 0)
+                        {
 
+                        }
                     }
-                       
-
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
                 }
-                catch(Exception ex)
+                conn.Close();
+                if (cbtn_yeuThich.Checked)
                 {
-                    MessageBox.Show(ex.ToString());
+                    UserDAO.DanhDau_ThoYT(userID, workerID);
                 }
-            }
-            conn.Close();
-            if (cbtn_yeuThich.Checked)
-            {
-                UserDAO.DanhDau_ThoYT(userID, workerID);
-            }
-            HistoryWorker2Form_Load(sender, e);
+                HistoryWorker2Form_Load(sender, e);
+            }            
         }
         // chuyen anh sang byte[]
         public static byte[] ImageToByteArray(Image image)
@@ -208,5 +226,6 @@ namespace WindowsFormsApp2
         {
             //
         }
+        
     }
 }

@@ -14,6 +14,7 @@ using System.Windows.Forms;
 using System.Drawing.Imaging;
 using static ServiceStack.Script.Lisp;
 using static TheArtOfDevHtmlRenderer.Adapters.RGraphicsPath;
+using Microsoft.VisualBasic;
 
 namespace WindowsFormsApp2
 {
@@ -71,12 +72,15 @@ namespace WindowsFormsApp2
             {
                 User user = new User(ID, txtName.Text, txtAddress.Text, dateBirthDay.Value, txtPhone.Text, txtEmail.Text, gioitinh, txtCMND.Text);
                 UserDAO.Edit_Info(user);
+                
             }
             else
             {
                 Worker worker = new Worker(ID, txtName.Text, txtAddress.Text, dateBirthDay.Value, txtPhone.Text, txtEmail.Text, gioitinh, txtCMND.Text);
                 WorkerDAO.Edit_Info(worker);
+               
             }
+            InfomationCusForm_Load(sender, e);
         }
 
       

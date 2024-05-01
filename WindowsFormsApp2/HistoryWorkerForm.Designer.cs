@@ -34,6 +34,8 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.btn_danglam = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_daHoanThanh = new Guna.UI2.WinForms.Guna2Button();
             this.cb_thoYT = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
@@ -43,8 +45,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.txb_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_daHoanThanh = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_danglam = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +58,7 @@
             this.flContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
             this.flContainer.Location = new System.Drawing.Point(270, 19);
             this.flContainer.Name = "flContainer";
-            this.flContainer.Size = new System.Drawing.Size(790, 651);
+            this.flContainer.Size = new System.Drawing.Size(845, 651);
             this.flContainer.TabIndex = 1;
             // 
             // guna2Elipse2
@@ -91,6 +91,48 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(233, 674);
             this.guna2ShadowPanel1.TabIndex = 0;
+            // 
+            // btn_danglam
+            // 
+            this.btn_danglam.AutoRoundedCorners = true;
+            this.btn_danglam.BackColor = System.Drawing.Color.Transparent;
+            this.btn_danglam.BorderRadius = 16;
+            this.btn_danglam.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_danglam.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_danglam.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_danglam.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_danglam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_danglam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_danglam.ForeColor = System.Drawing.Color.White;
+            this.btn_danglam.Location = new System.Drawing.Point(19, 427);
+            this.btn_danglam.Name = "btn_danglam";
+            this.btn_danglam.ShadowDecoration.BorderRadius = 21;
+            this.btn_danglam.ShadowDecoration.Enabled = true;
+            this.btn_danglam.Size = new System.Drawing.Size(200, 34);
+            this.btn_danglam.TabIndex = 47;
+            this.btn_danglam.Text = "Đang làm";
+            this.btn_danglam.Click += new System.EventHandler(this.btn_danglam_Click);
+            // 
+            // btn_daHoanThanh
+            // 
+            this.btn_daHoanThanh.AutoRoundedCorners = true;
+            this.btn_daHoanThanh.BackColor = System.Drawing.Color.Transparent;
+            this.btn_daHoanThanh.BorderRadius = 16;
+            this.btn_daHoanThanh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_daHoanThanh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_daHoanThanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_daHoanThanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_daHoanThanh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_daHoanThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_daHoanThanh.ForeColor = System.Drawing.Color.White;
+            this.btn_daHoanThanh.Location = new System.Drawing.Point(19, 380);
+            this.btn_daHoanThanh.Name = "btn_daHoanThanh";
+            this.btn_daHoanThanh.ShadowDecoration.BorderRadius = 21;
+            this.btn_daHoanThanh.ShadowDecoration.Enabled = true;
+            this.btn_daHoanThanh.Size = new System.Drawing.Size(200, 34);
+            this.btn_daHoanThanh.TabIndex = 47;
+            this.btn_daHoanThanh.Text = "Đã hoàn thành";
+            this.btn_daHoanThanh.Click += new System.EventHandler(this.btn_daHoanThanh_Click);
             // 
             // cb_thoYT
             // 
@@ -222,54 +264,12 @@
             this.txb_timkiem.TabIndex = 36;
             this.txb_timkiem.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
-            // btn_daHoanThanh
-            // 
-            this.btn_daHoanThanh.AutoRoundedCorners = true;
-            this.btn_daHoanThanh.BackColor = System.Drawing.Color.Transparent;
-            this.btn_daHoanThanh.BorderRadius = 5;
-            this.btn_daHoanThanh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_daHoanThanh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_daHoanThanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_daHoanThanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_daHoanThanh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_daHoanThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_daHoanThanh.ForeColor = System.Drawing.Color.White;
-            this.btn_daHoanThanh.Location = new System.Drawing.Point(19, 380);
-            this.btn_daHoanThanh.Name = "btn_daHoanThanh";
-            this.btn_daHoanThanh.ShadowDecoration.BorderRadius = 21;
-            this.btn_daHoanThanh.ShadowDecoration.Enabled = true;
-            this.btn_daHoanThanh.Size = new System.Drawing.Size(200, 34);
-            this.btn_daHoanThanh.TabIndex = 47;
-            this.btn_daHoanThanh.Text = "Đã hoàn thành";
-            this.btn_daHoanThanh.Click += new System.EventHandler(this.btn_daHoanThanh_Click);
-            // 
-            // btn_danglam
-            // 
-            this.btn_danglam.AutoRoundedCorners = true;
-            this.btn_danglam.BackColor = System.Drawing.Color.Transparent;
-            this.btn_danglam.BorderRadius = 5;
-            this.btn_danglam.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_danglam.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_danglam.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_danglam.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_danglam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_danglam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_danglam.ForeColor = System.Drawing.Color.White;
-            this.btn_danglam.Location = new System.Drawing.Point(19, 427);
-            this.btn_danglam.Name = "btn_danglam";
-            this.btn_danglam.ShadowDecoration.BorderRadius = 21;
-            this.btn_danglam.ShadowDecoration.Enabled = true;
-            this.btn_danglam.Size = new System.Drawing.Size(200, 34);
-            this.btn_danglam.TabIndex = 47;
-            this.btn_danglam.Text = "Đang làm";
-            this.btn_danglam.Click += new System.EventHandler(this.btn_danglam_Click);
-            // 
             // HistoryWorkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(1081, 684);
+            this.ClientSize = new System.Drawing.Size(1140, 684);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.flContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

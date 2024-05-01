@@ -39,6 +39,7 @@ namespace WindowsFormsApp2
         }
         public string WorkerID { get => workerID; set => workerID = value; }
         public Guna2PictureBox Ptb_avt { get => ptb_avt; set => ptb_avt = value; }
+        public Guna2TextBox MoTa { get => txb_mota;set=> txb_mota = value; }
         public string Cv { get => cv; set => cv = value; }
 
         public UCWorker()

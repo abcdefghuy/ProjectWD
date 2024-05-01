@@ -48,6 +48,7 @@ namespace WindowsFormsApp2
         //dat lich
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+
             UserDAO.Order_Worker(UserForm.UserID, CongViec, ngaylamviec.Value.Date, giolamviec.Text, txb_ghichu.Text, WorkerID, txb_diachi.Text, lbl_giatien.Text);
             this.Close();
         }

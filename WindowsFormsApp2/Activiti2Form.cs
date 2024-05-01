@@ -37,8 +37,8 @@ namespace WindowsFormsApp2
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            string mucdich = cbSelect.Text + txbKhac.Text;
-            UserDAO.Huy_Worker(ma);
+            string lydo = cbSelect.Text + txbKhac.Text;
+            UserDAO.Huy_Worker(userID,workerID,Cv,ma,lydo);
             this.Close();
         }
 
