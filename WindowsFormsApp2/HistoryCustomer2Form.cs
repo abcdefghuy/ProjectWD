@@ -16,20 +16,24 @@ namespace WindowsFormsApp2
         private string userID;
         private string workerID;
         private string cv;
+        private string ma;
         public string UserID { get => userID; set => userID = value; }
         public string WorkerID { get => workerID; set => workerID = value; }
         public string Cv { get => cv; set => cv = value; }
+        public string Ma { get => ma; set => ma = value; }
 
         public HistoryCustomer2Form()
         {
             InitializeComponent();
         }
-        public HistoryCustomer2Form(string userID, string workerID, string cv)
+        public HistoryCustomer2Form(string userID, string workerID, string cv, string ma)
         {
             UserID = userID;
             WorkerID = workerID;
             Cv = cv;
             InitializeComponent();
+            
+            Ma = ma;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -39,7 +43,7 @@ namespace WindowsFormsApp2
 
         private void HistoryCustomer2Form_Load(object sender, EventArgs e)
         {
-            User user = WorkerDAO.History_User(userID, workerID, cv);
+            User user = WorkerDAO.History_User(userID, workerID, cv,ma);
             lbl_name.Text = "Họ tên: " + user.Hoten;
             lbl_thanhtoan.Text = "Đã thanh toán: " + user.Congviec.Thanhtoan;
             lbl_date.Text = "Ngày làm việc: " + (user.Congviec.NgayLamViec.ToString("dd/MM/yyyy"));
@@ -47,7 +51,7 @@ namespace WindowsFormsApp2
             txb_danhgia.Text = user.Congviec.DanhGia;
             lbl_congviec.Text = "Công việc: " + cv;
             //Load ảnh đánh giá của khách
-            List<PictureBox> commentImage = WorkerDAO.CommentImage(userID, workerID, cv);
+            List<PictureBox> commentImage = WorkerDAO.CommentImage(userID, workerID, cv,ma);
             foreach(PictureBox pictureBox in commentImage)
             {
                 panelPicture.Controls.Add(pictureBox);

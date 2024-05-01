@@ -19,6 +19,7 @@ namespace WindowsFormsApp2
         private string danhGia;
         private string diaChiCV;
         private string thanhtoan;
+        private string madattho;
         public string UserID { get => userID; set => userID = value; }
         public string MaCongViec { get => maCongViec; set => maCongViec = value; }
         public string GioLamViec1 { get => GioLamViec; set => GioLamViec = value; }
@@ -30,6 +31,7 @@ namespace WindowsFormsApp2
         public string DanhGia { get => danhGia; set => danhGia = value; }
         public string DiaChiCV { get => diaChiCV; set => diaChiCV = value; }
         public string Thanhtoan { get => thanhtoan; set => thanhtoan = value; }
+        public string Madattho { get => madattho; set => madattho = value; }
 
         public CongViec()
         {

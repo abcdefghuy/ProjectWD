@@ -82,6 +82,8 @@ namespace WindowsFormsApp2
             txb_tgTrongNgay.Text = worker.Congviec.TgLamViecDay;
             txb_chiTiet.Text = worker.Congviec.ChiTietCV;
             rating.Value = worker.Rate;
+            GioiTinh(worker.Gioitinh);
+            txb_tuoi.Text = TinhTuoi(worker.Ngaysinh).ToString();
             if (worker.Avatar == null)
             {
                 //
@@ -108,6 +110,31 @@ namespace WindowsFormsApp2
         private void btnBack_Click(object sender, EventArgs e)
         {
             panelPage2.Hide();
+        }
+        private void GioiTinh(string s)
+        {
+            if (s == "Nam       ")
+            {
+                btn_nam.Checked = true;
+            }
+
+            else
+                btn_nu.Checked = true;
+        }
+        private int TinhTuoi(DateTime ngaySinh)
+        {
+            
+
+            // Ngày tháng năm hiện tại
+            DateTime ngayHienTai = DateTime.Today;
+
+            // Tính số ngày đã trôi qua giữa hai ngày
+            TimeSpan khoangThoiGian = ngayHienTai - ngaySinh;
+
+            // Chuyển số ngày đó thành số tuổi
+            int tuoi = (int)(khoangThoiGian.Days / 365.25);
+
+            return tuoi;
         }
     }
 }

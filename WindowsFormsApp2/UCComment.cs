@@ -20,6 +20,7 @@ namespace WindowsFormsApp2
         private string userID;
         private string workerID;
         private string congViec;
+        private string ma;
         public Label LblName
         {
             get => lbl_name; set => lbl_name = value;
@@ -51,5 +52,6 @@ namespace WindowsFormsApp2
         public string UserID { get => userID; set => userID = value; }
         public string WorkerID { get => workerID; set => workerID = value; }
         public string CongViec { get => congViec; set => congViec = value; }
+        public string Ma { get => ma; set => ma = value; }
     }
 }

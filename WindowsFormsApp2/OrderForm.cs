@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,7 @@ namespace WindowsFormsApp2
         {
             get => lbl_giatien; set => lbl_giatien = value;
         }
+        public static DateTime Ngay;
         
         public OrderForm()
         {
@@ -54,5 +56,22 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void btn_lich_Click(object sender, EventArgs e)
+        {
+                       
+        }
+
+        private void ngaylamviec_Click(object sender, EventArgs e)
+        {
+            OrderCustomerForm f = new OrderCustomerForm();
+            f.Show();
+        }
+        public void CapNhatDateTimePicker(DateTime selectedDate)
+        {
+            // Cập nhật giá trị của DateTimePicker với ngày được chọn từ UserControl.
+            ngaylamviec.Value = selectedDate;
+        }
+
     }
 }

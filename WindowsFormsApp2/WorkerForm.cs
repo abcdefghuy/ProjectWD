@@ -47,10 +47,6 @@ namespace WindowsFormsApp2
             OpenForm(new InfomationCusForm());
         }
 
-        private void btnService_Click(object sender, EventArgs e)
-        {
-            OpenForm(new OrderWorkerForm());
-        }
 
         private void btnHistory_Click(object sender, EventArgs e)
         {
@@ -84,6 +80,11 @@ namespace WindowsFormsApp2
         {
             StatisticForm.ID = WorkerID_lbl.Text;
             OpenForm(new StatisticForm());
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            OpenForm(new OrderWorkerForm());
         }
     }
 }

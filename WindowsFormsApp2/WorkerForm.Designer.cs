@@ -201,7 +201,7 @@
             this.btnOrder.TabIndex = 18;
             this.btnOrder.Text = "Nhận Lịch";
             this.btnOrder.UseTransparentBackground = true;
-            this.btnOrder.Click += new System.EventHandler(this.btnService_Click);
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnNotifica
             // 
