@@ -47,7 +47,7 @@ namespace WindowsFormsApp2
             }
             for (int i = 1; i <= days; i++)
             {
-                UCDay ucday = new UCDay();
+                UCDayFree ucday = new UCDayFree();
                 ucday.days(i);
                 flowLayoutPanel1.Controls.Add((ucday));
             }
@@ -83,7 +83,7 @@ namespace WindowsFormsApp2
             }
             for (int i = 1; i <= days; i++)
             {
-                UCDay ucday = new UCDay();
+                UCDayFree ucday = new UCDayFree();
                 ucday.days(i);
                 flowLayoutPanel1.Controls.Add((ucday));
             }
@@ -110,9 +110,17 @@ namespace WindowsFormsApp2
             }
             for (int i = 1; i <= days; i++)
             {
-                UCDay ucday = new UCDay();
+                UCDayFree ucday = new UCDayFree();
                 ucday.days(i);
                 flowLayoutPanel1.Controls.Add((ucday));
+            }
+        }
+        public void NhanNgayDuocChon(DateTime selectedDate)
+        {
+            // Khi nhận được ngày được chọn từ UserControl, gọi phương thức tương ứng trong Form OrderForm để cập nhật DateTimePicker.
+            if (Application.OpenForms["OrderForm"] is OrderForm orderForm)
+            {
+                orderForm.CapNhatDateTimePicker(selectedDate);
             }
         }
     }

@@ -60,7 +60,7 @@ namespace WindowsFormsApp2
             UserDAO.Danhgia_Worker((int)rating.Value, txb_danhgia.Text, workerID, userID,madattho);          
             //them vao anh danh gia    
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
-            string queryString = "Insert Into ImgDanhGia Values(@userid, @workerid, @congviec, @image)";
+            string queryString = "Insert Into ImgDanhGia Values(@userid, @workerid, @congviec, @img, @madon)";
             //string queryString = string.Format("Insert into ImgDanhGia Values('{0}','{1}','{2}',{3})",userID,workerID,cv, imageByteArray);
             conn.Open();
             foreach (Image image in selectedImages)
@@ -72,9 +72,13 @@ namespace WindowsFormsApp2
                     cmd.Parameters.AddWithValue("@userid", userID);
                     cmd.Parameters.AddWithValue("@workerid", workerID);
                     cmd.Parameters.AddWithValue("@congviec", cv);
-                    cmd.Parameters.AddWithValue("@image", imageByteArray);
+                    cmd.Parameters.AddWithValue("@madon", madattho);
+                    cmd.Parameters.AddWithValue("@img", imageByteArray);
                     if (cmd.ExecuteNonQuery() > 0)
-                        MessageBox.Show("Them anh thanh cong");
+                    {
+
+                    }
+                       
 
                 }
                 catch(Exception ex)

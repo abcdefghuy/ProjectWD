@@ -40,12 +40,13 @@
             this.btn_huy = new Guna.UI2.WinForms.Guna2Button();
             this.btn_datLich = new Guna.UI2.WinForms.Guna2Button();
             this.Messenger = new Guna.UI2.WinForms.Guna2MessageDialog();
-            this.ngaylamviec = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.txb_diachi = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_diachi = new System.Windows.Forms.Label();
             this.lbl_giatien = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.ngaylamviec = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.btn_lich = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -212,24 +213,6 @@
             this.Messenger.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
             this.Messenger.Text = "Bạn đã đặt lịch thành công";
             // 
-            // ngaylamviec
-            // 
-            this.ngaylamviec.Animated = true;
-            this.ngaylamviec.AutoRoundedCorners = true;
-            this.ngaylamviec.BackColor = System.Drawing.Color.Transparent;
-            this.ngaylamviec.BorderRadius = 17;
-            this.ngaylamviec.Checked = true;
-            this.ngaylamviec.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngaylamviec.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.ngaylamviec.Location = new System.Drawing.Point(89, 133);
-            this.ngaylamviec.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.ngaylamviec.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.ngaylamviec.Name = "ngaylamviec";
-            this.ngaylamviec.Size = new System.Drawing.Size(226, 36);
-            this.ngaylamviec.TabIndex = 2;
-            this.ngaylamviec.Value = new System.DateTime(2024, 3, 13, 14, 47, 2, 618);
-            // 
             // guna2Separator1
             // 
             this.guna2Separator1.Location = new System.Drawing.Point(34, 74);
@@ -293,11 +276,50 @@
             this.label5.TabIndex = 40;
             this.label5.Text = "Giá tiền:";
             // 
+            // ngaylamviec
+            // 
+            this.ngaylamviec.Animated = true;
+            this.ngaylamviec.AutoRoundedCorners = true;
+            this.ngaylamviec.BackColor = System.Drawing.Color.Transparent;
+            this.ngaylamviec.BorderRadius = 17;
+            this.ngaylamviec.Checked = true;
+            this.ngaylamviec.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F);
+            this.ngaylamviec.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.ngaylamviec.Location = new System.Drawing.Point(89, 133);
+            this.ngaylamviec.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.ngaylamviec.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.ngaylamviec.Name = "ngaylamviec";
+            this.ngaylamviec.Size = new System.Drawing.Size(226, 36);
+            this.ngaylamviec.TabIndex = 2;
+            this.ngaylamviec.Value = new System.DateTime(2024, 3, 13, 14, 47, 2, 618);
+            
+            this.ngaylamviec.Click += new System.EventHandler(this.ngaylamviec_Click);
+            // 
+            // btn_lich
+            // 
+            this.btn_lich.Animated = true;
+            this.btn_lich.AutoRoundedCorners = true;
+            this.btn_lich.BorderRadius = 17;
+            this.btn_lich.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_lich.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_lich.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_lich.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_lich.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_lich.ForeColor = System.Drawing.Color.White;
+            this.btn_lich.Location = new System.Drawing.Point(354, 133);
+            this.btn_lich.Name = "btn_lich";
+            this.btn_lich.Size = new System.Drawing.Size(152, 36);
+            this.btn_lich.TabIndex = 41;
+            this.btn_lich.Text = "Xem lich trong cua tho";
+            this.btn_lich.Click += new System.EventHandler(this.btn_lich_Click);
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 711);
+            this.Controls.Add(this.btn_lich);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbl_giatien);
             this.Controls.Add(this.lbl_diachi);
@@ -333,7 +355,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txb_ghichu;
         private Guna.UI2.WinForms.Guna2ComboBox giolamviec;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker ngaylamviec;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
@@ -342,5 +363,7 @@
         private Guna.UI2.WinForms.Guna2MessageDialog Messenger;
         private System.Windows.Forms.Label lbl_giatien;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2DateTimePicker ngaylamviec;
+        private Guna.UI2.WinForms.Guna2Button btn_lich;
     }
 }

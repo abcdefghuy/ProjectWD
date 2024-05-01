@@ -1099,3 +1099,4 @@ D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.For
 D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UCActiviti.resources
 D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UCWorkerCancel.resources
 D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.WorkerCancelForm.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UCDayFree.resources

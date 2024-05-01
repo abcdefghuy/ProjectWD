@@ -349,6 +349,12 @@
     <Compile Include="UCDayBlank.Designer.cs">
       <DependentUpon>UCDayBlank.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCDayFree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDayFree.Designer.cs">
+      <DependentUpon>UCDayFree.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCHistoryCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -509,6 +515,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCDayBlank.resx">
       <DependentUpon>UCDayBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDayFree.resx">
+      <DependentUpon>UCDayFree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCHistoryCustomer.resx">
       <DependentUpon>UCHistoryCustomer.cs</DependentUpon>

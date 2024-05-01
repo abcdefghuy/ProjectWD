@@ -15,6 +15,7 @@ namespace WindowsFormsApp2
     public partial class UCNotifica : UserControl
     {
         private string workerID;
+        private string madat;
         public Label Hoten
         {
             get => lbl_hoten; set => lbl_hoten = value;
@@ -49,6 +50,7 @@ namespace WindowsFormsApp2
 
         }
         public string WorkerID { get => workerID; set => workerID = value; }
+        public string Madat { get => madat; set => madat = value; }
 
         public UCNotifica()
         {
@@ -61,12 +63,12 @@ namespace WindowsFormsApp2
 
         private void btn_chapnhan_Click(object sender, EventArgs e)
         {
-            WorkerDAO.Accept_Order(UserID.Text, WorkerID);
+            WorkerDAO.Accept_Order(UserID.Text, WorkerID,Madat);
         }
 
         private void btn_tuchoi_Click(object sender, EventArgs e)
         {
-            WorkerDAO.Denine_Order(UserID.Text, WorkerID);
+            WorkerDAO.Denine_Order(UserID.Text, WorkerID,Madat);
         }
     }
 }

@@ -13,6 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class UCDay : UserControl
     {
+        public Label ngaylamviec {  get => lbl_sukien; set => lbl_sukien=value; }
         public UCDay()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace WindowsFormsApp2
         
         private void UCDay_Load(object sender, EventArgs e)
         {
+            UCDay uc=new UCDay();
             DateTime date = new DateTime(OrderWorkerForm.static_year, OrderWorkerForm.static_month, int.Parse(lblday.Text));
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
             try
@@ -38,8 +40,8 @@ namespace WindowsFormsApp2
                 {
                     lbl_sukien.Text = "Khách hàng:" + reader[0].ToString();
                     this.BackColor = Color.GreenYellow;
-                }    
-                    
+                }
+
             }
             catch (Exception ex)
             {
@@ -49,8 +51,7 @@ namespace WindowsFormsApp2
         }
 
         private void UCDay_Click(object sender, EventArgs e)
-        {
-            
+        {           
             OrderWorker2Form f = new OrderWorker2Form();
             f.Day = int.Parse(lblday.Text);
             f.ShowDialog();  

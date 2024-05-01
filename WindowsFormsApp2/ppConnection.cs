@@ -90,6 +90,8 @@ namespace WindowsFormsApp2
                     uc.LblTienThanhtoan.Text = "Đã thanh toán: " + reader.GetString(3);
                     uc.LblNgay.Text = "Ngày làm việc: " + (reader.GetDateTime(1)).ToString("dd/MM/yyyy");
                     uc.Lbl_TrangThai.Text = "Trạng thái: " + reader[2].ToString();
+                    uc.Cv = reader.GetString(7);
+                    uc.Ma=reader.GetString(8);
                     if (reader.IsDBNull(6))
                     {
                         //

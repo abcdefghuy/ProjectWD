@@ -210,8 +210,9 @@ namespace WindowsFormsApp2
             if (cbtn_doanhthu.Checked)
             {
                 flContainer.Controls.Clear();
-                UCWorker uc = UserDAO.TopDoanhThu_Worker(tho);
-                flContainer.Controls.Add(uc);
+                List<UCWorker> uc = UserDAO.TopDoanhThu_Worker(tho);
+                foreach(UCWorker x in uc)
+                    flContainer.Controls.Add(x);
             }
             else
             {
@@ -225,8 +226,9 @@ namespace WindowsFormsApp2
             if (cbtn_congviecBook.Checked)
             {
                 flContainer.Controls.Clear();
-                UCWorker uc = UserDAO.TopBooking(tho);
-                flContainer.Controls.Add(uc);
+                List<UCWorker> uc = UserDAO.TopBooking(tho);
+                foreach (UCWorker x in uc)
+                    flContainer.Controls.Add(x);
             }
             else
             {
@@ -240,52 +242,10 @@ namespace WindowsFormsApp2
             if (btn_xemdshuy.Checked == true)
             {
                 flContainer.Controls.Clear();
-
-                SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
-
-               
-                 string query = @"SELECT w.WorkerID, w.HoTen, w.SDT, w.Avatar, cv.MaCongViec, COUNT(cv.CongViecID) AS CancelledJobsCount
-                         FROM CongViec cv
-                         INNER JOIN WorkerInfoDB w ON cv.WorkerID = w.WorkerID
-                         WHERE cv.TrangThai = 'Da huy' AND cv.MaCongViec = @MaCongViec
-                         GROUP BY w.WorkerID, w.HoTen, w.SDT, w.Avatar, cv.MaCongViec
-                         ORDER BY CancelledJobsCount DESC";
-
-                    SqlCommand command = new SqlCommand(query, conn);
-                    command.Parameters.AddWithValue("@MaCongViec", tho);
-
-                    try
-                    {
-                        SqlCommand sqlCommand = new SqlCommand(query, conn);
-                        SqlDataReader reader = sqlCommand.ExecuteReader();
-
-                        while (reader.Read())
-                        {
-                            UCWorkerCancel uc = new UCWorkerCancel();
-                            uc.WorkerID = reader["WorkerID"].ToString();
-                            uc.Cv = reader["MaCongViec"].ToString();
-                            uc.LblName.Text = "Họ tên: " + reader["HoTen"].ToString();
-                            uc.LblPhone.Text = "Số điện thoại: " + reader["SDT"].ToString();
-                            uc.LblHuy.Text = "Số lượt bị hủy: " + reader["CancelledJobsCount"].ToString();
-
-                            if (reader["Avatar"] != DBNull.Value)
-                            {
-                                byte[] avt = (byte[])reader["Avatar"];
-                                MemoryStream ms = new MemoryStream(avt);
-                                uc.Ptb_avt.Image = Image.FromStream(ms);
-                            }
-
-                            flContainer.Controls.Add(uc);
-                        }
-
-                        reader.Close();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.ToString());
-                    }
-
-             }
+                List<UCWorkerCancel> uc = UserDAO.XemThoBiHuy(tho);
+                foreach (UCWorkerCancel x in uc)
+                    flContainer.Controls.Add(x);
+            }
             else
             {
                 LoadTho(tho);
