@@ -251,5 +251,15 @@ namespace WindowsFormsApp2
                 LoadTho(tho);
             }
         }
+
+        private void search_kinhnghiem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

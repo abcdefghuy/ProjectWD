@@ -39,7 +39,7 @@ namespace WindowsFormsApp2
         {
 
         }
-        public Worker(string id, string hoten, string diachi, DateTime ngaysinh, string sdt, string email, string gioitinh, string cccdcongViecTho)
+        public Worker(string id, string hoten, string diachi, DateTime ngaysinh, string sdt, string email, string gioitinh, string cccd)
         {
             Id = id;
             Hoten = hoten;
