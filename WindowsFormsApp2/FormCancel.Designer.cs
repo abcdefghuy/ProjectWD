@@ -33,8 +33,8 @@
             this.flContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelPage2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.label5 = new System.Windows.Forms.Label();
             this.panelPage2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,9 +42,10 @@
             // 
             this.flContainer.AutoScroll = true;
             this.flContainer.BackColor = System.Drawing.Color.White;
-            this.flContainer.Location = new System.Drawing.Point(3, 61);
+            this.flContainer.Location = new System.Drawing.Point(4, 75);
+            this.flContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flContainer.Name = "flContainer";
-            this.flContainer.Size = new System.Drawing.Size(590, 651);
+            this.flContainer.Size = new System.Drawing.Size(787, 801);
             this.flContainer.TabIndex = 44;
             // 
             // guna2Elipse1
@@ -57,20 +58,11 @@
             this.panelPage2.Controls.Add(this.btnBack);
             this.panelPage2.Controls.Add(this.flContainer);
             this.panelPage2.Controls.Add(this.label5);
-            this.panelPage2.Location = new System.Drawing.Point(4, -7);
+            this.panelPage2.Location = new System.Drawing.Point(5, -9);
+            this.panelPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelPage2.Name = "panelPage2";
-            this.panelPage2.Size = new System.Drawing.Size(597, 759);
+            this.panelPage2.Size = new System.Drawing.Size(796, 934);
             this.panelPage2.TabIndex = 42;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(41, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 15);
-            this.label5.TabIndex = 43;
-            this.label5.Text = "Bình Luận";
             // 
             // btnBack
             // 
@@ -81,21 +73,34 @@
             this.btnBack.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnBack.ImageRotate = 0F;
             this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBack.Location = new System.Drawing.Point(4, 3);
+            this.btnBack.Location = new System.Drawing.Point(5, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
             this.btnBack.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnBack.PressedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBack.Size = new System.Drawing.Size(40, 38);
+            this.btnBack.Size = new System.Drawing.Size(53, 47);
             this.btnBack.TabIndex = 45;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(55, 47);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 20);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "Bình Luận";
+            // 
             // FormCancel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 783);
+            this.ClientSize = new System.Drawing.Size(827, 964);
             this.Controls.Add(this.panelPage2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormCancel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCancel";

@@ -51,60 +51,66 @@
             // lbl_hoten
             // 
             this.lbl_hoten.AutoSize = true;
-            this.lbl_hoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hoten.Location = new System.Drawing.Point(36, 301);
+            this.lbl_hoten.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hoten.Location = new System.Drawing.Point(48, 370);
+            this.lbl_hoten.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_hoten.Name = "lbl_hoten";
-            this.lbl_hoten.Size = new System.Drawing.Size(55, 16);
+            this.lbl_hoten.Size = new System.Drawing.Size(70, 23);
             this.lbl_hoten.TabIndex = 1;
             this.lbl_hoten.Text = "Họ Tên:";
             // 
             // lbl_phone
             // 
             this.lbl_phone.AutoSize = true;
-            this.lbl_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_phone.Location = new System.Drawing.Point(218, 338);
+            this.lbl_phone.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_phone.Location = new System.Drawing.Point(291, 416);
+            this.lbl_phone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_phone.Name = "lbl_phone";
-            this.lbl_phone.Size = new System.Drawing.Size(92, 16);
+            this.lbl_phone.Size = new System.Drawing.Size(116, 23);
             this.lbl_phone.TabIndex = 1;
             this.lbl_phone.Text = "Số Điện Thoại";
             // 
             // lbl_diachi
             // 
             this.lbl_diachi.AutoSize = true;
-            this.lbl_diachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_diachi.Location = new System.Drawing.Point(36, 338);
+            this.lbl_diachi.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_diachi.Location = new System.Drawing.Point(48, 416);
+            this.lbl_diachi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_diachi.Name = "lbl_diachi";
-            this.lbl_diachi.Size = new System.Drawing.Size(49, 16);
+            this.lbl_diachi.Size = new System.Drawing.Size(65, 23);
             this.lbl_diachi.TabIndex = 1;
             this.lbl_diachi.Text = "Địa Chỉ";
             // 
             // lbl_congviec
             // 
             this.lbl_congviec.AutoSize = true;
-            this.lbl_congviec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_congviec.Location = new System.Drawing.Point(33, 378);
+            this.lbl_congviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_congviec.Location = new System.Drawing.Point(44, 465);
+            this.lbl_congviec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_congviec.Name = "lbl_congviec";
-            this.lbl_congviec.Size = new System.Drawing.Size(69, 16);
+            this.lbl_congviec.Size = new System.Drawing.Size(87, 23);
             this.lbl_congviec.TabIndex = 1;
             this.lbl_congviec.Text = "Công Việc";
             // 
             // lbl_ngaylamviec
             // 
             this.lbl_ngaylamviec.AutoSize = true;
-            this.lbl_ngaylamviec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ngaylamviec.Location = new System.Drawing.Point(33, 420);
+            this.lbl_ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ngaylamviec.Location = new System.Drawing.Point(44, 517);
+            this.lbl_ngaylamviec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ngaylamviec.Name = "lbl_ngaylamviec";
-            this.lbl_ngaylamviec.Size = new System.Drawing.Size(65, 16);
+            this.lbl_ngaylamviec.Size = new System.Drawing.Size(85, 23);
             this.lbl_ngaylamviec.TabIndex = 1;
             this.lbl_ngaylamviec.Text = "Thời Gian";
             // 
             // lbl_ghichu
             // 
             this.lbl_ghichu.AutoSize = true;
-            this.lbl_ghichu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ghichu.Location = new System.Drawing.Point(33, 463);
+            this.lbl_ghichu.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ghichu.Location = new System.Drawing.Point(44, 570);
+            this.lbl_ghichu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ghichu.Name = "lbl_ghichu";
-            this.lbl_ghichu.Size = new System.Drawing.Size(53, 16);
+            this.lbl_ghichu.Size = new System.Drawing.Size(70, 23);
             this.lbl_ghichu.TabIndex = 1;
             this.lbl_ghichu.Text = "Ghi Chú";
             // 
@@ -113,19 +119,20 @@
             this.btn_tuchoi.Animated = true;
             this.btn_tuchoi.AutoRoundedCorners = true;
             this.btn_tuchoi.BackColor = System.Drawing.Color.Transparent;
-            this.btn_tuchoi.BorderRadius = 21;
+            this.btn_tuchoi.BorderRadius = 26;
             this.btn_tuchoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_tuchoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_tuchoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_tuchoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_tuchoi.FillColor = System.Drawing.Color.Red;
-            this.btn_tuchoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_tuchoi.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_tuchoi.ForeColor = System.Drawing.Color.White;
-            this.btn_tuchoi.Location = new System.Drawing.Point(25, 508);
+            this.btn_tuchoi.Location = new System.Drawing.Point(33, 625);
+            this.btn_tuchoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_tuchoi.Name = "btn_tuchoi";
             this.btn_tuchoi.ShadowDecoration.BorderRadius = 26;
             this.btn_tuchoi.ShadowDecoration.Enabled = true;
-            this.btn_tuchoi.Size = new System.Drawing.Size(180, 45);
+            this.btn_tuchoi.Size = new System.Drawing.Size(240, 55);
             this.btn_tuchoi.TabIndex = 2;
             this.btn_tuchoi.Text = "Từ Chối";
             this.btn_tuchoi.UseTransparentBackground = true;
@@ -136,19 +143,20 @@
             this.btn_chapnhan.Animated = true;
             this.btn_chapnhan.AutoRoundedCorners = true;
             this.btn_chapnhan.BackColor = System.Drawing.Color.Transparent;
-            this.btn_chapnhan.BorderRadius = 21;
+            this.btn_chapnhan.BorderRadius = 26;
             this.btn_chapnhan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_chapnhan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_chapnhan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_chapnhan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_chapnhan.FillColor = System.Drawing.Color.Chartreuse;
-            this.btn_chapnhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_chapnhan.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_chapnhan.ForeColor = System.Drawing.Color.Black;
-            this.btn_chapnhan.Location = new System.Drawing.Point(220, 508);
+            this.btn_chapnhan.Location = new System.Drawing.Point(293, 625);
+            this.btn_chapnhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_chapnhan.Name = "btn_chapnhan";
             this.btn_chapnhan.ShadowDecoration.BorderRadius = 26;
             this.btn_chapnhan.ShadowDecoration.Enabled = true;
-            this.btn_chapnhan.Size = new System.Drawing.Size(180, 45);
+            this.btn_chapnhan.Size = new System.Drawing.Size(240, 55);
             this.btn_chapnhan.TabIndex = 2;
             this.btn_chapnhan.Text = "Chấp Nhận";
             this.btn_chapnhan.UseTransparentBackground = true;
@@ -157,10 +165,11 @@
             // lbl_userID
             // 
             this.lbl_userID.AutoSize = true;
-            this.lbl_userID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_userID.Location = new System.Drawing.Point(218, 301);
+            this.lbl_userID.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_userID.Location = new System.Drawing.Point(291, 370);
+            this.lbl_userID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_userID.Name = "lbl_userID";
-            this.lbl_userID.Size = new System.Drawing.Size(52, 16);
+            this.lbl_userID.Size = new System.Drawing.Size(66, 23);
             this.lbl_userID.TabIndex = 1;
             this.lbl_userID.Text = "UserID:";
             // 
@@ -168,16 +177,17 @@
             // 
             this.ptb_avt.Image = global::WindowsFormsApp2.Properties.Resources.user__2_;
             this.ptb_avt.ImageRotate = 0F;
-            this.ptb_avt.Location = new System.Drawing.Point(102, 45);
+            this.ptb_avt.Location = new System.Drawing.Point(136, 55);
+            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_avt.Name = "ptb_avt";
-            this.ptb_avt.Size = new System.Drawing.Size(232, 200);
+            this.ptb_avt.Size = new System.Drawing.Size(309, 246);
             this.ptb_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_avt.TabIndex = 0;
             this.ptb_avt.TabStop = false;
             // 
             // UCNotifica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btn_chapnhan);
@@ -190,8 +200,9 @@
             this.Controls.Add(this.lbl_diachi);
             this.Controls.Add(this.lbl_hoten);
             this.Controls.Add(this.ptb_avt);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCNotifica";
-            this.Size = new System.Drawing.Size(436, 592);
+            this.Size = new System.Drawing.Size(581, 729);
             this.Load += new System.EventHandler(this.UCNotifica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).EndInit();
             this.ResumeLayout(false);
