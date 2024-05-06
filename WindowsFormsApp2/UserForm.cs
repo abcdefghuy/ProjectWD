@@ -80,5 +80,10 @@ namespace WindowsFormsApp2
             UserID = userID_lbl.Text;
             
         }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            OpenForm(new PostForm("User"));
+        }
     }
 }

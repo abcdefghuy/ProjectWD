@@ -298,6 +298,30 @@
     <Compile Include="OrderWorkerForm.Designer.cs">
       <DependentUpon>OrderWorkerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PostDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostDetailForm.Designer.cs">
+      <DependentUpon>PostDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostDetailWorkerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostDetailWorkerForm.Designer.cs">
+      <DependentUpon>PostDetailWorkerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostForm.Designer.cs">
+      <DependentUpon>PostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostWorkerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostWorkerForm.Designer.cs">
+      <DependentUpon>PostWorkerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ppConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -372,6 +396,12 @@
     </Compile>
     <Compile Include="UCNotifica.Designer.cs">
       <DependentUpon>UCNotifica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPost.Designer.cs">
+      <DependentUpon>UCPost.cs</DependentUpon>
     </Compile>
     <Compile Include="UCWork.cs">
       <SubType>UserControl</SubType>
@@ -488,6 +518,18 @@
     <EmbeddedResource Include="OrderWorkerForm.resx">
       <DependentUpon>OrderWorkerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PostDetailForm.resx">
+      <DependentUpon>PostDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostDetailWorkerForm.resx">
+      <DependentUpon>PostDetailWorkerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostForm.resx">
+      <DependentUpon>PostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostWorkerForm.resx">
+      <DependentUpon>PostWorkerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -533,6 +575,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCNotifica.resx">
       <DependentUpon>UCNotifica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPost.resx">
+      <DependentUpon>UCPost.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCWork.resx">
       <DependentUpon>UCWork.cs</DependentUpon>
@@ -682,6 +727,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addition.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
