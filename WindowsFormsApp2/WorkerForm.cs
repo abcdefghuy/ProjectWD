@@ -86,5 +86,10 @@ namespace WindowsFormsApp2
         {
             OpenForm(new OrderWorkerForm());
         }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            OpenForm(new PostWorkerForm("Worker"));
+        }
     }
 }
