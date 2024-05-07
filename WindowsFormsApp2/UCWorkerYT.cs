@@ -35,5 +35,9 @@ namespace WindowsFormsApp2
         {
             get => ptb_avt; set => ptb_avt = value;
         }
+        public Label LblDiaChi
+        {
+            get => lbl_diachi; set => lbl_diachi = value;
+        }
     }
 }

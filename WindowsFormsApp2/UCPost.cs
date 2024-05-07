@@ -51,7 +51,7 @@ namespace WindowsFormsApp2
         {
             if (role == "User")
             {
-                PostDetailForm f = new PostDetailForm(maCV);
+                PostDetailForm f = new PostDetailForm(maCV,lbl_Congviec.Text);
                 f.HoTen.Text = lbl_name.Text;
                 f.Avatar.Image = ptb_avt.Image;
                 f.Show();

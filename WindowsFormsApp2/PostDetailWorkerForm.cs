@@ -33,7 +33,16 @@ namespace WindowsFormsApp2
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+            if (btnAdd.FillColor == Color.DodgerBlue)
+            {
+                btnAdd.Text = "Bỏ quan tâm";
+                btnAdd.FillColor = Color.Red;
+            }
+            else
+            {
+                btnAdd.Text = "Quan Tâm";
+                btnAdd.FillColor = Color.DodgerBlue;
+            }
         }
         private void quanTam(object sender, EventArgs e)
         {

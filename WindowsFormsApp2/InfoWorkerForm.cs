@@ -95,7 +95,7 @@ namespace WindowsFormsApp2
             }
 
             //load comment
-            List<UCComment> comments = UserDAO.Load_Comment(workerID);
+            List<UCComment> comments = UserDAO.Load_Comment(workerID,cv);
             foreach (UCComment uc in comments)
             {
                 flContainer.Controls.Add(uc);

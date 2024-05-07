@@ -64,11 +64,13 @@ namespace WindowsFormsApp2
         private void btn_chapnhan_Click(object sender, EventArgs e)
         {
             WorkerDAO.Accept_Order(UserID.Text, WorkerID,Madat);
+            WorkerDAO.Load_ThongBao(workerID);
         }
 
         private void btn_tuchoi_Click(object sender, EventArgs e)
         {
             WorkerDAO.Denine_Order(UserID.Text, WorkerID,Madat);
+            WorkerDAO.Load_ThongBao(workerID);
         }
     }
 }

@@ -14,6 +14,7 @@ namespace WindowsFormsApp2
     public partial class PostDetailForm : Form
     {
         private string maCV;
+        private string CV;
         public Label HoTen
         {
             get => lbl_name; set => lbl_name = value;
@@ -22,10 +23,11 @@ namespace WindowsFormsApp2
         {
             get => ptb_avt; set => ptb_avt = value;
         }
-        public PostDetailForm(string maCV)
+        public PostDetailForm(string maCV, string cV)
         {
             InitializeComponent();
             this.maCV = maCV;
+            this.CV = cV;
         }
 
         private void lbl_Congviec_Click(object sender, EventArgs e)
@@ -66,7 +68,7 @@ namespace WindowsFormsApp2
         {
             panelPage2.Show();
             flContainer.Controls.Clear();
-            List<UCWorker> workerList = UserDAO.ThoQuanTam(maCV);
+            List<UCWorker> workerList = UserDAO.ThoQuanTam(maCV,CV);
             foreach(UCWorker uc in workerList)
             {
                 flContainer.Controls.Add(uc);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,6 +75,13 @@ namespace WindowsFormsApp2
         {
             workerID = WorkerID_lbl.Text;
             OpenForm(new NotificationForm());
+            Worker w = WorkerDAO.Load_info_Worker(workerID);
+            lbl_Ten.Text = w.Hoten;
+            if (w.Avatar != null && w.Avatar.Length > 0)
+            {
+                MemoryStream ms = new MemoryStream(w.Avatar, 0, w.Avatar.Length);
+                ptb_avatar.Image = Image.FromStream(ms);
+            }
         }
 
         private void btn_thongke_Click(object sender, EventArgs e)

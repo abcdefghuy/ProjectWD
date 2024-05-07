@@ -71,7 +71,7 @@ namespace WindowsFormsApp2
             finally { conn.Close(); }
             return dtTable;
         }
-        public static List<UCHistoryCustomer>  load_Tim_kiem_KhachHang(string queryStr,string workerID)
+        public static List<UCHistoryCustomer> load_Tim_kiem_KhachHang(string queryStr, string workerID)
         {
             List<UCHistoryCustomer> userList = new List<UCHistoryCustomer>();
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
@@ -91,7 +91,7 @@ namespace WindowsFormsApp2
                     uc.LblNgay.Text = "Ngày làm việc: " + (reader.GetDateTime(1)).ToString("dd/MM/yyyy");
                     uc.Lbl_TrangThai.Text = "Trạng thái: " + reader[2].ToString();
                     uc.Cv = reader.GetString(7);
-                    uc.Ma=reader.GetString(8);
+                    uc.Ma = reader.GetString(8);
                     if (!reader.IsDBNull(6))
                     {
                         object value = reader[6];
@@ -99,7 +99,7 @@ namespace WindowsFormsApp2
                         MemoryStream ms = new MemoryStream(avt);
                         uc.Ptb_avt.Image = Image.FromStream(ms);
                     }
-                    
+
                     userList.Add(uc);
                 }
                 reader.Close();
@@ -129,8 +129,8 @@ namespace WindowsFormsApp2
                     UCHistoryWorker uc = new UCHistoryWorker();
                     uc.UserID = userID;
                     uc.WorkerID = reader.GetString(0);
-                    uc.Cv=reader.GetString(7);
-                    uc.MaDat=reader.GetString(8);
+                    uc.Cv = reader.GetString(7);
+                    uc.MaDat = reader.GetString(8);
                     uc.LblName.Text = "Họ tên: " + reader.GetString(5);
                     uc.Rating.Value = reader.GetInt32(4);
                     uc.LblTienThanhtoan.Text = "Đã thanh toán: " + reader.GetString(3);
@@ -144,7 +144,7 @@ namespace WindowsFormsApp2
                         MemoryStream ms = new MemoryStream(avt);
                         uc.Ptb_avt.Image = Image.FromStream(ms);
                     }
-                    
+
                     workerList.Add(uc);
                 }
                 reader.Close();
@@ -156,7 +156,7 @@ namespace WindowsFormsApp2
             finally { conn.Close(); }
             return workerList;
         }
-        public static List<UCWorker> DanhSachTho(string querry,string tho)
+        public static List<UCWorker> DanhSachTho(string querry, string tho)
         {
             List<UCWorker> workerList = new List<UCWorker>();
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
@@ -177,48 +177,8 @@ namespace WindowsFormsApp2
                     uc.LblKinhnghiem.Text = "Kinh nghiệm: " + reader.GetString(3);
                     uc.LblTiencong.Text = "Tiền công: " + reader.GetString(4);
                     uc.Rating.Value = reader.GetInt32(5);
-                    uc.MoTa.Text= reader.GetString(7);
-                    if (!reader.IsDBNull(6))
-                    {
-                        object value = reader[6];
-                        byte[] avt = (byte[])value;
-                        MemoryStream ms = new MemoryStream(avt);
-                        uc.Ptb_avt.Image = Image.FromStream(ms);
-                    }
-                    
-                    workerList.Add(uc);
-                }
-                reader.Close();
-                cnn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            return workerList;
-        }
-        public static List<UCWorker> DanhSachTho(string querry)
-        {
-            List<UCWorker> workerList = new List<UCWorker>();
-            SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
-            conn.Open();
-            try
-            {
-                SqlConnection cnn = new SqlConnection(Properties.Settings.Default.connStr);
-                cnn.Open();
-                SqlCommand sqlCommand = new SqlCommand(querry, cnn);
-                SqlDataReader reader = sqlCommand.ExecuteReader();
-                while (reader.Read())
-                {
-                    UCWorker uc = new UCWorker();
-                    uc.Cv = reader[8].ToString();
-                    uc.WorkerID = reader.GetString(0);
-                    uc.LblName.Text = "Họ tên: " + reader.GetString(1);
-                    uc.LblPhone.Text = "Số điện thoại: " + reader.GetString(2);
-                    uc.LblKinhnghiem.Text = "Kinh nghiệm: " + reader.GetString(3);
-                    uc.LblTiencong.Text = "Tiền công: " + reader.GetString(4);
-                    uc.Rating.Value = reader.GetInt32(5);
                     uc.MoTa.Text = reader.GetString(7);
+                    uc.LblDiaChi.Text = "Địa chỉ: " + reader.GetString(8);
                     if (!reader.IsDBNull(6))
                     {
                         object value = reader[6];
@@ -238,6 +198,7 @@ namespace WindowsFormsApp2
             }
             return workerList;
         }
+
         public static bool check_Login(string sqlStr)
         {
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
@@ -281,6 +242,6 @@ namespace WindowsFormsApp2
             // Show the zoom form
             zoomForm.Show();
         }
-        
+
     }
 }

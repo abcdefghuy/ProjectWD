@@ -33,6 +33,10 @@ namespace WindowsFormsApp2
         {
             get => lbl_tiencong; set => lbl_tiencong = value;
         }
+        public Label LblDiaChi
+        {
+            get => lbl_DiaChi; set => lbl_DiaChi = value;
+        } 
         public Guna2RatingStar Rating
         {
             get => rating; set => rating = value;
