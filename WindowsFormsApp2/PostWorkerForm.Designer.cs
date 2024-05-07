@@ -34,9 +34,9 @@
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.flContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.box_congviec = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_filterDay = new Guna.UI2.WinForms.Guna2Button();
             this.end_day = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.start_day = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@
             this.panelPage = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.cbtn_quantam = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.panelPage.SuspendLayout();
             this.SuspendLayout();
@@ -82,28 +83,29 @@
             this.label1.TabIndex = 48;
             this.label1.Text = "Công Việc";
             // 
-            // guna2ComboBox1
+            // box_congviec
             // 
-            this.guna2ComboBox1.AutoRoundedCorners = true;
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 17;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.box_congviec.AutoRoundedCorners = true;
+            this.box_congviec.BackColor = System.Drawing.Color.Transparent;
+            this.box_congviec.BorderRadius = 17;
+            this.box_congviec.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.box_congviec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.box_congviec.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.box_congviec.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.box_congviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
+            this.box_congviec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.box_congviec.ItemHeight = 30;
+            this.box_congviec.Items.AddRange(new object[] {
             "ThoDien",
             "Dien Lanh",
             "Ong Nuoc",
             "Tho Moc",
             "Xay Dung"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(19, 310);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2ComboBox1.TabIndex = 47;
+            this.box_congviec.Location = new System.Drawing.Point(19, 310);
+            this.box_congviec.Name = "box_congviec";
+            this.box_congviec.Size = new System.Drawing.Size(200, 36);
+            this.box_congviec.TabIndex = 47;
+            this.box_congviec.SelectedIndexChanged += new System.EventHandler(this.box_congviec_SelectedIndexChanged);
             // 
             // guna2Separator3
             // 
@@ -112,25 +114,26 @@
             this.guna2Separator3.Size = new System.Drawing.Size(200, 10);
             this.guna2Separator3.TabIndex = 45;
             // 
-            // guna2Button11
+            // btn_filterDay
             // 
-            this.guna2Button11.AutoRoundedCorners = true;
-            this.guna2Button11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button11.BorderRadius = 16;
-            this.guna2Button11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2Button11.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button11.ForeColor = System.Drawing.Color.White;
-            this.guna2Button11.Location = new System.Drawing.Point(58, 179);
-            this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.ShadowDecoration.BorderRadius = 21;
-            this.guna2Button11.ShadowDecoration.Enabled = true;
-            this.guna2Button11.Size = new System.Drawing.Size(111, 34);
-            this.guna2Button11.TabIndex = 44;
-            this.guna2Button11.Text = "Áp dụng";
+            this.btn_filterDay.AutoRoundedCorners = true;
+            this.btn_filterDay.BackColor = System.Drawing.Color.Transparent;
+            this.btn_filterDay.BorderRadius = 16;
+            this.btn_filterDay.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_filterDay.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_filterDay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_filterDay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_filterDay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_filterDay.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_filterDay.ForeColor = System.Drawing.Color.White;
+            this.btn_filterDay.Location = new System.Drawing.Point(58, 179);
+            this.btn_filterDay.Name = "btn_filterDay";
+            this.btn_filterDay.ShadowDecoration.BorderRadius = 21;
+            this.btn_filterDay.ShadowDecoration.Enabled = true;
+            this.btn_filterDay.Size = new System.Drawing.Size(111, 34);
+            this.btn_filterDay.TabIndex = 44;
+            this.btn_filterDay.Text = "Áp dụng";
+            this.btn_filterDay.Click += new System.EventHandler(this.btn_filterDay_Click);
             // 
             // end_day
             // 
@@ -189,10 +192,11 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.cbtn_quantam);
             this.guna2ShadowPanel1.Controls.Add(this.label1);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2ComboBox1);
+            this.guna2ShadowPanel1.Controls.Add(this.box_congviec);
             this.guna2ShadowPanel1.Controls.Add(this.guna2Separator3);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2Button11);
+            this.guna2ShadowPanel1.Controls.Add(this.btn_filterDay);
             this.guna2ShadowPanel1.Controls.Add(this.end_day);
             this.guna2ShadowPanel1.Controls.Add(this.start_day);
             this.guna2ShadowPanel1.Controls.Add(this.label7);
@@ -223,6 +227,24 @@
             // 
             this.guna2Elipse5.BorderRadius = 25;
             // 
+            // cbtn_quantam
+            // 
+            this.cbtn_quantam.AutoSize = true;
+            this.cbtn_quantam.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbtn_quantam.CheckedState.BorderRadius = 0;
+            this.cbtn_quantam.CheckedState.BorderThickness = 0;
+            this.cbtn_quantam.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbtn_quantam.Location = new System.Drawing.Point(23, 364);
+            this.cbtn_quantam.Name = "cbtn_quantam";
+            this.cbtn_quantam.Size = new System.Drawing.Size(99, 17);
+            this.cbtn_quantam.TabIndex = 49;
+            this.cbtn_quantam.Text = "Đang quan tâm";
+            this.cbtn_quantam.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbtn_quantam.UncheckedState.BorderRadius = 0;
+            this.cbtn_quantam.UncheckedState.BorderThickness = 0;
+            this.cbtn_quantam.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbtn_quantam.CheckedChanged += new System.EventHandler(this.cbtn_quantam_CheckedChanged);
+            // 
             // PostWorkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,9 +270,9 @@
         private System.Windows.Forms.FlowLayoutPanel flContainer;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox box_congviec;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button11;
+        private Guna.UI2.WinForms.Guna2Button btn_filterDay;
         private Guna.UI2.WinForms.Guna2DateTimePicker end_day;
         private Guna.UI2.WinForms.Guna2DateTimePicker start_day;
         private System.Windows.Forms.Label label7;
@@ -259,5 +281,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private Guna.UI2.WinForms.Guna2CheckBox cbtn_quantam;
     }
 }
