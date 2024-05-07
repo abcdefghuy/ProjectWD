@@ -34,12 +34,6 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelPage1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.panelPage2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.flContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.rating = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.lblRating = new System.Windows.Forms.Label();
             this.btn_viewRate = new Guna.UI2.WinForms.Guna2Button();
             this.txb_tuoi = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_chiTiet = new Guna.UI2.WinForms.Guna2TextBox();
@@ -53,7 +47,6 @@
             this.btn_nam = new Guna.UI2.WinForms.Guna2Button();
             this.btn_datLich = new Guna.UI2.WinForms.Guna2Button();
             this.btn_huy = new Guna.UI2.WinForms.Guna2Button();
-            this.ptb_avt = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -63,9 +56,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
+            this.panelPage2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.flContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.rating = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.lblRating = new System.Windows.Forms.Label();
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Messenger = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ptb_avt = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelPage1.SuspendLayout();
             this.panelPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).BeginInit();
@@ -86,7 +86,6 @@
             // 
             // panelPage1
             // 
-            this.panelPage1.Controls.Add(this.panelPage2);
             this.panelPage1.Controls.Add(this.btn_viewRate);
             this.panelPage1.Controls.Add(this.txb_tuoi);
             this.panelPage1.Controls.Add(this.txb_chiTiet);
@@ -116,6 +115,7 @@
             this.panelPage1.Size = new System.Drawing.Size(795, 934);
             this.panelPage1.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // panelPage2
             // 
             this.panelPage2.Controls.Add(this.btnBack);
@@ -191,6 +191,8 @@
             this.lblRating.TabIndex = 41;
             this.lblRating.Text = "Đánh giá:";
             // 
+=======
+>>>>>>> main
             // btn_viewRate
             // 
             this.btn_viewRate.Animated = true;
@@ -203,7 +205,7 @@
             this.btn_viewRate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_viewRate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_viewRate.FillColor = System.Drawing.Color.Gainsboro;
-            this.btn_viewRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_viewRate.Font = new System.Drawing.Font("UTM Alberta Heavy", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_viewRate.ForeColor = System.Drawing.Color.Black;
             this.btn_viewRate.Location = new System.Drawing.Point(571, 4);
             this.btn_viewRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -226,11 +228,16 @@
             this.txb_tuoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_tuoi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_tuoi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_tuoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txb_tuoi.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_tuoi.ForeColor = System.Drawing.Color.Black;
             this.txb_tuoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_tuoi.Location = new System.Drawing.Point(497, 229);
             this.txb_tuoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_tuoi.Location = new System.Drawing.Point(373, 228);
+            this.txb_tuoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_tuoi.Name = "txb_tuoi";
             this.txb_tuoi.PasswordChar = '\0';
             this.txb_tuoi.PlaceholderText = "";
@@ -249,11 +256,16 @@
             this.txb_chiTiet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_chiTiet.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_chiTiet.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_chiTiet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_chiTiet.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_chiTiet.ForeColor = System.Drawing.Color.Black;
             this.txb_chiTiet.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_chiTiet.Location = new System.Drawing.Point(36, 562);
             this.txb_chiTiet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_chiTiet.Location = new System.Drawing.Point(27, 549);
+            this.txb_chiTiet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_chiTiet.Multiline = true;
             this.txb_chiTiet.Name = "txb_chiTiet";
             this.txb_chiTiet.PasswordChar = '\0';
@@ -274,11 +286,16 @@
             this.txb_tgTrongNgay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_tgTrongNgay.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_tgTrongNgay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_tgTrongNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_tgTrongNgay.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_tgTrongNgay.ForeColor = System.Drawing.Color.Black;
             this.txb_tgTrongNgay.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_tgTrongNgay.Location = new System.Drawing.Point(273, 474);
             this.txb_tgTrongNgay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_tgTrongNgay.Location = new System.Drawing.Point(205, 474);
+            this.txb_tgTrongNgay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_tgTrongNgay.Name = "txb_tgTrongNgay";
             this.txb_tgTrongNgay.PasswordChar = '\0';
             this.txb_tgTrongNgay.PlaceholderText = "";
@@ -298,11 +315,16 @@
             this.txb_tgTrongTuan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_tgTrongTuan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_tgTrongTuan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_tgTrongTuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_tgTrongTuan.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_tgTrongTuan.ForeColor = System.Drawing.Color.Black;
             this.txb_tgTrongTuan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_tgTrongTuan.Location = new System.Drawing.Point(273, 414);
             this.txb_tgTrongTuan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_tgTrongTuan.Location = new System.Drawing.Point(215, 404);
+            this.txb_tgTrongTuan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_tgTrongTuan.Name = "txb_tgTrongTuan";
             this.txb_tgTrongTuan.PasswordChar = '\0';
             this.txb_tgTrongTuan.PlaceholderText = "";
@@ -322,11 +344,16 @@
             this.txb_tiencong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_tiencong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_tiencong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_tiencong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_tiencong.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_tiencong.ForeColor = System.Drawing.Color.Black;
             this.txb_tiencong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_tiencong.Location = new System.Drawing.Point(140, 354);
             this.txb_tiencong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_tiencong.Location = new System.Drawing.Point(106, 340);
+            this.txb_tiencong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_tiencong.Name = "txb_tiencong";
             this.txb_tiencong.PasswordChar = '\0';
             this.txb_tiencong.PlaceholderText = "";
@@ -346,11 +373,16 @@
             this.txb_kinhnghiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_kinhnghiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_kinhnghiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_kinhnghiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_kinhnghiem.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_kinhnghiem.ForeColor = System.Drawing.Color.Black;
             this.txb_kinhnghiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_kinhnghiem.Location = new System.Drawing.Point(140, 290);
             this.txb_kinhnghiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_kinhnghiem.Location = new System.Drawing.Point(106, 285);
+            this.txb_kinhnghiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_kinhnghiem.Name = "txb_kinhnghiem";
             this.txb_kinhnghiem.PasswordChar = '\0';
             this.txb_kinhnghiem.PlaceholderText = "";
@@ -370,11 +402,16 @@
             this.txb_phone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_phone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_phone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_phone.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_phone.ForeColor = System.Drawing.Color.Black;
             this.txb_phone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_phone.Location = new System.Drawing.Point(140, 231);
             this.txb_phone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_phone.Location = new System.Drawing.Point(105, 230);
+            this.txb_phone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_phone.Name = "txb_phone";
             this.txb_phone.PasswordChar = '\0';
             this.txb_phone.PlaceholderText = "";
@@ -394,11 +431,16 @@
             this.txb_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_name.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_name.ForeColor = System.Drawing.Color.Black;
             this.txb_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_name.Location = new System.Drawing.Point(101, 174);
             this.txb_name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_name.Location = new System.Drawing.Point(76, 154);
+            this.txb_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_name.Name = "txb_name";
             this.txb_name.PasswordChar = '\0';
             this.txb_name.PlaceholderText = "";
@@ -418,10 +460,14 @@
             this.btn_nu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_nu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_nu.FillColor = System.Drawing.Color.Transparent;
-            this.btn_nu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btn_nu.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nu.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.btn_nu.Location = new System.Drawing.Point(680, 169);
             this.btn_nu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.btn_nu.Location = new System.Drawing.Point(510, 150);
+>>>>>>> main
             this.btn_nu.Name = "btn_nu";
             this.btn_nu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_nu.Size = new System.Drawing.Size(95, 55);
@@ -441,10 +487,14 @@
             this.btn_nam.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_nam.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_nam.FillColor = System.Drawing.Color.Transparent;
-            this.btn_nam.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btn_nam.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nam.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.btn_nam.Location = new System.Drawing.Point(547, 169);
             this.btn_nam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.btn_nam.Location = new System.Drawing.Point(410, 150);
+>>>>>>> main
             this.btn_nam.Name = "btn_nam";
             this.btn_nam.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_nam.Size = new System.Drawing.Size(100, 55);
@@ -463,7 +513,7 @@
             this.btn_datLich.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_datLich.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_datLich.FillColor = System.Drawing.Color.Chartreuse;
-            this.btn_datLich.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_datLich.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_datLich.ForeColor = System.Drawing.Color.Black;
             this.btn_datLich.Location = new System.Drawing.Point(452, 875);
             this.btn_datLich.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -485,7 +535,7 @@
             this.btn_huy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_huy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_huy.FillColor = System.Drawing.Color.Red;
-            this.btn_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_huy.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_huy.ForeColor = System.Drawing.Color.White;
             this.btn_huy.Location = new System.Drawing.Point(92, 875);
             this.btn_huy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -496,6 +546,7 @@
             this.btn_huy.UseTransparentBackground = true;
             this.btn_huy.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+<<<<<<< HEAD
             // ptb_avt
             // 
             this.ptb_avt.Image = ((System.Drawing.Image)(resources.GetObject("ptb_avt.Image")));
@@ -516,96 +567,213 @@
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 18);
+=======
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(336, 241);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 16);
+>>>>>>> main
             this.label4.TabIndex = 21;
             this.label4.Text = "Tuổi";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+<<<<<<< HEAD
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(32, 306);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 18);
+=======
+            this.label2.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(25, 298);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 16);
+>>>>>>> main
             this.label2.TabIndex = 20;
             this.label2.Text = "Kinh Nghiệm:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
+<<<<<<< HEAD
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(33, 487);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(203, 18);
+=======
+            this.label10.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(25, 485);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(165, 16);
+>>>>>>> main
             this.label10.TabIndex = 25;
             this.label10.Text = "Thời gian làm việc trong ngày:\r\n";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+<<<<<<< HEAD
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(33, 428);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(221, 18);
+=======
+            this.label9.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(25, 416);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(177, 16);
+>>>>>>> main
             this.label9.TabIndex = 24;
             this.label9.Text = "Thời Gian Làm Việc Trong Tuần:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+<<<<<<< HEAD
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(33, 538);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 18);
+=======
+            this.label3.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 529);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 16);
+>>>>>>> main
             this.label3.TabIndex = 23;
             this.label3.Text = "Chi tiết công việc";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+<<<<<<< HEAD
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(32, 369);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 18);
+=======
+            this.label1.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(25, 352);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 16);
+>>>>>>> main
             this.label1.TabIndex = 22;
             this.label1.Text = "Tiền Công:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+<<<<<<< HEAD
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(448, 190);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 18);
+=======
+            this.label7.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(336, 167);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 16);
+>>>>>>> main
             this.label7.TabIndex = 28;
             this.label7.Text = "Giới Tính";
             // 
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
+<<<<<<< HEAD
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhone.Location = new System.Drawing.Point(32, 245);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(98, 18);
+=======
+            this.lblPhone.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(24, 241);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(80, 16);
+>>>>>>> main
             this.lblPhone.TabIndex = 29;
             this.lblPhone.Text = "Số điện thoại:";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
+<<<<<<< HEAD
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(32, 190);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(56, 18);
+=======
+            this.lblName.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(24, 167);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(45, 16);
+>>>>>>> main
             this.lblName.TabIndex = 30;
             this.lblName.Text = "Họ tên:";
+            // 
+            // panelPage2
+            // 
+            this.panelPage2.Controls.Add(this.btnBack);
+            this.panelPage2.Controls.Add(this.flContainer);
+            this.panelPage2.Controls.Add(this.label5);
+            this.panelPage2.Controls.Add(this.rating);
+            this.panelPage2.Controls.Add(this.lblRating);
+            this.panelPage2.Location = new System.Drawing.Point(12, 12);
+            this.panelPage2.Name = "panelPage2";
+            this.panelPage2.Size = new System.Drawing.Size(597, 759);
+            this.panelPage2.TabIndex = 40;
+            // 
+            // flContainer
+            // 
+            this.flContainer.AutoScroll = true;
+            this.flContainer.BackColor = System.Drawing.Color.White;
+            this.flContainer.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flContainer.Location = new System.Drawing.Point(4, 105);
+            this.flContainer.Name = "flContainer";
+            this.flContainer.Size = new System.Drawing.Size(590, 651);
+            this.flContainer.TabIndex = 44;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(42, 82);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 18);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "Bình Luận";
+            // 
+            // rating
+            // 
+            this.rating.BorderColor = System.Drawing.Color.Black;
+            this.rating.Location = new System.Drawing.Point(104, 32);
+            this.rating.Name = "rating";
+            this.rating.RatingColor = System.Drawing.Color.Yellow;
+            this.rating.ReadOnly = true;
+            this.rating.Size = new System.Drawing.Size(180, 28);
+            this.rating.TabIndex = 42;
+            // 
+            // lblRating
+            // 
+            this.lblRating.AutoSize = true;
+            this.lblRating.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRating.Location = new System.Drawing.Point(41, 41);
+            this.lblRating.Name = "lblRating";
+            this.lblRating.Size = new System.Drawing.Size(67, 18);
+            this.lblRating.TabIndex = 41;
+            this.lblRating.Text = "Đánh giá:";
             // 
             // guna2Elipse4
             // 
@@ -625,11 +793,44 @@
             this.guna2Elipse5.BorderRadius = 15;
             this.guna2Elipse5.TargetControl = this.flContainer;
             // 
+            // btnBack
+            // 
+            this.btnBack.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnBack.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnBack.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBack.Image = global::WindowsFormsApp2.Properties.Resources.arrow;
+            this.btnBack.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnBack.ImageRotate = 0F;
+            this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBack.Location = new System.Drawing.Point(4, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnBack.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBack.Size = new System.Drawing.Size(40, 38);
+            this.btnBack.TabIndex = 45;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // ptb_avt
+            // 
+            this.ptb_avt.Image = ((System.Drawing.Image)(resources.GetObject("ptb_avt.Image")));
+            this.ptb_avt.ImageRotate = 0F;
+            this.ptb_avt.Location = new System.Drawing.Point(233, 3);
+            this.ptb_avt.Name = "ptb_avt";
+            this.ptb_avt.Size = new System.Drawing.Size(126, 117);
+            this.ptb_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_avt.TabIndex = 31;
+            this.ptb_avt.TabStop = false;
+            // 
             // InfoWorkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(827, 964);
+=======
+            this.ClientSize = new System.Drawing.Size(620, 783);
+            this.Controls.Add(this.panelPage2);
+>>>>>>> main
             this.Controls.Add(this.panelPage1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);

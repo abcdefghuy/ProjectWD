@@ -80,7 +80,6 @@ namespace WindowsFormsApp2
                 //them vao anh danh gia    
                 SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
                 string queryString = "Insert Into ImgDanhGia Values(@userid, @workerid, @congviec, @img, @madon)";
-                //string queryString = string.Format("Insert into ImgDanhGia Values('{0}','{1}','{2}',{3})",userID,workerID,cv, imageByteArray);
                 conn.Open();
                 foreach (Image image in selectedImages)
                 {

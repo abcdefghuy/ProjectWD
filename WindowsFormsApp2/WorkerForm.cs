@@ -86,5 +86,11 @@ namespace WindowsFormsApp2
         {
             OpenForm(new OrderWorkerForm());
         }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            PostWorkerForm.workerID = WorkerID_lbl.Text;
+            OpenForm(new PostWorkerForm("Worker"));
+        }
     }
 }

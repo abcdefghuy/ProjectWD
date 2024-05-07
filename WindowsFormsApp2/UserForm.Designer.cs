@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.PanelContain = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panelMenu = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.btnSignout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -42,6 +41,8 @@
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.userID_lbl = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnPost = new Guna.UI2.WinForms.Guna2Button();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +60,7 @@
             this.PanelContain.Size = new System.Drawing.Size(1491, 880);
             this.PanelContain.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
@@ -80,9 +82,12 @@
             this.btnClose.UseTransparentBackground = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+=======
+>>>>>>> main
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            this.panelMenu.Controls.Add(this.btnPost);
             this.panelMenu.Controls.Add(this.btnSignout);
             this.panelMenu.Controls.Add(this.guna2Button1);
             this.panelMenu.Controls.Add(this.btnHistory);
@@ -113,8 +118,12 @@
             this.btnSignout.FillColor = System.Drawing.Color.White;
             this.btnSignout.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignout.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.btnSignout.Location = new System.Drawing.Point(19, 708);
             this.btnSignout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.btnSignout.Location = new System.Drawing.Point(14, 635);
+>>>>>>> main
             this.btnSignout.Name = "btnSignout";
             this.btnSignout.ShadowDecoration.BorderRadius = 25;
             this.btnSignout.ShadowDecoration.Enabled = true;
@@ -139,10 +148,14 @@
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
-            this.guna2Button1.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.guna2Button1.Location = new System.Drawing.Point(19, 507);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.guna2Button1.Location = new System.Drawing.Point(14, 397);
+>>>>>>> main
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
             this.guna2Button1.Size = new System.Drawing.Size(267, 65);
@@ -168,8 +181,12 @@
             this.btnHistory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
             this.btnHistory.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistory.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.btnHistory.Location = new System.Drawing.Point(19, 386);
             this.btnHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.btnHistory.Location = new System.Drawing.Point(14, 487);
+>>>>>>> main
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
             this.btnHistory.Size = new System.Drawing.Size(267, 65);
@@ -247,8 +264,12 @@
             // 
             this.guna2Separator4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
             this.guna2Separator4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+<<<<<<< HEAD
             this.guna2Separator4.Location = new System.Drawing.Point(19, 630);
             this.guna2Separator4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.guna2Separator4.Location = new System.Drawing.Point(14, 572);
+>>>>>>> main
             this.guna2Separator4.Name = "guna2Separator4";
             this.guna2Separator4.Size = new System.Drawing.Size(267, 12);
             this.guna2Separator4.TabIndex = 15;
@@ -278,6 +299,50 @@
             this.guna2PictureBox2.TabIndex = 11;
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnClose.HoverState.Image = global::WindowsFormsApp2.Properties.Resources.close2;
+            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClose.Image = global::WindowsFormsApp2.Properties.Resources.close2;
+            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnClose.ImageRotate = 0F;
+            this.btnClose.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnClose.IndicateFocus = true;
+            this.btnClose.Location = new System.Drawing.Point(1316, -3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.PressedState.Image = global::WindowsFormsApp2.Properties.Resources.close2;
+            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClose.Size = new System.Drawing.Size(35, 36);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.UseTransparentBackground = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnPost
+            // 
+            this.btnPost.Animated = true;
+            this.btnPost.BackColor = System.Drawing.Color.Transparent;
+            this.btnPost.BorderRadius = 20;
+            this.btnPost.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnPost.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPost.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPost.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPost.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPost.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
+            this.btnPost.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F);
+            this.btnPost.ForeColor = System.Drawing.Color.Black;
+            this.btnPost.Image = global::WindowsFormsApp2.Properties.Resources.addition;
+            this.btnPost.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPost.Location = new System.Drawing.Point(14, 306);
+            this.btnPost.Name = "btnPost";
+            this.btnPost.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            this.btnPost.Size = new System.Drawing.Size(200, 53);
+            this.btnPost.TabIndex = 26;
+            this.btnPost.Text = "Đăng bài";
+            this.btnPost.UseTransparentBackground = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // UserForm
             // 
@@ -316,5 +381,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2Button btnSignout;
         public System.Windows.Forms.Label userID_lbl;
+        private Guna.UI2.WinForms.Guna2Button btnPost;
     }
 }

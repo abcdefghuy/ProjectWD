@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txb_danhgia = new Guna.UI2.WinForms.Guna2TextBox();
             this.rating = new Guna.UI2.WinForms.Guna2RatingStar();
             this.lbl_name = new System.Windows.Forms.Label();
@@ -35,12 +36,17 @@
             this.panel_anh = new System.Windows.Forms.FlowLayoutPanel();
             this.lbl_Congviec = new System.Windows.Forms.Label();
             this.lbl_ngaylamviec = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).BeginInit();
             this.SuspendLayout();
             // 
             // txb_danhgia
             // 
             this.txb_danhgia.Animated = true;
+<<<<<<< HEAD
+=======
+            this.txb_danhgia.BackColor = System.Drawing.Color.Transparent;
+>>>>>>> main
             this.txb_danhgia.BorderRadius = 15;
             this.txb_danhgia.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txb_danhgia.DefaultText = "";
@@ -48,13 +54,17 @@
             this.txb_danhgia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txb_danhgia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_danhgia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_danhgia.FillColor = System.Drawing.Color.Gainsboro;
             this.txb_danhgia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_danhgia.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F);
             this.txb_danhgia.ForeColor = System.Drawing.Color.Black;
             this.txb_danhgia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_danhgia.Location = new System.Drawing.Point(64, 68);
             this.txb_danhgia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_danhgia.Location = new System.Drawing.Point(48, 55);
+            this.txb_danhgia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_danhgia.Multiline = true;
             this.txb_danhgia.Name = "txb_danhgia";
             this.txb_danhgia.PasswordChar = '\0';
@@ -81,10 +91,16 @@
             // 
             this.lbl_name.AutoSize = true;
             this.lbl_name.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lbl_name.Location = new System.Drawing.Point(64, 11);
             this.lbl_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(57, 20);
+=======
+            this.lbl_name.Location = new System.Drawing.Point(48, 9);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(45, 16);
+>>>>>>> main
             this.lbl_name.TabIndex = 24;
             this.lbl_name.Text = "Họ Tên";
             // 
@@ -116,10 +132,16 @@
             // 
             this.lbl_Congviec.AutoSize = true;
             this.lbl_Congviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lbl_Congviec.Location = new System.Drawing.Point(296, 11);
             this.lbl_Congviec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Congviec.Name = "lbl_Congviec";
             this.lbl_Congviec.Size = new System.Drawing.Size(58, 17);
+=======
+            this.lbl_Congviec.Location = new System.Drawing.Point(222, 9);
+            this.lbl_Congviec.Name = "lbl_Congviec";
+            this.lbl_Congviec.Size = new System.Drawing.Size(48, 14);
+>>>>>>> main
             this.lbl_Congviec.TabIndex = 30;
             this.lbl_Congviec.Text = "congviec";
             // 
@@ -127,18 +149,33 @@
             // 
             this.lbl_ngaylamviec.AutoSize = true;
             this.lbl_ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lbl_ngaylamviec.Location = new System.Drawing.Point(296, 34);
             this.lbl_ngaylamviec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ngaylamviec.Name = "lbl_ngaylamviec";
             this.lbl_ngaylamviec.Size = new System.Drawing.Size(80, 17);
+=======
+            this.lbl_ngaylamviec.Location = new System.Drawing.Point(222, 28);
+            this.lbl_ngaylamviec.Name = "lbl_ngaylamviec";
+            this.lbl_ngaylamviec.Size = new System.Drawing.Size(67, 14);
+>>>>>>> main
             this.lbl_ngaylamviec.TabIndex = 30;
             this.lbl_ngaylamviec.Text = "ngaylamviec";
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // UCComment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.LightGray;
+=======
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+>>>>>>> main
             this.Controls.Add(this.lbl_ngaylamviec);
             this.Controls.Add(this.lbl_Congviec);
             this.Controls.Add(this.panel_anh);
@@ -164,5 +201,6 @@
         private System.Windows.Forms.FlowLayoutPanel panel_anh;
         private System.Windows.Forms.Label lbl_Congviec;
         private System.Windows.Forms.Label lbl_ngaylamviec;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

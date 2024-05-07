@@ -40,14 +40,6 @@
             this.btnPipe = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefriger = new Guna.UI2.WinForms.Guna2Button();
             this.btnElectric = new Guna.UI2.WinForms.Guna2Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelPage2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.btn_xemdshuy = new Guna.UI2.WinForms.Guna2Button();
@@ -68,6 +60,7 @@
             this.search_kinhnghiem = new Guna.UI2.WinForms.Guna2ComboBox();
             this.search_tien = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
             this.label14 = new System.Windows.Forms.Label();
@@ -90,14 +83,15 @@
             // 
             // panelMain
             // 
+            this.panelMain.Controls.Add(this.btnRefriger);
+            this.panelMain.Controls.Add(this.btnPipe);
+            this.panelMain.Controls.Add(this.btnCarpen);
             this.panelMain.Controls.Add(this.btnBuilder);
             this.panelMain.Controls.Add(this.btnUnclog);
             this.panelMain.Controls.Add(this.btnClean);
-            this.panelMain.Controls.Add(this.btnCarpen);
             this.panelMain.Controls.Add(this.btnFixing);
-            this.panelMain.Controls.Add(this.btnPipe);
-            this.panelMain.Controls.Add(this.btnRefriger);
             this.panelMain.Controls.Add(this.btnElectric);
+<<<<<<< HEAD
             this.panelMain.Controls.Add(this.label8);
             this.panelMain.Controls.Add(this.label7);
             this.panelMain.Controls.Add(this.label5);
@@ -108,6 +102,9 @@
             this.panelMain.Controls.Add(this.label1);
             this.panelMain.Location = new System.Drawing.Point(85, 64);
             this.panelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.panelMain.Location = new System.Drawing.Point(64, 52);
+>>>>>>> main
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1229, 722);
             this.panelMain.TabIndex = 0;
@@ -116,23 +113,32 @@
             // 
             this.btnBuilder.Animated = true;
             this.btnBuilder.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuilder.BorderRadius = 15;
+            this.btnBuilder.BorderRadius = 20;
             this.btnBuilder.CustomBorderColor = System.Drawing.Color.White;
             this.btnBuilder.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.btnBuilder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBuilder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuilder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBuilder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBuilder.FillColor = System.Drawing.Color.Empty;
-            this.btnBuilder.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnBuilder.ForeColor = System.Drawing.Color.White;
+            this.btnBuilder.FillColor = System.Drawing.Color.White;
+            this.btnBuilder.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuilder.ForeColor = System.Drawing.Color.Black;
             this.btnBuilder.Image = global::WindowsFormsApp2.Properties.Resources.brickwall;
             this.btnBuilder.ImageSize = new System.Drawing.Size(50, 50);
             this.btnBuilder.Location = new System.Drawing.Point(53, 409);
             this.btnBuilder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuilder.Name = "btnBuilder";
+<<<<<<< HEAD
             this.btnBuilder.Size = new System.Drawing.Size(221, 273);
+=======
+            this.btnBuilder.ShadowDecoration.BorderRadius = 20;
+            this.btnBuilder.ShadowDecoration.Enabled = true;
+            this.btnBuilder.Size = new System.Drawing.Size(166, 222);
+>>>>>>> main
             this.btnBuilder.TabIndex = 1;
+            this.btnBuilder.Text = "Xây dựng";
+            this.btnBuilder.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnBuilder.Tile = true;
             this.btnBuilder.UseTransparentBackground = true;
             this.btnBuilder.Click += new System.EventHandler(this.btnBuilder_Click);
             // 
@@ -140,23 +146,32 @@
             // 
             this.btnUnclog.Animated = true;
             this.btnUnclog.BackColor = System.Drawing.Color.Transparent;
-            this.btnUnclog.BorderRadius = 15;
+            this.btnUnclog.BorderRadius = 20;
             this.btnUnclog.CustomBorderColor = System.Drawing.Color.White;
             this.btnUnclog.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.btnUnclog.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUnclog.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnUnclog.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnUnclog.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUnclog.FillColor = System.Drawing.Color.Empty;
-            this.btnUnclog.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUnclog.ForeColor = System.Drawing.Color.White;
+            this.btnUnclog.FillColor = System.Drawing.Color.White;
+            this.btnUnclog.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUnclog.ForeColor = System.Drawing.Color.Black;
             this.btnUnclog.Image = global::WindowsFormsApp2.Properties.Resources.plunger;
             this.btnUnclog.ImageSize = new System.Drawing.Size(50, 50);
             this.btnUnclog.Location = new System.Drawing.Point(357, 409);
             this.btnUnclog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUnclog.Name = "btnUnclog";
+<<<<<<< HEAD
             this.btnUnclog.Size = new System.Drawing.Size(221, 273);
+=======
+            this.btnUnclog.ShadowDecoration.BorderRadius = 20;
+            this.btnUnclog.ShadowDecoration.Enabled = true;
+            this.btnUnclog.Size = new System.Drawing.Size(166, 222);
+>>>>>>> main
             this.btnUnclog.TabIndex = 1;
+            this.btnUnclog.Text = "Thông tắc";
+            this.btnUnclog.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnUnclog.Tile = true;
             this.btnUnclog.UseTransparentBackground = true;
             this.btnUnclog.Click += new System.EventHandler(this.btnUnclog_Click);
             // 
@@ -164,23 +179,32 @@
             // 
             this.btnClean.Animated = true;
             this.btnClean.BackColor = System.Drawing.Color.Transparent;
-            this.btnClean.BorderRadius = 15;
+            this.btnClean.BorderRadius = 20;
             this.btnClean.CustomBorderColor = System.Drawing.Color.White;
             this.btnClean.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.btnClean.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClean.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClean.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClean.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClean.FillColor = System.Drawing.Color.Empty;
-            this.btnClean.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClean.ForeColor = System.Drawing.Color.White;
+            this.btnClean.FillColor = System.Drawing.Color.White;
+            this.btnClean.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClean.ForeColor = System.Drawing.Color.Black;
             this.btnClean.Image = global::WindowsFormsApp2.Properties.Resources.mop;
             this.btnClean.ImageSize = new System.Drawing.Size(50, 50);
             this.btnClean.Location = new System.Drawing.Point(652, 409);
             this.btnClean.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClean.Name = "btnClean";
+<<<<<<< HEAD
             this.btnClean.Size = new System.Drawing.Size(221, 273);
+=======
+            this.btnClean.ShadowDecoration.BorderRadius = 20;
+            this.btnClean.ShadowDecoration.Enabled = true;
+            this.btnClean.Size = new System.Drawing.Size(166, 222);
+>>>>>>> main
             this.btnClean.TabIndex = 1;
+            this.btnClean.Text = "Vệ sinh";
+            this.btnClean.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnClean.Tile = true;
             this.btnClean.UseTransparentBackground = true;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
@@ -188,23 +212,32 @@
             // 
             this.btnCarpen.Animated = true;
             this.btnCarpen.BackColor = System.Drawing.Color.Transparent;
-            this.btnCarpen.BorderRadius = 15;
+            this.btnCarpen.BorderRadius = 20;
             this.btnCarpen.CustomBorderColor = System.Drawing.Color.White;
             this.btnCarpen.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.btnCarpen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCarpen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCarpen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCarpen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCarpen.FillColor = System.Drawing.Color.Empty;
-            this.btnCarpen.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCarpen.ForeColor = System.Drawing.Color.White;
+            this.btnCarpen.FillColor = System.Drawing.Color.White;
+            this.btnCarpen.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarpen.ForeColor = System.Drawing.Color.Black;
             this.btnCarpen.Image = global::WindowsFormsApp2.Properties.Resources.hammer;
             this.btnCarpen.ImageSize = new System.Drawing.Size(50, 50);
             this.btnCarpen.Location = new System.Drawing.Point(955, 28);
             this.btnCarpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCarpen.Name = "btnCarpen";
+<<<<<<< HEAD
             this.btnCarpen.Size = new System.Drawing.Size(221, 273);
+=======
+            this.btnCarpen.ShadowDecoration.BorderRadius = 20;
+            this.btnCarpen.ShadowDecoration.Enabled = true;
+            this.btnCarpen.Size = new System.Drawing.Size(166, 222);
+>>>>>>> main
             this.btnCarpen.TabIndex = 1;
+            this.btnCarpen.Text = "Thợ mộc";
+            this.btnCarpen.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnCarpen.Tile = true;
             this.btnCarpen.UseTransparentBackground = true;
             this.btnCarpen.Click += new System.EventHandler(this.btnCarpen_Click);
             // 
@@ -212,23 +245,32 @@
             // 
             this.btnFixing.Animated = true;
             this.btnFixing.BackColor = System.Drawing.Color.Transparent;
-            this.btnFixing.BorderRadius = 15;
+            this.btnFixing.BorderRadius = 20;
             this.btnFixing.CustomBorderColor = System.Drawing.Color.White;
             this.btnFixing.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.btnFixing.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnFixing.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnFixing.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnFixing.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFixing.FillColor = System.Drawing.Color.Empty;
-            this.btnFixing.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnFixing.ForeColor = System.Drawing.Color.White;
+            this.btnFixing.FillColor = System.Drawing.Color.White;
+            this.btnFixing.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFixing.ForeColor = System.Drawing.Color.Black;
             this.btnFixing.Image = global::WindowsFormsApp2.Properties.Resources.house;
             this.btnFixing.ImageSize = new System.Drawing.Size(50, 50);
             this.btnFixing.Location = new System.Drawing.Point(955, 409);
             this.btnFixing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFixing.Name = "btnFixing";
+<<<<<<< HEAD
             this.btnFixing.Size = new System.Drawing.Size(221, 273);
+=======
+            this.btnFixing.ShadowDecoration.BorderRadius = 20;
+            this.btnFixing.ShadowDecoration.Enabled = true;
+            this.btnFixing.Size = new System.Drawing.Size(166, 222);
+>>>>>>> main
             this.btnFixing.TabIndex = 1;
+            this.btnFixing.Text = "Sửa nhà";
+            this.btnFixing.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnFixing.Tile = true;
             this.btnFixing.UseTransparentBackground = true;
             this.btnFixing.Click += new System.EventHandler(this.btnFixing_Click);
             // 
@@ -236,23 +278,32 @@
             // 
             this.btnPipe.Animated = true;
             this.btnPipe.BackColor = System.Drawing.Color.Transparent;
-            this.btnPipe.BorderRadius = 15;
+            this.btnPipe.BorderRadius = 20;
             this.btnPipe.CustomBorderColor = System.Drawing.Color.White;
             this.btnPipe.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.btnPipe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPipe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPipe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnPipe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPipe.FillColor = System.Drawing.Color.Empty;
-            this.btnPipe.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPipe.ForeColor = System.Drawing.Color.White;
+            this.btnPipe.FillColor = System.Drawing.Color.White;
+            this.btnPipe.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPipe.ForeColor = System.Drawing.Color.Black;
             this.btnPipe.Image = global::WindowsFormsApp2.Properties.Resources.leak;
             this.btnPipe.ImageSize = new System.Drawing.Size(50, 50);
             this.btnPipe.Location = new System.Drawing.Point(652, 28);
             this.btnPipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPipe.Name = "btnPipe";
+<<<<<<< HEAD
             this.btnPipe.Size = new System.Drawing.Size(221, 273);
+=======
+            this.btnPipe.ShadowDecoration.BorderRadius = 20;
+            this.btnPipe.ShadowDecoration.Enabled = true;
+            this.btnPipe.Size = new System.Drawing.Size(166, 222);
+>>>>>>> main
             this.btnPipe.TabIndex = 1;
+            this.btnPipe.Text = "Ống nước";
+            this.btnPipe.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnPipe.Tile = true;
             this.btnPipe.UseTransparentBackground = true;
             this.btnPipe.Click += new System.EventHandler(this.btnPipe_Click);
             // 
@@ -260,23 +311,32 @@
             // 
             this.btnRefriger.Animated = true;
             this.btnRefriger.BackColor = System.Drawing.Color.Transparent;
-            this.btnRefriger.BorderRadius = 15;
+            this.btnRefriger.BorderRadius = 20;
             this.btnRefriger.CustomBorderColor = System.Drawing.Color.White;
             this.btnRefriger.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.btnRefriger.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnRefriger.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRefriger.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnRefriger.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRefriger.FillColor = System.Drawing.Color.Empty;
-            this.btnRefriger.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRefriger.ForeColor = System.Drawing.Color.White;
+            this.btnRefriger.FillColor = System.Drawing.Color.White;
+            this.btnRefriger.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F);
+            this.btnRefriger.ForeColor = System.Drawing.Color.Black;
             this.btnRefriger.Image = global::WindowsFormsApp2.Properties.Resources.mode;
             this.btnRefriger.ImageSize = new System.Drawing.Size(50, 50);
             this.btnRefriger.Location = new System.Drawing.Point(357, 28);
             this.btnRefriger.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefriger.Name = "btnRefriger";
+<<<<<<< HEAD
             this.btnRefriger.Size = new System.Drawing.Size(221, 273);
+=======
+            this.btnRefriger.ShadowDecoration.BorderRadius = 20;
+            this.btnRefriger.ShadowDecoration.Enabled = true;
+            this.btnRefriger.Size = new System.Drawing.Size(166, 222);
+>>>>>>> main
             this.btnRefriger.TabIndex = 1;
+            this.btnRefriger.Text = "Điện lạnh";
+            this.btnRefriger.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnRefriger.Tile = true;
             this.btnRefriger.UseTransparentBackground = true;
             this.btnRefriger.Click += new System.EventHandler(this.btnRefriger_Click);
             // 
@@ -284,26 +344,36 @@
             // 
             this.btnElectric.Animated = true;
             this.btnElectric.BackColor = System.Drawing.Color.Transparent;
-            this.btnElectric.BorderRadius = 15;
+            this.btnElectric.BorderRadius = 20;
             this.btnElectric.CustomBorderColor = System.Drawing.Color.White;
             this.btnElectric.CustomBorderThickness = new System.Windows.Forms.Padding(1);
             this.btnElectric.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnElectric.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnElectric.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnElectric.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnElectric.FillColor = System.Drawing.Color.Empty;
-            this.btnElectric.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnElectric.ForeColor = System.Drawing.Color.White;
+            this.btnElectric.FillColor = System.Drawing.Color.White;
+            this.btnElectric.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F);
+            this.btnElectric.ForeColor = System.Drawing.Color.Black;
             this.btnElectric.Image = global::WindowsFormsApp2.Properties.Resources.plug;
             this.btnElectric.ImageSize = new System.Drawing.Size(50, 50);
             this.btnElectric.Location = new System.Drawing.Point(53, 28);
             this.btnElectric.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnElectric.Name = "btnElectric";
+<<<<<<< HEAD
             this.btnElectric.Size = new System.Drawing.Size(221, 273);
+=======
+            this.btnElectric.ShadowDecoration.BorderRadius = 20;
+            this.btnElectric.ShadowDecoration.Enabled = true;
+            this.btnElectric.Size = new System.Drawing.Size(166, 222);
+>>>>>>> main
             this.btnElectric.TabIndex = 1;
+            this.btnElectric.Text = "Thợ điện";
+            this.btnElectric.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnElectric.Tile = true;
             this.btnElectric.UseTransparentBackground = true;
             this.btnElectric.Click += new System.EventHandler(this.btnElectric_Click);
             // 
+<<<<<<< HEAD
             // label8
             // 
             this.label8.AutoSize = true;
@@ -400,13 +470,19 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Thợ điện";
             // 
+=======
+>>>>>>> main
             // panelPage2
             // 
             this.panelPage2.Controls.Add(this.guna2ShadowPanel1);
             this.panelPage2.Controls.Add(this.btnBack);
             this.panelPage2.Controls.Add(this.flContainer);
+<<<<<<< HEAD
             this.panelPage2.Location = new System.Drawing.Point(31, 15);
             this.panelPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.panelPage2.Location = new System.Drawing.Point(3, 3);
+>>>>>>> main
             this.panelPage2.Name = "panelPage2";
             this.panelPage2.Size = new System.Drawing.Size(1453, 871);
             this.panelPage2.TabIndex = 3;
@@ -450,6 +526,7 @@
             // 
             // btn_xemdshuy
             // 
+            this.btn_xemdshuy.BackColor = System.Drawing.Color.Transparent;
             this.btn_xemdshuy.BorderRadius = 10;
             this.btn_xemdshuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_xemdshuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -462,7 +539,11 @@
             this.btn_xemdshuy.Name = "btn_xemdshuy";
             this.btn_xemdshuy.ShadowDecoration.BorderRadius = 15;
             this.btn_xemdshuy.ShadowDecoration.Enabled = true;
+<<<<<<< HEAD
             this.btn_xemdshuy.Size = new System.Drawing.Size(111, 69);
+=======
+            this.btn_xemdshuy.Size = new System.Drawing.Size(83, 56);
+>>>>>>> main
             this.btn_xemdshuy.TabIndex = 69;
             this.btn_xemdshuy.Text = "Thợ bị hủy";
             this.btn_xemdshuy.Click += new System.EventHandler(this.btn_xemdshuy_Click);
@@ -475,10 +556,16 @@
             this.cbtn_congviecBook.CheckedState.BorderThickness = 0;
             this.cbtn_congviecBook.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbtn_congviecBook.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.cbtn_congviecBook.Location = new System.Drawing.Point(23, 788);
             this.cbtn_congviecBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbtn_congviecBook.Name = "cbtn_congviecBook";
             this.cbtn_congviecBook.Size = new System.Drawing.Size(176, 24);
+=======
+            this.cbtn_congviecBook.Location = new System.Drawing.Point(17, 640);
+            this.cbtn_congviecBook.Name = "cbtn_congviecBook";
+            this.cbtn_congviecBook.Size = new System.Drawing.Size(144, 20);
+>>>>>>> main
             this.cbtn_congviecBook.TabIndex = 68;
             this.cbtn_congviecBook.Text = "Được book nhiều nhất";
             this.cbtn_congviecBook.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -495,10 +582,16 @@
             this.cbtn_doanhthu.CheckedState.BorderThickness = 0;
             this.cbtn_doanhthu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbtn_doanhthu.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.cbtn_doanhthu.Location = new System.Drawing.Point(22, 745);
             this.cbtn_doanhthu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbtn_doanhthu.Name = "cbtn_doanhthu";
             this.cbtn_doanhthu.Size = new System.Drawing.Size(160, 24);
+=======
+            this.cbtn_doanhthu.Location = new System.Drawing.Point(16, 605);
+            this.cbtn_doanhthu.Name = "cbtn_doanhthu";
+            this.cbtn_doanhthu.Size = new System.Drawing.Size(131, 20);
+>>>>>>> main
             this.cbtn_doanhthu.TabIndex = 67;
             this.cbtn_doanhthu.Text = "Doanh thu cao nhất";
             this.cbtn_doanhthu.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -509,6 +602,7 @@
             // 
             // btn_toptho
             // 
+            this.btn_toptho.BackColor = System.Drawing.Color.Transparent;
             this.btn_toptho.BorderRadius = 10;
             this.btn_toptho.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_toptho.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -516,12 +610,20 @@
             this.btn_toptho.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_toptho.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F);
             this.btn_toptho.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btn_toptho.Location = new System.Drawing.Point(23, 453);
             this.btn_toptho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_toptho.Name = "btn_toptho";
             this.btn_toptho.ShadowDecoration.BorderRadius = 15;
             this.btn_toptho.ShadowDecoration.Enabled = true;
             this.btn_toptho.Size = new System.Drawing.Size(120, 69);
+=======
+            this.btn_toptho.Location = new System.Drawing.Point(17, 368);
+            this.btn_toptho.Name = "btn_toptho";
+            this.btn_toptho.ShadowDecoration.BorderRadius = 15;
+            this.btn_toptho.ShadowDecoration.Enabled = true;
+            this.btn_toptho.Size = new System.Drawing.Size(90, 56);
+>>>>>>> main
             this.btn_toptho.TabIndex = 66;
             this.btn_toptho.Text = "Top thợ được yêu thích nhất";
             this.btn_toptho.Click += new System.EventHandler(this.btn_toptho_Click);
@@ -711,8 +813,12 @@
             this.search_kinhnghiem.Items.AddRange(new object[] {
             "Cao đến Thấp",
             "Thấp đến Cao"});
+<<<<<<< HEAD
             this.search_kinhnghiem.Location = new System.Drawing.Point(16, 684);
             this.search_kinhnghiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.search_kinhnghiem.Location = new System.Drawing.Point(12, 556);
+>>>>>>> main
             this.search_kinhnghiem.Name = "search_kinhnghiem";
             this.search_kinhnghiem.Size = new System.Drawing.Size(260, 36);
             this.search_kinhnghiem.TabIndex = 53;
@@ -732,8 +838,12 @@
             this.search_tien.Items.AddRange(new object[] {
             "Cao đến Thấp",
             "Thấp đến Cao"});
+<<<<<<< HEAD
             this.search_tien.Location = new System.Drawing.Point(16, 590);
             this.search_tien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.search_tien.Location = new System.Drawing.Point(12, 479);
+>>>>>>> main
             this.search_tien.Name = "search_tien";
             this.search_tien.Size = new System.Drawing.Size(260, 36);
             this.search_tien.TabIndex = 54;
@@ -743,18 +853,36 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("UTM Alberta Heavy", 11F);
+<<<<<<< HEAD
             this.label13.Location = new System.Drawing.Point(18, 656);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.label13.Location = new System.Drawing.Point(14, 533);
+>>>>>>> main
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(124, 25);
             this.label13.TabIndex = 50;
             this.label13.Text = "Kinh Nghiệm";
             this.label13.Click += new System.EventHandler(this.label13_Click);
+<<<<<<< HEAD
             // 
             // guna2Separator4
             // 
             this.guna2Separator4.Location = new System.Drawing.Point(15, 530);
             this.guna2Separator4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Location = new System.Drawing.Point(11, 520);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(200, 10);
+            this.guna2Separator1.TabIndex = 52;
+            // 
+            // guna2Separator4
+            // 
+            this.guna2Separator4.Location = new System.Drawing.Point(11, 431);
+>>>>>>> main
             this.guna2Separator4.Name = "guna2Separator4";
             this.guna2Separator4.Size = new System.Drawing.Size(267, 12);
             this.guna2Separator4.TabIndex = 52;
@@ -771,8 +899,12 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("UTM Alberta Heavy", 11F);
+<<<<<<< HEAD
             this.label14.Location = new System.Drawing.Point(17, 550);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.label14.Location = new System.Drawing.Point(13, 447);
+>>>>>>> main
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(79, 25);
             this.label14.TabIndex = 49;
@@ -869,7 +1001,6 @@
             this.Text = "ServiceForm";
             this.Load += new System.EventHandler(this.ServiceForm_Load);
             this.panelMain.ResumeLayout(false);
-            this.panelMain.PerformLayout();
             this.panelPage2.ResumeLayout(false);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
@@ -882,14 +1013,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Panel panelMain;
         private Guna.UI2.WinForms.Guna2Button btnElectric;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button btnFixing;
         private Guna.UI2.WinForms.Guna2Button btnClean;
         private Guna.UI2.WinForms.Guna2Button btnCarpen;

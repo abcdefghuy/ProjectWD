@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorkerForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.PanelContain = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panelMenu = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.btnHistory = new Guna.UI2.WinForms.Guna2Button();
             this.btnSignout = new Guna.UI2.WinForms.Guna2Button();
@@ -43,8 +42,13 @@
             this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.WorkerID_lbl = new System.Windows.Forms.Label();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btn_thongke = new Guna.UI2.WinForms.Guna2Button();
+<<<<<<< HEAD
+=======
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnPost = new Guna.UI2.WinForms.Guna2Button();
+>>>>>>> main
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +66,7 @@
             this.PanelContain.Size = new System.Drawing.Size(1455, 848);
             this.PanelContain.TabIndex = 10;
             // 
+<<<<<<< HEAD
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
@@ -83,9 +88,12 @@
             this.btnClose.UseTransparentBackground = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+=======
+>>>>>>> main
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            this.panelMenu.Controls.Add(this.btnPost);
             this.panelMenu.Controls.Add(this.btnHistory);
             this.panelMenu.Controls.Add(this.btnSignout);
             this.panelMenu.Controls.Add(this.btnWork);
@@ -144,8 +152,12 @@
             this.btnSignout.FillColor = System.Drawing.Color.White;
             this.btnSignout.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignout.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.btnSignout.Location = new System.Drawing.Point(19, 695);
             this.btnSignout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.btnSignout.Location = new System.Drawing.Point(14, 645);
+>>>>>>> main
             this.btnSignout.Name = "btnSignout";
             this.btnSignout.ShadowDecoration.BorderRadius = 25;
             this.btnSignout.ShadowDecoration.Enabled = true;
@@ -279,8 +291,12 @@
             // 
             this.guna2Separator4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
             this.guna2Separator4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(35)))), ((int)(((byte)(65)))));
+<<<<<<< HEAD
             this.guna2Separator4.Location = new System.Drawing.Point(19, 630);
             this.guna2Separator4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.guna2Separator4.Location = new System.Drawing.Point(14, 592);
+>>>>>>> main
             this.guna2Separator4.Name = "guna2Separator4";
             this.guna2Separator4.Size = new System.Drawing.Size(267, 12);
             this.guna2Separator4.TabIndex = 15;
@@ -297,6 +313,27 @@
             this.WorkerID_lbl.TabIndex = 13;
             this.WorkerID_lbl.Text = "Nguyễn Văn A";
             // 
+            // btn_thongke
+            // 
+            this.btn_thongke.Animated = true;
+            this.btn_thongke.AutoRoundedCorners = true;
+            this.btn_thongke.BackColor = System.Drawing.Color.Transparent;
+            this.btn_thongke.BorderRadius = 21;
+            this.btn_thongke.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_thongke.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_thongke.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_thongke.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_thongke.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thongke.ForeColor = System.Drawing.Color.White;
+            this.btn_thongke.Location = new System.Drawing.Point(1113, 11);
+            this.btn_thongke.Name = "btn_thongke";
+            this.btn_thongke.ShadowDecoration.BorderRadius = 25;
+            this.btn_thongke.ShadowDecoration.Enabled = true;
+            this.btn_thongke.Size = new System.Drawing.Size(147, 45);
+            this.btn_thongke.TabIndex = 12;
+            this.btn_thongke.Text = "Thống kê  ";
+            this.btn_thongke.Click += new System.EventHandler(this.btn_thongke_Click);
+            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -311,8 +348,9 @@
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
             // 
-            // btn_thongke
+            // btnClose
             // 
+<<<<<<< HEAD
             this.btn_thongke.Animated = true;
             this.btn_thongke.AutoRoundedCorners = true;
             this.btn_thongke.BackColor = System.Drawing.Color.Transparent;
@@ -333,12 +371,60 @@
             this.btn_thongke.Text = "Thống kê  ";
             this.btn_thongke.Click += new System.EventHandler(this.btn_thongke_Click);
             // 
+=======
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnClose.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnClose.ImageRotate = 0F;
+            this.btnClose.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnClose.IndicateFocus = true;
+            this.btnClose.Location = new System.Drawing.Point(1307, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClose.Size = new System.Drawing.Size(35, 36);
+            this.btnClose.TabIndex = 11;
+            this.btnClose.UseTransparentBackground = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnPost
+            // 
+            this.btnPost.Animated = true;
+            this.btnPost.BackColor = System.Drawing.Color.Transparent;
+            this.btnPost.BorderRadius = 20;
+            this.btnPost.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnPost.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPost.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPost.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPost.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPost.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
+            this.btnPost.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F);
+            this.btnPost.ForeColor = System.Drawing.Color.Black;
+            this.btnPost.Image = global::WindowsFormsApp2.Properties.Resources.addition;
+            this.btnPost.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPost.Location = new System.Drawing.Point(24, 524);
+            this.btnPost.Name = "btnPost";
+            this.btnPost.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            this.btnPost.Size = new System.Drawing.Size(200, 53);
+            this.btnPost.TabIndex = 27;
+            this.btnPost.Text = "Bài đăng";
+            this.btnPost.UseTransparentBackground = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
+            // 
+>>>>>>> main
             // WorkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1805, 932);
+=======
+            this.ClientSize = new System.Drawing.Size(1354, 757);
+>>>>>>> main
             this.Controls.Add(this.btn_thongke);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.PanelContain);
@@ -373,5 +459,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         public System.Windows.Forms.Label WorkerID_lbl;
         private Guna.UI2.WinForms.Guna2Button btn_thongke;
+        private Guna.UI2.WinForms.Guna2Button btnPost;
     }
 }

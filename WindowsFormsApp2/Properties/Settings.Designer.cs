@@ -25,9 +25,14 @@ namespace WindowsFormsApp2.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+<<<<<<< HEAD
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=TheGioTho_Database3;Integrated" +
             " Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;App" +
             "licationIntent=ReadWrite;MultiSubnetFailover=False")]
+=======
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\ProjectModels;Initial Catalog=DatabaseProject;Integrated Se" +
+            "curity=True")]
+>>>>>>> main
         public string connStr {
             get {
                 return ((string)(this["connStr"]));

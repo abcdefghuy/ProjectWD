@@ -68,7 +68,6 @@ namespace WindowsFormsApp2
             this.Close();
         }
         
-        //
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             ActivityForm.userID = userID_lbl.Text;
@@ -79,6 +78,12 @@ namespace WindowsFormsApp2
         {
             UserID = userID_lbl.Text;
             
+        }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            PostForm.userID = userID_lbl.Text;
+            OpenForm(new PostForm("User"));
         }
     }
 }

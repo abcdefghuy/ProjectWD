@@ -670,5 +670,187 @@ namespace WindowsFormsApp2
             return list;
         }
        
+        // Thêm bài đăng user
+        public static void ThemBaiDang(string maCV, string userID, string congViec, string diaChi, string chiTiet, DateTime ngayLamViec, List<Image> listImage)
+        {
+            string queryString = string.Format("Insert Into CongViecUser Values ('{0}', '{1}', '{2}', '{3}', '{4}','{5}')",userID, congViec, diaChi, chiTiet, maCV, ngayLamViec);
+            ppConnection.ThucThi(queryString);
+            // thêm ảnh của bài đăng
+            ThemAnhBaiDang(maCV, listImage);
+        }
+
+        // Thêm ảnh bài đăng
+        public static void ThemAnhBaiDang(string maCV, List<Image> listImage)
+        {
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
+            string queryString_img = "Insert Into ImgCongViecUser Values(@maCV, @img)";
+            conn.Open();
+            foreach (Image image in listImage)
+            {
+                try
+                {
+                    byte[] imageByteArray = ImageToByteArray(image);
+                    SqlCommand cmd = new SqlCommand(queryString_img, conn);
+                    cmd.Parameters.AddWithValue("@maCV", maCV);
+                    cmd.Parameters.AddWithValue("@img", imageByteArray);
+                    if (cmd.ExecuteNonQuery() > 0) { }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+            conn.Close();
+        }
+
+        public static byte[] ImageToByteArray(Image image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                return ms.ToArray();
+            }
+        }
+
+        public static List<UCPost> DanhSachBaiDang(string queryString)
+        {
+            List<UCPost> UCPosts = new List<UCPost>();
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
+            conn.Open();
+            try
+            {
+                SqlCommand sqlCommand = new SqlCommand(queryString, conn);
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    UCPost uc = new UCPost("User");
+                    uc.MaCV = reader[0].ToString();
+                    uc.HoTen.Text = reader[1].ToString();
+                    uc.CongViec.Text = reader[3].ToString();
+                    uc.ChiTiet.Text = reader[4].ToString();
+                    uc.NgayLamViec.Text = reader.GetDateTime(5).ToString("dd/MM/yyyy");
+                    if (!reader.IsDBNull(2))
+                    {
+                        object value = reader[2];
+                        byte[] avt = (byte[])value;
+                        MemoryStream ms = new MemoryStream(avt);
+                        uc.Avatar.Image = Image.FromStream(ms);
+                    }
+                    UCPosts.Add(uc);
+                }
+                reader.Close();
+                // Load ảnh bài đăng 
+                foreach (UCPost ucpost in UCPosts)
+                {
+                    string queryImg = string.Format("Select * From ImgCongViecUser Where MaCongViec = '{0}'", ucpost.MaCV);
+                    List<PictureBox> listImg = new List<PictureBox>();
+                    SqlCommand cmd2 = new SqlCommand(queryImg, conn);
+                    SqlDataReader reader2 = cmd2.ExecuteReader();
+                    while (reader2.Read())
+                    {
+                        PictureBox pictureBox = new PictureBox();
+                        pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                        pictureBox.Click += ppConnection.ZoomImage;
+                        MemoryStream ms = new MemoryStream((byte[])reader2[1]);
+                        pictureBox.Image = Image.FromStream(ms);
+                        listImg.Add(pictureBox);
+                    }
+                    reader2.Close();
+                    foreach (PictureBox img in listImg)
+                    {
+                        ucpost.PanelAnh.Controls.Add(img);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally { conn.Close(); }
+
+            return UCPosts;
+        }
+
+        //Load danh sách các bài đăng 
+        public static List<UCPost> DanhSachPost(string userID)
+        {
+            string queryString = string.Format("Select CongViecUser.MaCongViec, UserInfoDB.HoTen, UserInfoDB.Avatar, CongViecUser.CongViec, CongViecUser.ChiTiet, CongViecUser.NgayLamViec" +
+                                                " From CongViecUser inner join UserInfoDB on CongViecUser.UserID=UserInfoDB.UserID" +
+                                                " Where CongViecUser.UserID = '{0}'", userID);
+            return DanhSachBaiDang(queryString);
+        }
+
+        // Chi tiết bài đăng
+        public static CongViecUser chiTietBaiDang(string maCV)
+        {
+            CongViecUser cvUser = new CongViecUser();
+            string queryString = string.Format("Select * From CongViecUser Where MaCongViec='{0}'", maCV);
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
+            conn.Open();
+            try
+            {
+                SqlCommand sqlCommand = new SqlCommand(queryString, conn);
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    cvUser.UserID = reader[0].ToString();
+                    cvUser.CongViec = reader[1].ToString();
+                    cvUser.DiaChi = reader[2].ToString();
+                    cvUser.ChiTiet = reader[3].ToString();
+                    cvUser.NgayLamViec = reader.GetDateTime(5);
+                }
+                reader.Close();
+                // Load ảnh bài đăng 
+                string queryImg = string.Format("Select * From ImgCongViecUser Where MaCongViec = '{0}'", maCV);
+                SqlCommand cmd2 = new SqlCommand(queryImg, conn);
+                SqlDataReader reader2 = cmd2.ExecuteReader();
+                List<Image> imgList = new List<Image>();
+                while (reader2.Read())
+                {
+                    MemoryStream ms = new MemoryStream((byte[])reader2[1]);
+                    imgList.Add(Image.FromStream(ms));
+                }
+                cvUser.ImgList = imgList;
+                reader2.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally { conn.Close(); }
+            return cvUser;
+        }
+
+        // Xóa bài đăng
+        public static void XoaBaiDang(string maCV)
+        {
+            string queryString = string.Format("Delete From CongViecUser Where MaCongViec='{0}'" +
+                                            "\r\nDelete From ImgCongViecUser Where MaCongViec='{0}'", maCV);
+            ppConnection.ThucThi(queryString);
+        }
+        //Load thợ quan tâm
+        public static List<UCWorker> ThoQuanTam(string maCV)
+        {
+            List<UCWorker> workerList = new List<UCWorker>();
+            string queryString = string.Format("Select WorkerInfoDB.WorkerID, WorkerInfoDB.HoTen, WorkerInfoDB.SDT, CongViecThoDB.KinhNghiem, CongViecThoDB.TienCong, WorkerInfoDB.Rate, Avatar, CongViecThoDB.ChiTietCV, CongViecThoDB.CongViec " +
+                                            "From WorkerInfoDB inner join CongViecThoDB on WorkerInfoDB.WorkerID=CongViecThoDB.WorkerID " +
+                                            "Where WorkerInfoDB.WorkerID IN (Select WorkerID From ThoQuanTam Where MaBaiDang='{0}')", maCV);
+            return ppConnection.DanhSachTho(queryString);
+        }
+        // lọc bài đăng theo ngày
+        public static List<UCPost> BaiDangTheoNgay(string userID, DateTime start_day, DateTime end_day)
+        {
+            string queryString = string.Format("Select CongViecUser.MaCongViec, UserInfoDB.HoTen, UserInfoDB.Avatar, CongViecUser.CongViec, CongViecUser.ChiTiet, CongViecUser.NgayLamViec" +
+                                                " From CongViecUser inner join UserInfoDB on CongViecUser.UserID=UserInfoDB.UserID" +
+                                                " Where CongViecUser.UserID = '{0}' and CongViecUser.NgayLamViec Between '{1}' and '{2}'", userID, start_day.Date, end_day.Date);
+            return DanhSachBaiDang(queryString);
+        }
+        public static List<UCPost> BaiDangTheoCongViec(string userID, string congViec)
+        {
+            string queryString = string.Format("Select CongViecUser.MaCongViec, UserInfoDB.HoTen, UserInfoDB.Avatar, CongViecUser.CongViec, CongViecUser.ChiTiet, CongViecUser.NgayLamViec" +
+                                                " From CongViecUser inner join UserInfoDB on CongViecUser.UserID=UserInfoDB.UserID" +
+                                                " Where CongViecUser.UserID = '{0}' and CongViecUser.CongViec='{1}'", userID, congViec);
+            return DanhSachBaiDang(queryString);
+        }
     }
 }

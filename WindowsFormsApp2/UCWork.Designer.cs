@@ -42,7 +42,6 @@
             this.txb_tiencong = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_week = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_day = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel_image = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -64,8 +63,13 @@
             this.txb_chitiet.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_chitiet.ForeColor = System.Drawing.Color.Black;
             this.txb_chitiet.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_chitiet.Location = new System.Drawing.Point(168, 389);
             this.txb_chitiet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_chitiet.Location = new System.Drawing.Point(126, 316);
+            this.txb_chitiet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_chitiet.Multiline = true;
             this.txb_chitiet.Name = "txb_chitiet";
             this.txb_chitiet.PasswordChar = '\0';
@@ -80,10 +84,16 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label9.Location = new System.Drawing.Point(19, 389);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(111, 23);
+=======
+            this.label9.Location = new System.Drawing.Point(14, 316);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(92, 18);
+>>>>>>> main
             this.label9.TabIndex = 54;
             this.label9.Text = "Mô tả chi tiết";
             // 
@@ -92,10 +102,16 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label12.Location = new System.Drawing.Point(19, 146);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 23);
+=======
+            this.label12.Location = new System.Drawing.Point(14, 119);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 18);
+>>>>>>> main
             this.label12.TabIndex = 51;
             this.label12.Text = "Tiền Công";
             // 
@@ -104,10 +120,16 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label13.Location = new System.Drawing.Point(19, 308);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(238, 23);
+=======
+            this.label13.Location = new System.Drawing.Point(14, 250);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(195, 18);
+>>>>>>> main
             this.label13.TabIndex = 50;
             this.label13.Text = "Thời gian làm việc trong ngày";
             // 
@@ -116,10 +138,16 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label14.Location = new System.Drawing.Point(19, 226);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(235, 23);
+=======
+            this.label14.Location = new System.Drawing.Point(14, 184);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(193, 18);
+>>>>>>> main
             this.label14.TabIndex = 55;
             this.label14.Text = "Thời gian làm việc trong tuần";
             // 
@@ -128,10 +156,16 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label15.Location = new System.Drawing.Point(320, 54);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(109, 23);
+=======
+            this.label15.Location = new System.Drawing.Point(240, 44);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(92, 18);
+>>>>>>> main
             this.label15.TabIndex = 49;
             this.label15.Text = "Kinh Nghiệm";
             // 
@@ -139,10 +173,16 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label16.Location = new System.Drawing.Point(17, 54);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(87, 23);
+=======
+            this.label16.Location = new System.Drawing.Point(13, 44);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(72, 18);
+>>>>>>> main
             this.label16.TabIndex = 48;
             this.label16.Text = "Công Việc";
             // 
@@ -160,8 +200,13 @@
             this.txb_congviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_congviec.ForeColor = System.Drawing.Color.Black;
             this.txb_congviec.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_congviec.Location = new System.Drawing.Point(119, 43);
             this.txb_congviec.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_congviec.Location = new System.Drawing.Point(89, 35);
+            this.txb_congviec.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_congviec.Multiline = true;
             this.txb_congviec.Name = "txb_congviec";
             this.txb_congviec.PasswordChar = '\0';
@@ -185,8 +230,13 @@
             this.txb_kinhnghiem.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_kinhnghiem.ForeColor = System.Drawing.Color.Black;
             this.txb_kinhnghiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_kinhnghiem.Location = new System.Drawing.Point(437, 43);
             this.txb_kinhnghiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_kinhnghiem.Location = new System.Drawing.Point(328, 35);
+            this.txb_kinhnghiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_kinhnghiem.Multiline = true;
             this.txb_kinhnghiem.Name = "txb_kinhnghiem";
             this.txb_kinhnghiem.PasswordChar = '\0';
@@ -210,8 +260,13 @@
             this.txb_tiencong.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_tiencong.ForeColor = System.Drawing.Color.Black;
             this.txb_tiencong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_tiencong.Location = new System.Drawing.Point(119, 129);
             this.txb_tiencong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_tiencong.Location = new System.Drawing.Point(89, 105);
+            this.txb_tiencong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_tiencong.Multiline = true;
             this.txb_tiencong.Name = "txb_tiencong";
             this.txb_tiencong.PasswordChar = '\0';
@@ -235,8 +290,13 @@
             this.txb_week.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_week.ForeColor = System.Drawing.Color.Black;
             this.txb_week.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_week.Location = new System.Drawing.Point(269, 209);
             this.txb_week.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_week.Location = new System.Drawing.Point(213, 170);
+            this.txb_week.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_week.Multiline = true;
             this.txb_week.Name = "txb_week";
             this.txb_week.PasswordChar = '\0';
@@ -260,8 +320,13 @@
             this.txb_day.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_day.ForeColor = System.Drawing.Color.Black;
             this.txb_day.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.txb_day.Location = new System.Drawing.Point(269, 292);
             this.txb_day.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.txb_day.Location = new System.Drawing.Point(215, 237);
+            this.txb_day.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+>>>>>>> main
             this.txb_day.Multiline = true;
             this.txb_day.Name = "txb_day";
             this.txb_day.PasswordChar = '\0';
@@ -271,6 +336,7 @@
             this.txb_day.Size = new System.Drawing.Size(347, 52);
             this.txb_day.TabIndex = 57;
             // 
+<<<<<<< HEAD
             // panel_image
             // 
             this.panel_image.Location = new System.Drawing.Point(168, 505);
@@ -279,12 +345,13 @@
             this.panel_image.Size = new System.Drawing.Size(448, 133);
             this.panel_image.TabIndex = 58;
             // 
+=======
+>>>>>>> main
             // UCWork
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.Controls.Add(this.panel_image);
             this.Controls.Add(this.txb_day);
             this.Controls.Add(this.txb_week);
             this.Controls.Add(this.txb_tiencong);
@@ -299,7 +366,11 @@
             this.Controls.Add(this.label16);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCWork";
+<<<<<<< HEAD
             this.Size = new System.Drawing.Size(671, 688);
+=======
+            this.Size = new System.Drawing.Size(503, 441);
+>>>>>>> main
             this.Load += new System.EventHandler(this.UCWork_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -321,6 +392,5 @@
         private Guna.UI2.WinForms.Guna2TextBox txb_tiencong;
         private Guna.UI2.WinForms.Guna2TextBox txb_kinhnghiem;
         private Guna.UI2.WinForms.Guna2TextBox txb_congviec;
-        private System.Windows.Forms.FlowLayoutPanel panel_image;
     }
 }
