@@ -38,8 +38,9 @@
             this.lbl_Diachi = new System.Windows.Forms.Label();
             this.lbl_Congviec = new System.Windows.Forms.Label();
             this.ptb_avt = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.txb_danhgia = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txb_chitiet = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_name = new System.Windows.Forms.Label();
+            this.lbl_ngaylamviec = new System.Windows.Forms.Label();
             this.panelPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).BeginInit();
             this.SuspendLayout();
@@ -59,9 +60,10 @@
             this.panelPage1.Controls.Add(this.btnAdd);
             this.panelPage1.Controls.Add(this.panel_anh);
             this.panelPage1.Controls.Add(this.lbl_Diachi);
+            this.panelPage1.Controls.Add(this.lbl_ngaylamviec);
             this.panelPage1.Controls.Add(this.lbl_Congviec);
             this.panelPage1.Controls.Add(this.ptb_avt);
-            this.panelPage1.Controls.Add(this.txb_danhgia);
+            this.panelPage1.Controls.Add(this.txb_chitiet);
             this.panelPage1.Controls.Add(this.lbl_name);
             this.panelPage1.Location = new System.Drawing.Point(12, 13);
             this.panelPage1.Name = "panelPage1";
@@ -152,32 +154,32 @@
             this.ptb_avt.TabStop = false;
             this.ptb_avt.UseTransparentBackground = true;
             // 
-            // txb_danhgia
+            // txb_chitiet
             // 
-            this.txb_danhgia.Animated = true;
-            this.txb_danhgia.BackColor = System.Drawing.Color.Transparent;
-            this.txb_danhgia.BorderRadius = 15;
-            this.txb_danhgia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_danhgia.DefaultText = "";
-            this.txb_danhgia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_danhgia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_danhgia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_danhgia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_danhgia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_danhgia.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
-            this.txb_danhgia.ForeColor = System.Drawing.Color.Black;
-            this.txb_danhgia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_danhgia.Location = new System.Drawing.Point(24, 118);
-            this.txb_danhgia.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txb_danhgia.Multiline = true;
-            this.txb_danhgia.Name = "txb_danhgia";
-            this.txb_danhgia.PasswordChar = '\0';
-            this.txb_danhgia.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txb_danhgia.PlaceholderText = "";
-            this.txb_danhgia.ReadOnly = true;
-            this.txb_danhgia.SelectedText = "";
-            this.txb_danhgia.Size = new System.Drawing.Size(558, 171);
-            this.txb_danhgia.TabIndex = 49;
+            this.txb_chitiet.Animated = true;
+            this.txb_chitiet.BackColor = System.Drawing.Color.Transparent;
+            this.txb_chitiet.BorderRadius = 15;
+            this.txb_chitiet.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_chitiet.DefaultText = "";
+            this.txb_chitiet.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_chitiet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_chitiet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_chitiet.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_chitiet.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_chitiet.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
+            this.txb_chitiet.ForeColor = System.Drawing.Color.Black;
+            this.txb_chitiet.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_chitiet.Location = new System.Drawing.Point(24, 118);
+            this.txb_chitiet.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txb_chitiet.Multiline = true;
+            this.txb_chitiet.Name = "txb_chitiet";
+            this.txb_chitiet.PasswordChar = '\0';
+            this.txb_chitiet.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txb_chitiet.PlaceholderText = "";
+            this.txb_chitiet.ReadOnly = true;
+            this.txb_chitiet.SelectedText = "";
+            this.txb_chitiet.Size = new System.Drawing.Size(558, 171);
+            this.txb_chitiet.TabIndex = 49;
             // 
             // lbl_name
             // 
@@ -189,6 +191,16 @@
             this.lbl_name.TabIndex = 48;
             this.lbl_name.Text = "Họ Tên";
             // 
+            // lbl_ngaylamviec
+            // 
+            this.lbl_ngaylamviec.AutoSize = true;
+            this.lbl_ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ngaylamviec.Location = new System.Drawing.Point(258, 61);
+            this.lbl_ngaylamviec.Name = "lbl_ngaylamviec";
+            this.lbl_ngaylamviec.Size = new System.Drawing.Size(91, 17);
+            this.lbl_ngaylamviec.TabIndex = 52;
+            this.lbl_ngaylamviec.Text = "Ngay lam viec";
+            // 
             // PostDetailWorkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,6 +211,7 @@
             this.Name = "PostDetailWorkerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PostDetailWorkerForm";
+            this.Load += new System.EventHandler(this.PostDetailWorkerForm_Load);
             this.panelPage1.ResumeLayout(false);
             this.panelPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).EndInit();
@@ -216,8 +229,9 @@
         private System.Windows.Forms.Label lbl_Diachi;
         private System.Windows.Forms.Label lbl_Congviec;
         private Guna.UI2.WinForms.Guna2CirclePictureBox ptb_avt;
-        private Guna.UI2.WinForms.Guna2TextBox txb_danhgia;
+        private Guna.UI2.WinForms.Guna2TextBox txb_chitiet;
         private System.Windows.Forms.Label lbl_name;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private System.Windows.Forms.Label lbl_ngaylamviec;
     }
 }

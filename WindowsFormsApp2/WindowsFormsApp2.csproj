@@ -213,6 +213,7 @@
     <Compile Include="Check.cs" />
     <Compile Include="CongViec.cs" />
     <Compile Include="CongViecTho.cs" />
+    <Compile Include="CongViecUser.cs" />
     <Compile Include="CreateRoundForm.cs" />
     <Compile Include="EditAddressForm.cs">
       <SubType>Form</SubType>
