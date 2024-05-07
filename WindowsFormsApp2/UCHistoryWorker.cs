@@ -79,5 +79,10 @@ namespace WindowsFormsApp2
             }
             
         }
+
+        private void btn_yeuthich_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

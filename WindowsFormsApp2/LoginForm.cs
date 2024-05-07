@@ -28,12 +28,6 @@ namespace WindowsFormsApp2
             pnlSinUp.Hide();
             check.AttachValidatingEventToTextBoxes(this);
         }
-
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             pnlSinUp.Show();
@@ -116,6 +110,11 @@ namespace WindowsFormsApp2
         private void btn_workerlogin_Click(object sender, EventArgs e)
         {
             btnClicked = false;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

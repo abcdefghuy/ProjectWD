@@ -33,7 +33,16 @@ namespace WindowsFormsApp2
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+            if(btnAdd.FillColor== Color.DodgerBlue)
+            {
+                btnAdd.Text = "Bỏ quan tâm";
+                btnAdd.FillColor = Color.Red;
+            }
+            else
+            {
+                btnAdd.Text = "Quan Tâm";
+                btnAdd.FillColor = Color.DodgerBlue;
+            }
         }
         private void quanTam(object sender, EventArgs e)
         {
@@ -64,10 +73,10 @@ namespace WindowsFormsApp2
             }
 
             CongViecUser cvUser = UserDAO.chiTietBaiDang(maCV);
-            lbl_Congviec.Text = cvUser.CongViec;
-            lbl_Diachi.Text = cvUser.DiaChi;
+            lbl_Congviec.Text = "Yêu cầu: "+ cvUser.CongViec;
+            lbl_Diachi.Text = "Địa chỉ: "+ cvUser.DiaChi;
             txb_chitiet.Text = cvUser.ChiTiet;
-            lbl_ngaylamviec.Text = cvUser.NgayLamViec.ToString("dd/MM/yyyy");
+            lbl_ngaylamviec.Text = "Ngày Làm việc: "+cvUser.NgayLamViec.ToString("dd/MM/yyyy");
             foreach (Image img in cvUser.ImgList)
             {
                 PictureBox pictureBox = new PictureBox();

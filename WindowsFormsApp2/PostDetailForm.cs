@@ -14,6 +14,7 @@ namespace WindowsFormsApp2
     public partial class PostDetailForm : Form
     {
         private string maCV;
+        private string Cv;
         public Label HoTen
         {
             get => lbl_name; set => lbl_name = value;
@@ -22,10 +23,11 @@ namespace WindowsFormsApp2
         {
             get => ptb_avt; set => ptb_avt = value;
         }
-        public PostDetailForm(string maCV)
+        public PostDetailForm(string maCV,string cv)
         {
             InitializeComponent();
             this.maCV = maCV;
+            this.Cv = cv;
         }
 
         private void lbl_Congviec_Click(object sender, EventArgs e)
@@ -47,10 +49,10 @@ namespace WindowsFormsApp2
         {
             panelPage2.Hide();
             CongViecUser cvUser = UserDAO.chiTietBaiDang(maCV);
-            lbl_Congviec.Text = cvUser.CongViec;
-            lbl_Diachi.Text = cvUser.DiaChi;
+            lbl_Congviec.Text = "Yêu cầu: "+ cvUser.CongViec;
+            lbl_Diachi.Text = "Địa chỉ: "+ cvUser.DiaChi;
             txb_chitiet.Text = cvUser.ChiTiet;
-            lbl_ngaylamviec.Text = cvUser.NgayLamViec.ToString("dd/MM/yyyy");
+            lbl_ngaylamviec.Text = "Ngày làm việc:" + cvUser.NgayLamViec.ToString("dd/MM/yyyy");
             foreach(Image img in cvUser.ImgList)
             {
                 PictureBox pictureBox = new PictureBox();
@@ -66,7 +68,7 @@ namespace WindowsFormsApp2
         {
             panelPage2.Show();
             flContainer.Controls.Clear();
-            List<UCWorker> workerList = UserDAO.ThoQuanTam(maCV);
+            List<UCWorker> workerList = UserDAO.ThoQuanTam(maCV,Cv);
             foreach(UCWorker uc in workerList)
             {
                 flContainer.Controls.Add(uc);

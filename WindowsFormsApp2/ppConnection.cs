@@ -178,6 +178,7 @@ namespace WindowsFormsApp2
                     uc.LblTiencong.Text = "Tiền công: " + reader.GetString(4);
                     uc.Rating.Value = reader.GetInt32(5);
                     uc.MoTa.Text= reader.GetString(7);
+                    uc.LblDiaChi.Text="Địa chỉ: "+ reader.GetString(8);
                     if (!reader.IsDBNull(6))
                     {
                         object value = reader[6];
@@ -197,47 +198,7 @@ namespace WindowsFormsApp2
             }
             return workerList;
         }
-        public static List<UCWorker> DanhSachTho(string querry)
-        {
-            List<UCWorker> workerList = new List<UCWorker>();
-            SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
-            conn.Open();
-            try
-            {
-                SqlConnection cnn = new SqlConnection(Properties.Settings.Default.connStr);
-                cnn.Open();
-                SqlCommand sqlCommand = new SqlCommand(querry, cnn);
-                SqlDataReader reader = sqlCommand.ExecuteReader();
-                while (reader.Read())
-                {
-                    UCWorker uc = new UCWorker();
-                    uc.Cv = reader[8].ToString();
-                    uc.WorkerID = reader.GetString(0);
-                    uc.LblName.Text = "Họ tên: " + reader.GetString(1);
-                    uc.LblPhone.Text = "Số điện thoại: " + reader.GetString(2);
-                    uc.LblKinhnghiem.Text = "Kinh nghiệm: " + reader.GetString(3);
-                    uc.LblTiencong.Text = "Tiền công: " + reader.GetString(4);
-                    uc.Rating.Value = reader.GetInt32(5);
-                    uc.MoTa.Text = reader.GetString(7);
-                    if (!reader.IsDBNull(6))
-                    {
-                        object value = reader[6];
-                        byte[] avt = (byte[])value;
-                        MemoryStream ms = new MemoryStream(avt);
-                        uc.Ptb_avt.Image = Image.FromStream(ms);
-                    }
-
-                    workerList.Add(uc);
-                }
-                reader.Close();
-                cnn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            return workerList;
-        }
+        
         public static bool check_Login(string sqlStr)
         {
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);

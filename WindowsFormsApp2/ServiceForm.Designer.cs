@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServiceForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnRefriger = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPipe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCarpen = new Guna.UI2.WinForms.Guna2Button();
             this.btnBuilder = new Guna.UI2.WinForms.Guna2Button();
             this.btnUnclog = new Guna.UI2.WinForms.Guna2Button();
             this.btnClean = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCarpen = new Guna.UI2.WinForms.Guna2Button();
             this.btnFixing = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPipe = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRefriger = new Guna.UI2.WinForms.Guna2Button();
             this.btnElectric = new Guna.UI2.WinForms.Guna2Button();
             this.panelPage2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -90,10 +90,98 @@
             this.panelMain.Controls.Add(this.btnClean);
             this.panelMain.Controls.Add(this.btnFixing);
             this.panelMain.Controls.Add(this.btnElectric);
-            this.panelMain.Location = new System.Drawing.Point(64, 52);
+            this.panelMain.Location = new System.Drawing.Point(85, 64);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(922, 587);
+            this.panelMain.Size = new System.Drawing.Size(1229, 722);
             this.panelMain.TabIndex = 0;
+            // 
+            // btnRefriger
+            // 
+            this.btnRefriger.Animated = true;
+            this.btnRefriger.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefriger.BorderRadius = 20;
+            this.btnRefriger.CustomBorderColor = System.Drawing.Color.White;
+            this.btnRefriger.CustomBorderThickness = new System.Windows.Forms.Padding(1);
+            this.btnRefriger.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefriger.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefriger.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRefriger.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRefriger.FillColor = System.Drawing.Color.White;
+            this.btnRefriger.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F);
+            this.btnRefriger.ForeColor = System.Drawing.Color.Black;
+            this.btnRefriger.Image = global::WindowsFormsApp2.Properties.Resources.mode;
+            this.btnRefriger.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnRefriger.Location = new System.Drawing.Point(357, 28);
+            this.btnRefriger.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefriger.Name = "btnRefriger";
+            this.btnRefriger.ShadowDecoration.BorderRadius = 20;
+            this.btnRefriger.ShadowDecoration.Enabled = true;
+            this.btnRefriger.Size = new System.Drawing.Size(221, 273);
+            this.btnRefriger.TabIndex = 1;
+            this.btnRefriger.Text = "Điện lạnh";
+            this.btnRefriger.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnRefriger.Tile = true;
+            this.btnRefriger.UseTransparentBackground = true;
+            this.btnRefriger.Click += new System.EventHandler(this.btnRefriger_Click);
+            // 
+            // btnPipe
+            // 
+            this.btnPipe.Animated = true;
+            this.btnPipe.BackColor = System.Drawing.Color.Transparent;
+            this.btnPipe.BorderRadius = 20;
+            this.btnPipe.CustomBorderColor = System.Drawing.Color.White;
+            this.btnPipe.CustomBorderThickness = new System.Windows.Forms.Padding(1);
+            this.btnPipe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPipe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPipe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPipe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPipe.FillColor = System.Drawing.Color.White;
+            this.btnPipe.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPipe.ForeColor = System.Drawing.Color.Black;
+            this.btnPipe.Image = global::WindowsFormsApp2.Properties.Resources.leak;
+            this.btnPipe.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnPipe.Location = new System.Drawing.Point(652, 28);
+            this.btnPipe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPipe.Name = "btnPipe";
+            this.btnPipe.ShadowDecoration.BorderRadius = 20;
+            this.btnPipe.ShadowDecoration.Enabled = true;
+            this.btnPipe.Size = new System.Drawing.Size(221, 273);
+            this.btnPipe.TabIndex = 1;
+            this.btnPipe.Text = "Ống nước";
+            this.btnPipe.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnPipe.Tile = true;
+            this.btnPipe.UseTransparentBackground = true;
+            this.btnPipe.Click += new System.EventHandler(this.btnPipe_Click);
+            // 
+            // btnCarpen
+            // 
+            this.btnCarpen.Animated = true;
+            this.btnCarpen.BackColor = System.Drawing.Color.Transparent;
+            this.btnCarpen.BorderRadius = 20;
+            this.btnCarpen.CustomBorderColor = System.Drawing.Color.White;
+            this.btnCarpen.CustomBorderThickness = new System.Windows.Forms.Padding(1);
+            this.btnCarpen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCarpen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCarpen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCarpen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCarpen.FillColor = System.Drawing.Color.White;
+            this.btnCarpen.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarpen.ForeColor = System.Drawing.Color.Black;
+            this.btnCarpen.Image = global::WindowsFormsApp2.Properties.Resources.hammer;
+            this.btnCarpen.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnCarpen.Location = new System.Drawing.Point(955, 28);
+            this.btnCarpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCarpen.Name = "btnCarpen";
+            this.btnCarpen.ShadowDecoration.BorderRadius = 20;
+            this.btnCarpen.ShadowDecoration.Enabled = true;
+            this.btnCarpen.Size = new System.Drawing.Size(221, 273);
+            this.btnCarpen.TabIndex = 1;
+            this.btnCarpen.Text = "Thợ mộc";
+            this.btnCarpen.TextOffset = new System.Drawing.Point(0, 25);
+            this.btnCarpen.Tile = true;
+            this.btnCarpen.UseTransparentBackground = true;
+            this.btnCarpen.Click += new System.EventHandler(this.btnCarpen_Click);
             // 
             // btnBuilder
             // 
@@ -111,11 +199,12 @@
             this.btnBuilder.ForeColor = System.Drawing.Color.Black;
             this.btnBuilder.Image = global::WindowsFormsApp2.Properties.Resources.brickwall;
             this.btnBuilder.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnBuilder.Location = new System.Drawing.Point(40, 332);
+            this.btnBuilder.Location = new System.Drawing.Point(53, 409);
+            this.btnBuilder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuilder.Name = "btnBuilder";
             this.btnBuilder.ShadowDecoration.BorderRadius = 20;
             this.btnBuilder.ShadowDecoration.Enabled = true;
-            this.btnBuilder.Size = new System.Drawing.Size(166, 222);
+            this.btnBuilder.Size = new System.Drawing.Size(221, 273);
             this.btnBuilder.TabIndex = 1;
             this.btnBuilder.Text = "Xây dựng";
             this.btnBuilder.TextOffset = new System.Drawing.Point(0, 25);
@@ -139,11 +228,12 @@
             this.btnUnclog.ForeColor = System.Drawing.Color.Black;
             this.btnUnclog.Image = global::WindowsFormsApp2.Properties.Resources.plunger;
             this.btnUnclog.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnUnclog.Location = new System.Drawing.Point(268, 332);
+            this.btnUnclog.Location = new System.Drawing.Point(357, 409);
+            this.btnUnclog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUnclog.Name = "btnUnclog";
             this.btnUnclog.ShadowDecoration.BorderRadius = 20;
             this.btnUnclog.ShadowDecoration.Enabled = true;
-            this.btnUnclog.Size = new System.Drawing.Size(166, 222);
+            this.btnUnclog.Size = new System.Drawing.Size(221, 273);
             this.btnUnclog.TabIndex = 1;
             this.btnUnclog.Text = "Thông tắc";
             this.btnUnclog.TextOffset = new System.Drawing.Point(0, 25);
@@ -167,45 +257,18 @@
             this.btnClean.ForeColor = System.Drawing.Color.Black;
             this.btnClean.Image = global::WindowsFormsApp2.Properties.Resources.mop;
             this.btnClean.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnClean.Location = new System.Drawing.Point(489, 332);
+            this.btnClean.Location = new System.Drawing.Point(652, 409);
+            this.btnClean.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClean.Name = "btnClean";
             this.btnClean.ShadowDecoration.BorderRadius = 20;
             this.btnClean.ShadowDecoration.Enabled = true;
-            this.btnClean.Size = new System.Drawing.Size(166, 222);
+            this.btnClean.Size = new System.Drawing.Size(221, 273);
             this.btnClean.TabIndex = 1;
             this.btnClean.Text = "Vệ sinh";
             this.btnClean.TextOffset = new System.Drawing.Point(0, 25);
             this.btnClean.Tile = true;
             this.btnClean.UseTransparentBackground = true;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
-            // 
-            // btnCarpen
-            // 
-            this.btnCarpen.Animated = true;
-            this.btnCarpen.BackColor = System.Drawing.Color.Transparent;
-            this.btnCarpen.BorderRadius = 20;
-            this.btnCarpen.CustomBorderColor = System.Drawing.Color.White;
-            this.btnCarpen.CustomBorderThickness = new System.Windows.Forms.Padding(1);
-            this.btnCarpen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCarpen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCarpen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCarpen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCarpen.FillColor = System.Drawing.Color.White;
-            this.btnCarpen.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCarpen.ForeColor = System.Drawing.Color.Black;
-            this.btnCarpen.Image = global::WindowsFormsApp2.Properties.Resources.hammer;
-            this.btnCarpen.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnCarpen.Location = new System.Drawing.Point(716, 23);
-            this.btnCarpen.Name = "btnCarpen";
-            this.btnCarpen.ShadowDecoration.BorderRadius = 20;
-            this.btnCarpen.ShadowDecoration.Enabled = true;
-            this.btnCarpen.Size = new System.Drawing.Size(166, 222);
-            this.btnCarpen.TabIndex = 1;
-            this.btnCarpen.Text = "Thợ mộc";
-            this.btnCarpen.TextOffset = new System.Drawing.Point(0, 25);
-            this.btnCarpen.Tile = true;
-            this.btnCarpen.UseTransparentBackground = true;
-            this.btnCarpen.Click += new System.EventHandler(this.btnCarpen_Click);
             // 
             // btnFixing
             // 
@@ -223,73 +286,18 @@
             this.btnFixing.ForeColor = System.Drawing.Color.Black;
             this.btnFixing.Image = global::WindowsFormsApp2.Properties.Resources.house;
             this.btnFixing.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnFixing.Location = new System.Drawing.Point(716, 332);
+            this.btnFixing.Location = new System.Drawing.Point(955, 409);
+            this.btnFixing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFixing.Name = "btnFixing";
             this.btnFixing.ShadowDecoration.BorderRadius = 20;
             this.btnFixing.ShadowDecoration.Enabled = true;
-            this.btnFixing.Size = new System.Drawing.Size(166, 222);
+            this.btnFixing.Size = new System.Drawing.Size(221, 273);
             this.btnFixing.TabIndex = 1;
             this.btnFixing.Text = "Sửa nhà";
             this.btnFixing.TextOffset = new System.Drawing.Point(0, 25);
             this.btnFixing.Tile = true;
             this.btnFixing.UseTransparentBackground = true;
             this.btnFixing.Click += new System.EventHandler(this.btnFixing_Click);
-            // 
-            // btnPipe
-            // 
-            this.btnPipe.Animated = true;
-            this.btnPipe.BackColor = System.Drawing.Color.Transparent;
-            this.btnPipe.BorderRadius = 20;
-            this.btnPipe.CustomBorderColor = System.Drawing.Color.White;
-            this.btnPipe.CustomBorderThickness = new System.Windows.Forms.Padding(1);
-            this.btnPipe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPipe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPipe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPipe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPipe.FillColor = System.Drawing.Color.White;
-            this.btnPipe.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPipe.ForeColor = System.Drawing.Color.Black;
-            this.btnPipe.Image = global::WindowsFormsApp2.Properties.Resources.leak;
-            this.btnPipe.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnPipe.Location = new System.Drawing.Point(489, 23);
-            this.btnPipe.Name = "btnPipe";
-            this.btnPipe.ShadowDecoration.BorderRadius = 20;
-            this.btnPipe.ShadowDecoration.Enabled = true;
-            this.btnPipe.Size = new System.Drawing.Size(166, 222);
-            this.btnPipe.TabIndex = 1;
-            this.btnPipe.Text = "Ống nước";
-            this.btnPipe.TextOffset = new System.Drawing.Point(0, 25);
-            this.btnPipe.Tile = true;
-            this.btnPipe.UseTransparentBackground = true;
-            this.btnPipe.Click += new System.EventHandler(this.btnPipe_Click);
-            // 
-            // btnRefriger
-            // 
-            this.btnRefriger.Animated = true;
-            this.btnRefriger.BackColor = System.Drawing.Color.Transparent;
-            this.btnRefriger.BorderRadius = 20;
-            this.btnRefriger.CustomBorderColor = System.Drawing.Color.White;
-            this.btnRefriger.CustomBorderThickness = new System.Windows.Forms.Padding(1);
-            this.btnRefriger.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefriger.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefriger.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRefriger.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRefriger.FillColor = System.Drawing.Color.White;
-            this.btnRefriger.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F);
-            this.btnRefriger.ForeColor = System.Drawing.Color.Black;
-            this.btnRefriger.Image = global::WindowsFormsApp2.Properties.Resources.mode;
-            this.btnRefriger.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnRefriger.Location = new System.Drawing.Point(268, 23);
-            this.btnRefriger.Name = "btnRefriger";
-            this.btnRefriger.ShadowDecoration.BorderRadius = 20;
-            this.btnRefriger.ShadowDecoration.Enabled = true;
-            this.btnRefriger.Size = new System.Drawing.Size(166, 222);
-            this.btnRefriger.TabIndex = 1;
-            this.btnRefriger.Text = "Điện lạnh";
-            this.btnRefriger.TextOffset = new System.Drawing.Point(0, 25);
-            this.btnRefriger.Tile = true;
-            this.btnRefriger.UseTransparentBackground = true;
-            this.btnRefriger.Click += new System.EventHandler(this.btnRefriger_Click);
             // 
             // btnElectric
             // 
@@ -307,11 +315,12 @@
             this.btnElectric.ForeColor = System.Drawing.Color.Black;
             this.btnElectric.Image = global::WindowsFormsApp2.Properties.Resources.plug;
             this.btnElectric.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnElectric.Location = new System.Drawing.Point(40, 23);
+            this.btnElectric.Location = new System.Drawing.Point(53, 28);
+            this.btnElectric.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnElectric.Name = "btnElectric";
             this.btnElectric.ShadowDecoration.BorderRadius = 20;
             this.btnElectric.ShadowDecoration.Enabled = true;
-            this.btnElectric.Size = new System.Drawing.Size(166, 222);
+            this.btnElectric.Size = new System.Drawing.Size(221, 273);
             this.btnElectric.TabIndex = 1;
             this.btnElectric.Text = "Thợ điện";
             this.btnElectric.TextOffset = new System.Drawing.Point(0, 25);
@@ -324,9 +333,10 @@
             this.panelPage2.Controls.Add(this.guna2ShadowPanel1);
             this.panelPage2.Controls.Add(this.btnBack);
             this.panelPage2.Controls.Add(this.flContainer);
-            this.panelPage2.Location = new System.Drawing.Point(3, 3);
+            this.panelPage2.Location = new System.Drawing.Point(4, 4);
+            this.panelPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelPage2.Name = "panelPage2";
-            this.panelPage2.Size = new System.Drawing.Size(1090, 708);
+            this.panelPage2.Size = new System.Drawing.Size(1453, 871);
             this.panelPage2.TabIndex = 3;
             // 
             // guna2ShadowPanel1
@@ -357,12 +367,13 @@
             this.guna2ShadowPanel1.Controls.Add(this.guna2Separator6);
             this.guna2ShadowPanel1.Controls.Add(this.txb_timkiem);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(29, 20);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(39, 25);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 10;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(233, 679);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(311, 836);
             this.guna2ShadowPanel1.TabIndex = 4;
             // 
             // btn_xemdshuy
@@ -375,11 +386,12 @@
             this.btn_xemdshuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_xemdshuy.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xemdshuy.ForeColor = System.Drawing.Color.White;
-            this.btn_xemdshuy.Location = new System.Drawing.Point(129, 368);
+            this.btn_xemdshuy.Location = new System.Drawing.Point(172, 453);
+            this.btn_xemdshuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_xemdshuy.Name = "btn_xemdshuy";
             this.btn_xemdshuy.ShadowDecoration.BorderRadius = 15;
             this.btn_xemdshuy.ShadowDecoration.Enabled = true;
-            this.btn_xemdshuy.Size = new System.Drawing.Size(83, 56);
+            this.btn_xemdshuy.Size = new System.Drawing.Size(111, 69);
             this.btn_xemdshuy.TabIndex = 69;
             this.btn_xemdshuy.Text = "Thợ bị hủy";
             this.btn_xemdshuy.Click += new System.EventHandler(this.btn_xemdshuy_Click);
@@ -392,9 +404,10 @@
             this.cbtn_congviecBook.CheckedState.BorderThickness = 0;
             this.cbtn_congviecBook.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbtn_congviecBook.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbtn_congviecBook.Location = new System.Drawing.Point(17, 640);
+            this.cbtn_congviecBook.Location = new System.Drawing.Point(23, 788);
+            this.cbtn_congviecBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbtn_congviecBook.Name = "cbtn_congviecBook";
-            this.cbtn_congviecBook.Size = new System.Drawing.Size(144, 20);
+            this.cbtn_congviecBook.Size = new System.Drawing.Size(176, 24);
             this.cbtn_congviecBook.TabIndex = 68;
             this.cbtn_congviecBook.Text = "Được book nhiều nhất";
             this.cbtn_congviecBook.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -411,9 +424,10 @@
             this.cbtn_doanhthu.CheckedState.BorderThickness = 0;
             this.cbtn_doanhthu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbtn_doanhthu.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbtn_doanhthu.Location = new System.Drawing.Point(16, 605);
+            this.cbtn_doanhthu.Location = new System.Drawing.Point(21, 745);
+            this.cbtn_doanhthu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbtn_doanhthu.Name = "cbtn_doanhthu";
-            this.cbtn_doanhthu.Size = new System.Drawing.Size(131, 20);
+            this.cbtn_doanhthu.Size = new System.Drawing.Size(160, 24);
             this.cbtn_doanhthu.TabIndex = 67;
             this.cbtn_doanhthu.Text = "Doanh thu cao nhất";
             this.cbtn_doanhthu.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -432,11 +446,12 @@
             this.btn_toptho.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_toptho.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F);
             this.btn_toptho.ForeColor = System.Drawing.Color.White;
-            this.btn_toptho.Location = new System.Drawing.Point(17, 368);
+            this.btn_toptho.Location = new System.Drawing.Point(23, 453);
+            this.btn_toptho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_toptho.Name = "btn_toptho";
             this.btn_toptho.ShadowDecoration.BorderRadius = 15;
             this.btn_toptho.ShadowDecoration.Enabled = true;
-            this.btn_toptho.Size = new System.Drawing.Size(90, 56);
+            this.btn_toptho.Size = new System.Drawing.Size(120, 69);
             this.btn_toptho.TabIndex = 66;
             this.btn_toptho.Text = "Top thợ được yêu thích nhất";
             this.btn_toptho.Click += new System.EventHandler(this.btn_toptho_Click);
@@ -454,9 +469,10 @@
             this.btn_5.FillColor = System.Drawing.Color.Empty;
             this.btn_5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_5.ForeColor = System.Drawing.Color.White;
-            this.btn_5.Location = new System.Drawing.Point(49, 122);
+            this.btn_5.Location = new System.Drawing.Point(65, 150);
+            this.btn_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_5.Name = "btn_5";
-            this.btn_5.Size = new System.Drawing.Size(141, 28);
+            this.btn_5.Size = new System.Drawing.Size(188, 34);
             this.btn_5.TabIndex = 61;
             this.btn_5.UseTransparentBackground = true;
             this.btn_5.Click += new System.EventHandler(this.guna2Button6_Click);
@@ -474,9 +490,10 @@
             this.btn_4.FillColor = System.Drawing.Color.Empty;
             this.btn_4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_4.ForeColor = System.Drawing.Color.White;
-            this.btn_4.Location = new System.Drawing.Point(49, 175);
+            this.btn_4.Location = new System.Drawing.Point(65, 215);
+            this.btn_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_4.Name = "btn_4";
-            this.btn_4.Size = new System.Drawing.Size(141, 28);
+            this.btn_4.Size = new System.Drawing.Size(188, 34);
             this.btn_4.TabIndex = 62;
             this.btn_4.UseTransparentBackground = true;
             this.btn_4.Click += new System.EventHandler(this.btn_4_Click);
@@ -494,9 +511,10 @@
             this.btn_3.FillColor = System.Drawing.Color.Empty;
             this.btn_3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_3.ForeColor = System.Drawing.Color.White;
-            this.btn_3.Location = new System.Drawing.Point(49, 218);
+            this.btn_3.Location = new System.Drawing.Point(65, 268);
+            this.btn_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_3.Name = "btn_3";
-            this.btn_3.Size = new System.Drawing.Size(141, 28);
+            this.btn_3.Size = new System.Drawing.Size(188, 34);
             this.btn_3.TabIndex = 63;
             this.btn_3.UseTransparentBackground = true;
             this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
@@ -514,9 +532,10 @@
             this.btn_2.FillColor = System.Drawing.Color.Empty;
             this.btn_2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_2.ForeColor = System.Drawing.Color.White;
-            this.btn_2.Location = new System.Drawing.Point(49, 268);
+            this.btn_2.Location = new System.Drawing.Point(65, 330);
+            this.btn_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_2.Name = "btn_2";
-            this.btn_2.Size = new System.Drawing.Size(141, 28);
+            this.btn_2.Size = new System.Drawing.Size(188, 34);
             this.btn_2.TabIndex = 64;
             this.btn_2.UseTransparentBackground = true;
             this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
@@ -534,60 +553,66 @@
             this.btn_1.FillColor = System.Drawing.Color.Empty;
             this.btn_1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_1.ForeColor = System.Drawing.Color.White;
-            this.btn_1.Location = new System.Drawing.Point(49, 311);
+            this.btn_1.Location = new System.Drawing.Point(65, 383);
+            this.btn_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_1.Name = "btn_1";
-            this.btn_1.Size = new System.Drawing.Size(141, 28);
+            this.btn_1.Size = new System.Drawing.Size(188, 34);
             this.btn_1.TabIndex = 65;
             this.btn_1.UseTransparentBackground = true;
             this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
             // 
             // guna2RatingStar6
             // 
-            this.guna2RatingStar6.Location = new System.Drawing.Point(58, 311);
+            this.guna2RatingStar6.Location = new System.Drawing.Point(77, 383);
+            this.guna2RatingStar6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2RatingStar6.Name = "guna2RatingStar6";
             this.guna2RatingStar6.RatingColor = System.Drawing.Color.Yellow;
             this.guna2RatingStar6.ReadOnly = true;
-            this.guna2RatingStar6.Size = new System.Drawing.Size(120, 28);
+            this.guna2RatingStar6.Size = new System.Drawing.Size(160, 34);
             this.guna2RatingStar6.TabIndex = 56;
             this.guna2RatingStar6.Value = 1F;
             // 
             // guna2RatingStar7
             // 
-            this.guna2RatingStar7.Location = new System.Drawing.Point(58, 268);
+            this.guna2RatingStar7.Location = new System.Drawing.Point(77, 330);
+            this.guna2RatingStar7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2RatingStar7.Name = "guna2RatingStar7";
             this.guna2RatingStar7.RatingColor = System.Drawing.Color.Yellow;
             this.guna2RatingStar7.ReadOnly = true;
-            this.guna2RatingStar7.Size = new System.Drawing.Size(120, 28);
+            this.guna2RatingStar7.Size = new System.Drawing.Size(160, 34);
             this.guna2RatingStar7.TabIndex = 57;
             this.guna2RatingStar7.Value = 2F;
             // 
             // guna2RatingStar8
             // 
-            this.guna2RatingStar8.Location = new System.Drawing.Point(58, 218);
+            this.guna2RatingStar8.Location = new System.Drawing.Point(77, 268);
+            this.guna2RatingStar8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2RatingStar8.Name = "guna2RatingStar8";
             this.guna2RatingStar8.RatingColor = System.Drawing.Color.Yellow;
             this.guna2RatingStar8.ReadOnly = true;
-            this.guna2RatingStar8.Size = new System.Drawing.Size(120, 28);
+            this.guna2RatingStar8.Size = new System.Drawing.Size(160, 34);
             this.guna2RatingStar8.TabIndex = 58;
             this.guna2RatingStar8.Value = 3F;
             // 
             // guna2RatingStar9
             // 
-            this.guna2RatingStar9.Location = new System.Drawing.Point(58, 175);
+            this.guna2RatingStar9.Location = new System.Drawing.Point(77, 215);
+            this.guna2RatingStar9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2RatingStar9.Name = "guna2RatingStar9";
             this.guna2RatingStar9.RatingColor = System.Drawing.Color.Yellow;
             this.guna2RatingStar9.ReadOnly = true;
-            this.guna2RatingStar9.Size = new System.Drawing.Size(120, 28);
+            this.guna2RatingStar9.Size = new System.Drawing.Size(160, 34);
             this.guna2RatingStar9.TabIndex = 59;
             this.guna2RatingStar9.Value = 4F;
             // 
             // guna2RatingStar10
             // 
-            this.guna2RatingStar10.Location = new System.Drawing.Point(58, 122);
+            this.guna2RatingStar10.Location = new System.Drawing.Point(77, 150);
+            this.guna2RatingStar10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2RatingStar10.Name = "guna2RatingStar10";
             this.guna2RatingStar10.RatingColor = System.Drawing.Color.Yellow;
             this.guna2RatingStar10.ReadOnly = true;
-            this.guna2RatingStar10.Size = new System.Drawing.Size(120, 28);
+            this.guna2RatingStar10.Size = new System.Drawing.Size(160, 34);
             this.guna2RatingStar10.TabIndex = 60;
             this.guna2RatingStar10.Value = 5F;
             // 
@@ -595,9 +620,10 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(13, 85);
+            this.label12.Location = new System.Drawing.Point(17, 105);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 20);
+            this.label12.Size = new System.Drawing.Size(91, 25);
             this.label12.TabIndex = 55;
             this.label12.Text = "Đánh Giá";
             // 
@@ -615,9 +641,10 @@
             this.search_kinhnghiem.Items.AddRange(new object[] {
             "Cao đến Thấp",
             "Thấp đến Cao"});
-            this.search_kinhnghiem.Location = new System.Drawing.Point(12, 556);
+            this.search_kinhnghiem.Location = new System.Drawing.Point(16, 684);
+            this.search_kinhnghiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.search_kinhnghiem.Name = "search_kinhnghiem";
-            this.search_kinhnghiem.Size = new System.Drawing.Size(196, 36);
+            this.search_kinhnghiem.Size = new System.Drawing.Size(260, 36);
             this.search_kinhnghiem.TabIndex = 53;
             this.search_kinhnghiem.SelectedIndexChanged += new System.EventHandler(this.search_kinhnghiem_SelectedIndexChanged);
             // 
@@ -635,9 +662,10 @@
             this.search_tien.Items.AddRange(new object[] {
             "Cao đến Thấp",
             "Thấp đến Cao"});
-            this.search_tien.Location = new System.Drawing.Point(12, 479);
+            this.search_tien.Location = new System.Drawing.Point(16, 590);
+            this.search_tien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.search_tien.Name = "search_tien";
-            this.search_tien.Size = new System.Drawing.Size(196, 36);
+            this.search_tien.Size = new System.Drawing.Size(260, 36);
             this.search_tien.TabIndex = 54;
             this.search_tien.SelectedIndexChanged += new System.EventHandler(this.search_tien_SelectedIndexChanged);
             // 
@@ -645,49 +673,55 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("UTM Alberta Heavy", 11F);
-            this.label13.Location = new System.Drawing.Point(14, 533);
+            this.label13.Location = new System.Drawing.Point(19, 656);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(94, 20);
+            this.label13.Size = new System.Drawing.Size(124, 25);
             this.label13.TabIndex = 50;
             this.label13.Text = "Kinh Nghiệm";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // guna2Separator1
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(11, 520);
+            this.guna2Separator1.Location = new System.Drawing.Point(15, 640);
+            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(200, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(267, 12);
             this.guna2Separator1.TabIndex = 52;
             // 
             // guna2Separator4
             // 
-            this.guna2Separator4.Location = new System.Drawing.Point(11, 431);
+            this.guna2Separator4.Location = new System.Drawing.Point(15, 530);
+            this.guna2Separator4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Separator4.Name = "guna2Separator4";
-            this.guna2Separator4.Size = new System.Drawing.Size(200, 10);
+            this.guna2Separator4.Size = new System.Drawing.Size(267, 12);
             this.guna2Separator4.TabIndex = 52;
             // 
             // guna2Separator5
             // 
-            this.guna2Separator5.Location = new System.Drawing.Point(12, 352);
+            this.guna2Separator5.Location = new System.Drawing.Point(16, 433);
+            this.guna2Separator5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Separator5.Name = "guna2Separator5";
-            this.guna2Separator5.Size = new System.Drawing.Size(200, 10);
+            this.guna2Separator5.Size = new System.Drawing.Size(267, 12);
             this.guna2Separator5.TabIndex = 51;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("UTM Alberta Heavy", 11F);
-            this.label14.Location = new System.Drawing.Point(13, 447);
+            this.label14.Location = new System.Drawing.Point(17, 550);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 20);
+            this.label14.Size = new System.Drawing.Size(79, 25);
             this.label14.TabIndex = 49;
             this.label14.Text = "Giá tiền";
             // 
             // guna2Separator6
             // 
-            this.guna2Separator6.Location = new System.Drawing.Point(12, 72);
+            this.guna2Separator6.Location = new System.Drawing.Point(16, 89);
+            this.guna2Separator6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Separator6.Name = "guna2Separator6";
-            this.guna2Separator6.Size = new System.Drawing.Size(200, 10);
+            this.guna2Separator6.Size = new System.Drawing.Size(267, 12);
             this.guna2Separator6.TabIndex = 48;
             // 
             // txb_timkiem
@@ -704,13 +738,13 @@
             this.txb_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_timkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_timkiem.IconLeft = global::WindowsFormsApp2.Properties.Resources.search;
-            this.txb_timkiem.Location = new System.Drawing.Point(12, 17);
-            this.txb_timkiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txb_timkiem.Location = new System.Drawing.Point(16, 21);
+            this.txb_timkiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txb_timkiem.Name = "txb_timkiem";
             this.txb_timkiem.PasswordChar = '\0';
-            this.txb_timkiem.PlaceholderText = "Tìm theo tên";
+            this.txb_timkiem.PlaceholderText = "Tìm theo địa chỉ";
             this.txb_timkiem.SelectedText = "";
-            this.txb_timkiem.Size = new System.Drawing.Size(200, 38);
+            this.txb_timkiem.Size = new System.Drawing.Size(267, 47);
             this.txb_timkiem.TabIndex = 47;
             this.txb_timkiem.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
@@ -724,10 +758,11 @@
             this.btnBack.ImageRotate = 0F;
             this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
             this.btnBack.Location = new System.Drawing.Point(0, 0);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
             this.btnBack.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnBack.PressedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBack.Size = new System.Drawing.Size(40, 38);
+            this.btnBack.Size = new System.Drawing.Size(53, 47);
             this.btnBack.TabIndex = 26;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -735,9 +770,10 @@
             // 
             this.flContainer.AutoScroll = true;
             this.flContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.flContainer.Location = new System.Drawing.Point(268, 20);
+            this.flContainer.Location = new System.Drawing.Point(357, 25);
+            this.flContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flContainer.Name = "flContainer";
-            this.flContainer.Size = new System.Drawing.Size(819, 685);
+            this.flContainer.Size = new System.Drawing.Size(1092, 843);
             this.flContainer.TabIndex = 0;
             // 
             // guna2Elipse2
@@ -751,13 +787,14 @@
             // 
             // ServiceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(1125, 723);
+            this.ClientSize = new System.Drawing.Size(1500, 890);
             this.Controls.Add(this.panelPage2);
             this.Controls.Add(this.panelMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ServiceForm";
             this.Text = "ServiceForm";
             this.Load += new System.EventHandler(this.ServiceForm_Load);

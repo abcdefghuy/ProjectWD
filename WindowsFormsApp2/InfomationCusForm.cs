@@ -70,13 +70,13 @@ namespace WindowsFormsApp2
         {
             if (role == "User")
             {
-                User user = new User(ID, txtName.Text, txtAddress.Text, dateBirthDay.Value, txtPhone.Text, txtEmail.Text, gioitinh, txtCMND.Text);
+                User user = new User(ID, txtName.Text, txtAddress.Text, dateBirthDay.Value, txtPhone.Text, txtEmail.Text, XacDinhGioiTinh(), txtCMND.Text);
                 UserDAO.Edit_Info(user);
                 
             }
             else
             {
-                Worker worker = new Worker(ID, txtName.Text, txtAddress.Text, dateBirthDay.Value, txtPhone.Text, txtEmail.Text, gioitinh, txtCMND.Text);
+                Worker worker = new Worker(ID, txtName.Text, txtAddress.Text, dateBirthDay.Value, txtPhone.Text, txtEmail.Text, XacDinhGioiTinh(), txtCMND.Text);
                 WorkerDAO.Edit_Info(worker);
                
             }
@@ -132,15 +132,18 @@ namespace WindowsFormsApp2
             else
                 btnNu.Checked = true;
         }
-
-        private void btnNam_Click(object sender, EventArgs e)
+        private string XacDinhGioiTinh()
         {
-            gioitinh = btnNam.Text;
-        }
-
-        private void btnNu_Click(object sender, EventArgs e)
-        {
-            gioitinh = btnNu.Text;
+            string gioitinh = "";
+            if (btnNam.Checked == true)
+            {
+                gioitinh=btnNam.Text;
+            }
+            else if (btnNu.Checked == true)
+            {
+                gioitinh+=btnNu.Text;
+            }
+            return gioitinh;
         }
     }
 }

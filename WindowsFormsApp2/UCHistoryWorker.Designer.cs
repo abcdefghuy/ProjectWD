@@ -99,7 +99,7 @@
             // 
             this.rating.BorderColor = System.Drawing.Color.Black;
             this.rating.Location = new System.Drawing.Point(86, 209);
-            this.rating.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rating.Margin = new System.Windows.Forms.Padding(4);
             this.rating.Name = "rating";
             this.rating.RatingColor = System.Drawing.Color.Yellow;
             this.rating.ReadOnly = true;
@@ -111,7 +111,7 @@
             this.ptb_avt.Image = ((System.Drawing.Image)(resources.GetObject("ptb_avt.Image")));
             this.ptb_avt.ImageRotate = 0F;
             this.ptb_avt.Location = new System.Drawing.Point(45, -1);
-            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4);
             this.ptb_avt.Name = "ptb_avt";
             this.ptb_avt.Size = new System.Drawing.Size(168, 144);
             this.ptb_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,7 +143,7 @@
             this.btn_chitiet.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F);
             this.btn_chitiet.ForeColor = System.Drawing.Color.White;
             this.btn_chitiet.Location = new System.Drawing.Point(58, 314);
-            this.btn_chitiet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_chitiet.Margin = new System.Windows.Forms.Padding(4);
             this.btn_chitiet.Name = "btn_chitiet";
             this.btn_chitiet.ShadowDecoration.BorderRadius = 20;
             this.btn_chitiet.ShadowDecoration.Enabled = true;
@@ -166,7 +166,7 @@
             this.Controls.Add(this.lbl_tienthanhtoan);
             this.Controls.Add(this.lbl_name);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCHistoryWorker";
             this.Size = new System.Drawing.Size(259, 369);
             this.Click += new System.EventHandler(this.UCHistoryWorker_Click);

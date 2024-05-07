@@ -1340,3 +1340,8 @@ D:\UTE2\HOCKI2\anotherProject\Project_Tuan15\ProjectWD\WindowsFormsApp2\obj\Debu
 D:\UTE2\HOCKI2\anotherProject\Project_Tuan15\ProjectWD\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 D:\UTE2\HOCKI2\anotherProject\Project_Tuan15\ProjectWD\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 D:\UTE2\HOCKI2\anotherProject\Project_Tuan15\ProjectWD\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.PostDetailForm.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.PostDetailWorkerForm.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.PostForm.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.PostWorkerForm.resources
+D:\Project_tuan13\Project_tuan13\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UCPost.resources

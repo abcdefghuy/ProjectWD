@@ -41,6 +41,7 @@
             this.btn_chitiet = new Guna.UI2.WinForms.Guna2Button();
             this.txb_mota = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.lbl_DiaChi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             // 
             this.lblRating.AutoSize = true;
             this.lblRating.Font = new System.Drawing.Font("UTM Alberta Heavy", 10F);
-            this.lblRating.Location = new System.Drawing.Point(196, 194);
+            this.lblRating.Location = new System.Drawing.Point(180, 197);
             this.lblRating.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRating.Name = "lblRating";
             this.lblRating.Size = new System.Drawing.Size(82, 23);
@@ -64,7 +65,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("UTM Alberta Heavy", 10F);
-            this.lblName.Location = new System.Drawing.Point(196, 31);
+            this.lblName.Location = new System.Drawing.Point(180, 12);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(66, 23);
@@ -75,7 +76,7 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("UTM Alberta Heavy", 10F);
-            this.lblPhone.Location = new System.Drawing.Point(196, 73);
+            this.lblPhone.Location = new System.Drawing.Point(180, 42);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(116, 23);
@@ -85,8 +86,8 @@
             // rating
             // 
             this.rating.BorderColor = System.Drawing.Color.Black;
-            this.rating.Location = new System.Drawing.Point(285, 186);
-            this.rating.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rating.Location = new System.Drawing.Point(270, 195);
+            this.rating.Margin = new System.Windows.Forms.Padding(4);
             this.rating.Name = "rating";
             this.rating.RatingColor = System.Drawing.Color.Yellow;
             this.rating.ReadOnly = true;
@@ -98,7 +99,7 @@
             this.ptb_avt.Image = ((System.Drawing.Image)(resources.GetObject("ptb_avt.Image")));
             this.ptb_avt.ImageRotate = 0F;
             this.ptb_avt.Location = new System.Drawing.Point(4, 4);
-            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4);
             this.ptb_avt.Name = "ptb_avt";
             this.ptb_avt.Size = new System.Drawing.Size(168, 144);
             this.ptb_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,7 +110,7 @@
             // 
             this.lbl_tiencong.AutoSize = true;
             this.lbl_tiencong.Font = new System.Drawing.Font("UTM Alberta Heavy", 10F);
-            this.lbl_tiencong.Location = new System.Drawing.Point(196, 150);
+            this.lbl_tiencong.Location = new System.Drawing.Point(180, 166);
             this.lbl_tiencong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_tiencong.Name = "lbl_tiencong";
             this.lbl_tiencong.Size = new System.Drawing.Size(88, 23);
@@ -120,7 +121,7 @@
             // 
             this.lbl_kinhnghiem.AutoSize = true;
             this.lbl_kinhnghiem.Font = new System.Drawing.Font("UTM Alberta Heavy", 10F);
-            this.lbl_kinhnghiem.Location = new System.Drawing.Point(196, 112);
+            this.lbl_kinhnghiem.Location = new System.Drawing.Point(180, 134);
             this.lbl_kinhnghiem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_kinhnghiem.Name = "lbl_kinhnghiem";
             this.lbl_kinhnghiem.Size = new System.Drawing.Size(109, 23);
@@ -137,7 +138,7 @@
             this.btn_chitiet.Font = new System.Drawing.Font("UTM Alberta Heavy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_chitiet.ForeColor = System.Drawing.Color.White;
             this.btn_chitiet.Location = new System.Drawing.Point(17, 176);
-            this.btn_chitiet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_chitiet.Margin = new System.Windows.Forms.Padding(4);
             this.btn_chitiet.Name = "btn_chitiet";
             this.btn_chitiet.Size = new System.Drawing.Size(143, 44);
             this.btn_chitiet.TabIndex = 18;
@@ -159,7 +160,7 @@
             this.txb_mota.Font = new System.Drawing.Font("UTM Alberta Heavy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_mota.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_mota.Location = new System.Drawing.Point(17, 238);
-            this.txb_mota.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txb_mota.Margin = new System.Windows.Forms.Padding(5);
             this.txb_mota.Multiline = true;
             this.txb_mota.Name = "txb_mota";
             this.txb_mota.PasswordChar = '\0';
@@ -184,11 +185,21 @@
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // lbl_DiaChi
+            // 
+            this.lbl_DiaChi.Font = new System.Drawing.Font("UTM Alberta Heavy", 10F);
+            this.lbl_DiaChi.Location = new System.Drawing.Point(180, 65);
+            this.lbl_DiaChi.Name = "lbl_DiaChi";
+            this.lbl_DiaChi.Size = new System.Drawing.Size(261, 58);
+            this.lbl_DiaChi.TabIndex = 20;
+            this.lbl_DiaChi.Text = "Địa chỉ";
+            // 
             // UCWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lbl_DiaChi);
             this.Controls.Add(this.txb_mota);
             this.Controls.Add(this.btn_chitiet);
             this.Controls.Add(this.rating);
@@ -199,7 +210,7 @@
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.lblName);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCWorker";
             this.Size = new System.Drawing.Size(464, 445);
             this.Load += new System.EventHandler(this.UCWorker_Load);
@@ -223,5 +234,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_chitiet;
         private Guna.UI2.WinForms.Guna2TextBox txb_mota;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
+        private System.Windows.Forms.Label lbl_DiaChi;
     }
 }

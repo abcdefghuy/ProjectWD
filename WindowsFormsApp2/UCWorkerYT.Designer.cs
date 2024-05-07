@@ -36,14 +36,15 @@
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.lbl_DiaChi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).BeginInit();
             this.SuspendLayout();
             // 
             // rating
             // 
             this.rating.BorderColor = System.Drawing.Color.Black;
-            this.rating.Location = new System.Drawing.Point(101, 280);
-            this.rating.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rating.Location = new System.Drawing.Point(116, 282);
+            this.rating.Margin = new System.Windows.Forms.Padding(4);
             this.rating.Name = "rating";
             this.rating.RatingColor = System.Drawing.Color.Yellow;
             this.rating.ReadOnly = true;
@@ -55,7 +56,7 @@
             this.ptb_avt.Image = ((System.Drawing.Image)(resources.GetObject("ptb_avt.Image")));
             this.ptb_avt.ImageRotate = 0F;
             this.ptb_avt.Location = new System.Drawing.Point(61, 4);
-            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4);
             this.ptb_avt.Name = "ptb_avt";
             this.ptb_avt.Size = new System.Drawing.Size(168, 144);
             this.ptb_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -66,7 +67,7 @@
             // 
             this.lblRating.AutoSize = true;
             this.lblRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRating.Location = new System.Drawing.Point(19, 288);
+            this.lblRating.Location = new System.Drawing.Point(19, 282);
             this.lblRating.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRating.Name = "lblRating";
             this.lblRating.Size = new System.Drawing.Size(70, 18);
@@ -77,7 +78,7 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(19, 207);
+            this.lblPhone.Location = new System.Drawing.Point(19, 200);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(98, 18);
@@ -100,17 +101,26 @@
             this.guna2Elipse1.BorderRadius = 15;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // lbl_DiaChi
+            // 
+            this.lbl_DiaChi.Location = new System.Drawing.Point(22, 230);
+            this.lbl_DiaChi.Name = "lbl_DiaChi";
+            this.lbl_DiaChi.Size = new System.Drawing.Size(254, 49);
+            this.lbl_DiaChi.TabIndex = 14;
+            this.lbl_DiaChi.Text = "Địa chỉ: ";
+            // 
             // UCWorkerYT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.lbl_DiaChi);
             this.Controls.Add(this.rating);
             this.Controls.Add(this.ptb_avt);
             this.Controls.Add(this.lblRating);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCWorkerYT";
             this.Size = new System.Drawing.Size(280, 320);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).EndInit();
@@ -127,5 +137,6 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblName;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Label lbl_DiaChi;
     }
 }

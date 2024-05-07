@@ -37,6 +37,11 @@ namespace WindowsFormsApp2
         {
             get => rating; set => rating = value;
         }
+        public Label LblDiaChi
+        {
+            get => lbl_DiaChi; set => lbl_DiaChi = value;   
+        }
+
         public string WorkerID { get => workerID; set => workerID = value; }
         public Guna2PictureBox Ptb_avt { get => ptb_avt; set => ptb_avt = value; }
         public Guna2TextBox MoTa { get => txb_mota;set=> txb_mota = value; }

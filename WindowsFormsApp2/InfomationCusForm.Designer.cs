@@ -276,7 +276,7 @@
             this.btnNu.TabIndex = 27;
             this.btnNu.Text = "Nữ";
             this.btnNu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnNu.Click += new System.EventHandler(this.btnNu_Click);
+            
             // 
             // btnNam
             // 
@@ -299,7 +299,7 @@
             this.btnNam.TabIndex = 28;
             this.btnNam.Text = "Nam";
             this.btnNam.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnNam.Click += new System.EventHandler(this.btnNam_Click);
+            
             // 
             // btnSave
             // 
