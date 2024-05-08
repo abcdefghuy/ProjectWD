@@ -37,8 +37,10 @@ namespace WindowsFormsApp2
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            string lydo = cbSelect.Text + txbKhac.Text;
+            string lydo = cbSelect.Text + txbKhac.Text;           
             UserDAO.Huy_Worker(userID,workerID,Cv,ma,lydo);
+            ActivityForm.userID= UserID;
+            UserForm.instance.OpenForm(new ActivityForm());
             this.Close();
         }
 

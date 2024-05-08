@@ -41,8 +41,8 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.flContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.cbtn_yeuThich = new Guna.UI2.WinForms.Guna2CheckBox();
             this.lbl_congviec = new System.Windows.Forms.Label();
+            this.btn_huyyeuthich = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -54,10 +54,9 @@
             // 
             this.lbl_date.AutoSize = true;
             this.lbl_date.Font = new System.Drawing.Font("UTM Alberta Heavy", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_date.Location = new System.Drawing.Point(51, 206);
-            this.lbl_date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_date.Location = new System.Drawing.Point(38, 167);
             this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(77, 32);
+            this.lbl_date.Size = new System.Drawing.Size(61, 25);
             this.lbl_date.TabIndex = 13;
             this.lbl_date.Text = "Ngày:";
             // 
@@ -65,10 +64,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("UTM Alberta Heavy", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(51, 261);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(38, 212);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 32);
+            this.label3.Size = new System.Drawing.Size(92, 25);
             this.label3.TabIndex = 14;
             this.label3.Text = "Đánh giá:";
             // 
@@ -76,10 +74,9 @@
             // 
             this.lbl_thanhtoan.AutoSize = true;
             this.lbl_thanhtoan.Font = new System.Drawing.Font("UTM Alberta Heavy", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_thanhtoan.Location = new System.Drawing.Point(51, 149);
-            this.lbl_thanhtoan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_thanhtoan.Location = new System.Drawing.Point(38, 121);
             this.lbl_thanhtoan.Name = "lbl_thanhtoan";
-            this.lbl_thanhtoan.Size = new System.Drawing.Size(222, 32);
+            this.lbl_thanhtoan.Size = new System.Drawing.Size(181, 25);
             this.lbl_thanhtoan.TabIndex = 15;
             this.lbl_thanhtoan.Text = "Tiền đã thanh toán:";
             // 
@@ -87,10 +84,9 @@
             // 
             this.lbl_name.AutoSize = true;
             this.lbl_name.Font = new System.Drawing.Font("UTM Alberta Heavy", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(51, 44);
-            this.lbl_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_name.Location = new System.Drawing.Point(38, 36);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(93, 32);
+            this.lbl_name.Size = new System.Drawing.Size(74, 25);
             this.lbl_name.TabIndex = 16;
             this.lbl_name.Text = "Họ tên:";
             // 
@@ -98,11 +94,10 @@
             // 
             this.rating.BackColor = System.Drawing.Color.White;
             this.rating.BorderColor = System.Drawing.Color.Black;
-            this.rating.Location = new System.Drawing.Point(199, 262);
-            this.rating.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rating.Location = new System.Drawing.Point(149, 213);
             this.rating.Name = "rating";
             this.rating.RatingColor = System.Drawing.Color.Yellow;
-            this.rating.Size = new System.Drawing.Size(160, 34);
+            this.rating.Size = new System.Drawing.Size(120, 28);
             this.rating.TabIndex = 17;
             // 
             // txb_danhgia
@@ -119,14 +114,14 @@
             this.txb_danhgia.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_danhgia.ForeColor = System.Drawing.Color.Black;
             this.txb_danhgia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_danhgia.Location = new System.Drawing.Point(56, 313);
-            this.txb_danhgia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txb_danhgia.Location = new System.Drawing.Point(42, 254);
+            this.txb_danhgia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txb_danhgia.Multiline = true;
             this.txb_danhgia.Name = "txb_danhgia";
             this.txb_danhgia.PasswordChar = '\0';
             this.txb_danhgia.PlaceholderText = "";
             this.txb_danhgia.SelectedText = "";
-            this.txb_danhgia.Size = new System.Drawing.Size(620, 134);
+            this.txb_danhgia.Size = new System.Drawing.Size(465, 109);
             this.txb_danhgia.TabIndex = 18;
             // 
             // btn_danhgia
@@ -134,19 +129,18 @@
             this.btn_danhgia.Animated = true;
             this.btn_danhgia.AutoRoundedCorners = true;
             this.btn_danhgia.BackColor = System.Drawing.Color.Transparent;
-            this.btn_danhgia.BorderRadius = 20;
+            this.btn_danhgia.BorderRadius = 16;
             this.btn_danhgia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_danhgia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_danhgia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_danhgia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_danhgia.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_danhgia.ForeColor = System.Drawing.Color.White;
-            this.btn_danhgia.Location = new System.Drawing.Point(481, 769);
-            this.btn_danhgia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_danhgia.Location = new System.Drawing.Point(401, 625);
             this.btn_danhgia.Name = "btn_danhgia";
             this.btn_danhgia.ShadowDecoration.BorderRadius = 26;
             this.btn_danhgia.ShadowDecoration.Enabled = true;
-            this.btn_danhgia.Size = new System.Drawing.Size(141, 43);
+            this.btn_danhgia.Size = new System.Drawing.Size(106, 35);
             this.btn_danhgia.TabIndex = 19;
             this.btn_danhgia.Text = "Gửi";
             this.btn_danhgia.Click += new System.EventHandler(this.btn_danhgia_Click);
@@ -156,7 +150,7 @@
             this.btnAddPicture.Animated = true;
             this.btnAddPicture.AutoRoundedCorners = true;
             this.btnAddPicture.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddPicture.BorderRadius = 20;
+            this.btnAddPicture.BorderRadius = 16;
             this.btnAddPicture.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddPicture.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddPicture.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -164,12 +158,11 @@
             this.btnAddPicture.FillColor = System.Drawing.Color.Silver;
             this.btnAddPicture.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
             this.btnAddPicture.ForeColor = System.Drawing.Color.Black;
-            this.btnAddPicture.Location = new System.Drawing.Point(140, 769);
-            this.btnAddPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddPicture.Location = new System.Drawing.Point(203, 625);
             this.btnAddPicture.Name = "btnAddPicture";
             this.btnAddPicture.ShadowDecoration.BorderRadius = 26;
             this.btnAddPicture.ShadowDecoration.Enabled = true;
-            this.btnAddPicture.Size = new System.Drawing.Size(141, 43);
+            this.btnAddPicture.Size = new System.Drawing.Size(106, 35);
             this.btnAddPicture.TabIndex = 19;
             this.btnAddPicture.Text = "Thêm ảnh";
             this.btnAddPicture.Click += new System.EventHandler(this.btnAddPicture_Click);
@@ -185,12 +178,11 @@
             this.btnClose.ImageRotate = 0F;
             this.btnClose.ImageSize = new System.Drawing.Size(20, 20);
             this.btnClose.IndicateFocus = true;
-            this.btnClose.Location = new System.Drawing.Point(675, 15);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Location = new System.Drawing.Point(506, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.Image = global::WindowsFormsApp2.Properties.Resources.close2;
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClose.Size = new System.Drawing.Size(47, 44);
+            this.btnClose.Size = new System.Drawing.Size(35, 36);
             this.btnClose.TabIndex = 12;
             this.btnClose.UseTransparentBackground = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -199,54 +191,55 @@
             // 
             this.flContainer.AutoScroll = true;
             this.flContainer.AutoSize = true;
-            this.flContainer.Location = new System.Drawing.Point(57, 454);
-            this.flContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flContainer.Location = new System.Drawing.Point(43, 369);
             this.flContainer.Name = "flContainer";
-            this.flContainer.Size = new System.Drawing.Size(619, 193);
+            this.flContainer.Size = new System.Drawing.Size(464, 157);
             this.flContainer.TabIndex = 20;
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // cbtn_yeuThich
-            // 
-            this.cbtn_yeuThich.AutoSize = true;
-            this.cbtn_yeuThich.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbtn_yeuThich.CheckedState.BorderRadius = 0;
-            this.cbtn_yeuThich.CheckedState.BorderThickness = 0;
-            this.cbtn_yeuThich.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbtn_yeuThich.Font = new System.Drawing.Font("UTM Alberta Heavy", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbtn_yeuThich.Location = new System.Drawing.Point(57, 670);
-            this.cbtn_yeuThich.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cbtn_yeuThich.Name = "cbtn_yeuThich";
-            this.cbtn_yeuThich.Size = new System.Drawing.Size(143, 21);
-            this.cbtn_yeuThich.TabIndex = 21;
-            this.cbtn_yeuThich.Text = "Đánh dấu yêu thích";
-            this.cbtn_yeuThich.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cbtn_yeuThich.UncheckedState.BorderRadius = 0;
-            this.cbtn_yeuThich.UncheckedState.BorderThickness = 0;
-            this.cbtn_yeuThich.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cbtn_yeuThich.CheckedChanged += new System.EventHandler(this.cbtn_yeuThich_CheckedChanged);
-            // 
             // lbl_congviec
             // 
             this.lbl_congviec.AutoSize = true;
             this.lbl_congviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_congviec.Location = new System.Drawing.Point(51, 95);
-            this.lbl_congviec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_congviec.Location = new System.Drawing.Point(38, 77);
             this.lbl_congviec.Name = "lbl_congviec";
-            this.lbl_congviec.Size = new System.Drawing.Size(125, 32);
+            this.lbl_congviec.Size = new System.Drawing.Size(99, 25);
             this.lbl_congviec.TabIndex = 22;
             this.lbl_congviec.Text = "Công việc:";
             // 
+            // btn_huyyeuthich
+            // 
+            this.btn_huyyeuthich.Animated = true;
+            this.btn_huyyeuthich.AutoRoundedCorners = true;
+            this.btn_huyyeuthich.BackColor = System.Drawing.Color.Transparent;
+            this.btn_huyyeuthich.BorderRadius = 22;
+            this.btn_huyyeuthich.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.btn_huyyeuthich.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_huyyeuthich.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_huyyeuthich.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_huyyeuthich.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_huyyeuthich.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn_huyyeuthich.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
+            this.btn_huyyeuthich.ForeColor = System.Drawing.Color.Black;
+            this.btn_huyyeuthich.Location = new System.Drawing.Point(42, 625);
+            this.btn_huyyeuthich.Name = "btn_huyyeuthich";
+            this.btn_huyyeuthich.ShadowDecoration.BorderRadius = 26;
+            this.btn_huyyeuthich.ShadowDecoration.Enabled = true;
+            this.btn_huyyeuthich.Size = new System.Drawing.Size(121, 47);
+            this.btn_huyyeuthich.TabIndex = 23;
+            this.btn_huyyeuthich.Text = "Yêu thích";
+            this.btn_huyyeuthich.Click += new System.EventHandler(this.btn_huyyeuthich_Click);
+            // 
             // HistoryWorker2Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 860);
+            this.ClientSize = new System.Drawing.Size(553, 699);
+            this.Controls.Add(this.btn_huyyeuthich);
             this.Controls.Add(this.lbl_congviec);
-            this.Controls.Add(this.cbtn_yeuThich);
             this.Controls.Add(this.flContainer);
             this.Controls.Add(this.btnAddPicture);
             this.Controls.Add(this.btn_danhgia);
@@ -258,7 +251,6 @@
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "HistoryWorker2Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HistoryWorker2Form";
@@ -282,7 +274,7 @@
         private Guna.UI2.WinForms.Guna2Button btnAddPicture;
         private System.Windows.Forms.FlowLayoutPanel flContainer;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private Guna.UI2.WinForms.Guna2CheckBox cbtn_yeuThich;
         private System.Windows.Forms.Label lbl_congviec;
+        private Guna.UI2.WinForms.Guna2Button btn_huyyeuthich;
     }
 }

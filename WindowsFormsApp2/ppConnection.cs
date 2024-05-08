@@ -24,11 +24,11 @@ namespace WindowsFormsApp2
                 string sqlStr = sqlString;
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
                 if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Da thuc hien hanh dong thanh cong");
+                    MessageBox.Show("Đã thực hiện hành động thành công");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("thuc hien hanh dong that bai" + ex);
+                MessageBox.Show("Thực hiện hành động thất bại" + ex);
             }
             finally
             {

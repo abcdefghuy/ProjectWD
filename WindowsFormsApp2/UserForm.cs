@@ -13,14 +13,16 @@ namespace WindowsFormsApp2
 {
     public partial class UserForm : Form
     {
-        public static string UserID;
+        public static string UserID ;
+        public static UserForm instance;
         public UserForm()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private Form currentFormChild;
-        private void OpenForm(Form form)
+        public void OpenForm(Form form)
         {
             if (currentFormChild != null)
             {
@@ -35,6 +37,7 @@ namespace WindowsFormsApp2
             form.BringToFront();
             form.Show();
         }
+        
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -61,6 +64,7 @@ namespace WindowsFormsApp2
 
         private void btnService_Click(object sender, EventArgs e)
         {
+            ServiceForm.UserID=userID_lbl.Text;
             OpenForm(new ServiceForm());
         }
 

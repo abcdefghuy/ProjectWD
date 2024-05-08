@@ -42,9 +42,29 @@ namespace WindowsFormsApp2
         {
             this.Close();
         }
+        private void yeuThich(object sender, EventArgs e)
+        {
+            UserDAO.DanhDau_ThoYT(UserID, workerID);
+        }
+        private void BoYeuThich(object sender, EventArgs e)
+        {
+            UserDAO.Xoa_ThoYT(userID, workerID);
+        }
 
         private void HistoryWorker2Form_Load(object sender, EventArgs e)
         {
+            if (UserDAO.checkYeuThich(UserID, WorkerID))
+            {
+                btn_huyyeuthich.Text = "Hủy yêu thích";
+                btn_huyyeuthich.FillColor = Color.Red;
+                btn_huyyeuthich.Click += BoYeuThich;
+            }
+            else
+            {
+                btn_huyyeuthich.Text = "Yêu thích";
+                btn_huyyeuthich.FillColor = Color.DodgerBlue;
+                btn_huyyeuthich.Click += yeuThich;
+            }
             //Load data worker
             Worker worker = UserDAO.History_Worker(MaDatTho);
             lbl_name.Text = "Họ tên: " + worker.Hoten;
@@ -66,7 +86,7 @@ namespace WindowsFormsApp2
                 }
             }
 
-        }
+        }       
 
         private void btn_danhgia_Click(object sender, EventArgs e)
         {
@@ -103,12 +123,11 @@ namespace WindowsFormsApp2
                     }
                 }
                 conn.Close();
-                if (cbtn_yeuThich.Checked)
-                {
-                    UserDAO.DanhDau_ThoYT(userID, workerID);
-                }
+                
                 HistoryWorker2Form_Load(sender, e);
-            }            
+            }
+            HistoryWorkerForm.userID = userID;
+            UserForm.instance.OpenForm(new HistoryWorkerForm("Customer"));
         }
         // chuyen anh sang byte[]
         public static byte[] ImageToByteArray(Image image)
@@ -225,6 +244,19 @@ namespace WindowsFormsApp2
         {
             //
         }
-        
+
+        private void btn_huyyeuthich_Click(object sender, EventArgs e)
+        {
+            if (btn_huyyeuthich.FillColor == Color.DodgerBlue)
+            {
+                btn_huyyeuthich.Text = "Hủy Yêu thích";
+                btn_huyyeuthich.FillColor = Color.Red;
+            }
+            else
+            {
+                btn_huyyeuthich.Text = "Yêu thích";
+                btn_huyyeuthich.FillColor = Color.DodgerBlue;
+            }
+        }
     }
 }

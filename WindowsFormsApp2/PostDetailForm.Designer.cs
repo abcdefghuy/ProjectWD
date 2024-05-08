@@ -36,15 +36,14 @@
             this.flContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_viewWorker = new Guna.UI2.WinForms.Guna2Button();
             this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btn_chinhsua = new Guna.UI2.WinForms.Guna2Button();
             this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
             this.panel_anh = new System.Windows.Forms.FlowLayoutPanel();
             this.lbl_Diachi = new System.Windows.Forms.Label();
+            this.lbl_ngaylamviec = new System.Windows.Forms.Label();
             this.lbl_Congviec = new System.Windows.Forms.Label();
             this.ptb_avt = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.txb_chitiet = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.lbl_ngaylamviec = new System.Windows.Forms.Label();
             this.panelPage1.SuspendLayout();
             this.panelPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).BeginInit();
@@ -60,7 +59,6 @@
             this.panelPage1.Controls.Add(this.panelPage2);
             this.panelPage1.Controls.Add(this.btn_viewWorker);
             this.panelPage1.Controls.Add(this.btnBack);
-            this.panelPage1.Controls.Add(this.btn_chinhsua);
             this.panelPage1.Controls.Add(this.btn_xoa);
             this.panelPage1.Controls.Add(this.panel_anh);
             this.panelPage1.Controls.Add(this.lbl_Diachi);
@@ -69,18 +67,18 @@
             this.panelPage1.Controls.Add(this.ptb_avt);
             this.panelPage1.Controls.Add(this.txb_chitiet);
             this.panelPage1.Controls.Add(this.lbl_name);
-            this.panelPage1.Location = new System.Drawing.Point(13, 13);
+            this.panelPage1.Location = new System.Drawing.Point(12, 12);
             this.panelPage1.Name = "panelPage1";
-            this.panelPage1.Size = new System.Drawing.Size(595, 758);
+            this.panelPage1.Size = new System.Drawing.Size(595, 587);
             this.panelPage1.TabIndex = 0;
             // 
             // panelPage2
             // 
             this.panelPage2.Controls.Add(this.btnBack2);
             this.panelPage2.Controls.Add(this.flContainer);
-            this.panelPage2.Location = new System.Drawing.Point(3, 3);
+            this.panelPage2.Location = new System.Drawing.Point(3, 0);
             this.panelPage2.Name = "panelPage2";
-            this.panelPage2.Size = new System.Drawing.Size(596, 758);
+            this.panelPage2.Size = new System.Drawing.Size(596, 587);
             this.panelPage2.TabIndex = 58;
             // 
             // btnBack2
@@ -105,9 +103,9 @@
             // flContainer
             // 
             this.flContainer.AutoScroll = true;
-            this.flContainer.Location = new System.Drawing.Point(3, 83);
+            this.flContainer.Location = new System.Drawing.Point(3, 60);
             this.flContainer.Name = "flContainer";
-            this.flContainer.Size = new System.Drawing.Size(589, 675);
+            this.flContainer.Size = new System.Drawing.Size(589, 504);
             this.flContainer.TabIndex = 0;
             // 
             // btn_viewWorker
@@ -151,26 +149,6 @@
             this.btnBack.UseTransparentBackground = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btn_chinhsua
-            // 
-            this.btn_chinhsua.Animated = true;
-            this.btn_chinhsua.AutoRoundedCorners = true;
-            this.btn_chinhsua.BackColor = System.Drawing.Color.Transparent;
-            this.btn_chinhsua.BorderRadius = 21;
-            this.btn_chinhsua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_chinhsua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_chinhsua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_chinhsua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_chinhsua.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
-            this.btn_chinhsua.ForeColor = System.Drawing.Color.White;
-            this.btn_chinhsua.Location = new System.Drawing.Point(402, 688);
-            this.btn_chinhsua.Name = "btn_chinhsua";
-            this.btn_chinhsua.Size = new System.Drawing.Size(180, 45);
-            this.btn_chinhsua.TabIndex = 55;
-            this.btn_chinhsua.Text = "Chỉnh Sửa";
-            this.btn_chinhsua.UseTransparentBackground = true;
-            this.btn_chinhsua.Click += new System.EventHandler(this.btn_chinhsua_Click);
-            // 
             // btn_xoa
             // 
             this.btn_xoa.Animated = true;
@@ -184,7 +162,7 @@
             this.btn_xoa.FillColor = System.Drawing.Color.Red;
             this.btn_xoa.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
             this.btn_xoa.ForeColor = System.Drawing.Color.White;
-            this.btn_xoa.Location = new System.Drawing.Point(37, 688);
+            this.btn_xoa.Location = new System.Drawing.Point(205, 542);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(180, 45);
             this.btn_xoa.TabIndex = 54;
@@ -194,7 +172,7 @@
             // 
             // panel_anh
             // 
-            this.panel_anh.BackColor = System.Drawing.Color.Transparent;
+            this.panel_anh.BackColor = System.Drawing.Color.Gainsboro;
             this.panel_anh.Location = new System.Drawing.Point(24, 317);
             this.panel_anh.Name = "panel_anh";
             this.panel_anh.Size = new System.Drawing.Size(558, 138);
@@ -209,6 +187,16 @@
             this.lbl_Diachi.Size = new System.Drawing.Size(51, 17);
             this.lbl_Diachi.TabIndex = 51;
             this.lbl_Diachi.Text = "Dia Chi";
+            // 
+            // lbl_ngaylamviec
+            // 
+            this.lbl_ngaylamviec.AutoSize = true;
+            this.lbl_ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ngaylamviec.Location = new System.Drawing.Point(258, 60);
+            this.lbl_ngaylamviec.Name = "lbl_ngaylamviec";
+            this.lbl_ngaylamviec.Size = new System.Drawing.Size(95, 17);
+            this.lbl_ngaylamviec.TabIndex = 52;
+            this.lbl_ngaylamviec.Text = "Ngay làm việc:";
             // 
             // lbl_Congviec
             // 
@@ -272,22 +260,12 @@
             this.lbl_name.TabIndex = 48;
             this.lbl_name.Text = "Họ Tên";
             // 
-            // lbl_ngaylamviec
-            // 
-            this.lbl_ngaylamviec.AutoSize = true;
-            this.lbl_ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ngaylamviec.Location = new System.Drawing.Point(258, 60);
-            this.lbl_ngaylamviec.Name = "lbl_ngaylamviec";
-            this.lbl_ngaylamviec.Size = new System.Drawing.Size(95, 17);
-            this.lbl_ngaylamviec.TabIndex = 52;
-            this.lbl_ngaylamviec.Text = "Ngay làm việc:";
-            // 
             // PostDetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(620, 783);
+            this.ClientSize = new System.Drawing.Size(620, 619);
             this.Controls.Add(this.panelPage1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -310,7 +288,6 @@
         private Guna.UI2.WinForms.Guna2Panel panelPage2;
         private Guna.UI2.WinForms.Guna2Button btn_viewWorker;
         private Guna.UI2.WinForms.Guna2ImageButton btnBack;
-        private Guna.UI2.WinForms.Guna2Button btn_chinhsua;
         private Guna.UI2.WinForms.Guna2Button btn_xoa;
         private System.Windows.Forms.FlowLayoutPanel panel_anh;
         private System.Windows.Forms.Label lbl_Diachi;

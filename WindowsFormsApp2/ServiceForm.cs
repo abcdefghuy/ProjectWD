@@ -12,11 +12,13 @@ using System.Xml.Linq;
 using System.Globalization;
 using static ServiceStack.Script.Lisp;
 using System.IO;
+using Org.BouncyCastle.Asn1;
 
 namespace WindowsFormsApp2
 {
     public partial class ServiceForm : Form
     {
+        public static  string UserID;
         public ServiceForm()
         {
             InitializeComponent();
@@ -260,6 +262,22 @@ namespace WindowsFormsApp2
         private void label13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbtn_thoyeuthich_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbtn_thoyeuthich.Checked)
+            {
+                flContainer.Controls.Clear();
+                List<UCWorker> uc = UserDAO.ThoYeuThich(UserID, tho);
+                foreach (UCWorker x in uc)
+                    flContainer.Controls.Add(x);
+            }
+            else
+            {
+                flContainer.Controls.Clear();
+                LoadTho(tho);
+            }
         }
     }
 }

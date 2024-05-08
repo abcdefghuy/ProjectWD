@@ -19,6 +19,7 @@ using System.IO;
 using Org.BouncyCastle.Math.EC.Multiplier;
 using System.Web;
 using ServiceStack;
+using System.Reflection;
 
 namespace WindowsFormsApp2
 {   
@@ -42,7 +43,7 @@ namespace WindowsFormsApp2
         {
             string queryStr = string.Format("Select UserInfoDB.UserID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec, MaDatTho " +
                                                 "From CongViec inner join UserInfoDB on CongViec.UserID=UserInfoDB.UserID " +
-                                                "Where CongViec.WorkerID='{0}' and TrangThai!='Cho nhan' and HoTen Like '%{1}%'", workerID, username);
+                                                "Where CongViec.WorkerID='{0}' and TrangThai!='Chờ nhận' and HoTen Like '%{1}%'", workerID, username);
             return load_Tim_kiem_KhachHang(queryStr, workerID);
         }
 
@@ -50,8 +51,8 @@ namespace WindowsFormsApp2
         public static List<UCHistoryCustomer> Timkiem_Ngay(string workerID, DateTime startDay, DateTime endDay)
         {
             string queryStr = string.Format("Select UserInfoDB.UserID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec, MaDatTho  " +
-                                                "From CongViec inner join UserInfoDB on CongViec.UserID=UserInfoDB.UserID " +
-                                                "Where CongViec.WorkerID='{0}' and TrangThai!='Cho nhan' and NgayLamViec Between '{1}' and '{2}'", workerID, startDay.Date, endDay.Date);
+                                              "  From CongViec inner join UserInfoDB on CongViec.UserID = UserInfoDB.UserID "+
+                                              "  Where CongViec.WorkerID = '{0}' and TrangThai != 'Chờ nhận' and NgayLamViec Between '{1}' and '{2}'", workerID, startDay.Date, endDay.Date);
 
             return load_Tim_kiem_KhachHang(queryStr, workerID);
         }
@@ -68,19 +69,19 @@ namespace WindowsFormsApp2
         {
             string queryStr = string.Format("Select UserInfoDB.UserID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec, MaDatTho  " +
                                                 "From CongViec inner join UserInfoDB on CongViec.UserID=UserInfoDB.UserID " +
-                                                "Where CongViec.WorkerID='{0}' and TrangThai!='Cho nhan'", workerID);
+                                                "Where CongViec.WorkerID='{0}' and TrangThai!='Chờ nhận'", workerID);
             return load_Tim_kiem_KhachHang(queryStr, workerID);
         }
         // Chap nhap yeu cau dat lich
         public static void Accept_Order(string userID, string workerID,string madat)
         {
-            string queryString = string.Format("Update CongViec Set TrangThai='Da nhan' Where UserID='{0}' and WorkerID='{1}' and MaDatTho='{2}'", userID, workerID, madat);
+            string queryString = string.Format("Update CongViec Set TrangThai='Đã nhận' Where UserID='{0}' and WorkerID='{1}' and MaDatTho='{2}'", userID, workerID, madat);
             ppConnection.ThucThi(queryString);
         }
         //Tu choi yeu cau dat lich
         public static void Denine_Order(string userID, string workerID,string madat)
         {
-            string queryString = string.Format("Update CongViec Set TrangThai='Da huy' Where UserID='{0}' and WorkerID='{1}' and MaDatTho='{2}'", userID, workerID,madat);
+            string queryString = string.Format("Update CongViec Set TrangThai='Đã hủy' Where UserID='{0}' and WorkerID='{1}' and MaDatTho='{2}'", userID, workerID,madat);
             ppConnection.ThucThi(queryString);
         }
 
@@ -228,7 +229,7 @@ namespace WindowsFormsApp2
                 conn.Open();
                 string queryString = string.Format("Select HoTen, DiaChi, SDT, MaCongViec, NgayLamViec, GhiChu, CongViec.UserID, CongViec.WorkerID, Avatar, MaDatTho " +
                                                    "From CongViec inner join UserInfoDB on CongViec.UserID=UserInfoDB.UserID " +
-                                                   "Where CongViec.WorkerID='{0}' and CongViec.TrangThai='Cho nhan'", workerID);
+                                                   "Where CongViec.WorkerID='{0}' and CongViec.TrangThai='Chờ nhận'", workerID);
                 SqlCommand cmd = new SqlCommand(queryString, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -396,7 +397,7 @@ namespace WindowsFormsApp2
                 conn.Open();
                 string queryString = string.Format("Select HoTen " +
                                                     "From UserInfoDB inner join CongViec on UserInfoDB.UserID=CongViec.UserID " +
-                                                    "Where WorkerID = '{0}' and NgayLamViec = '{1}' and TrangThai='Da nhan'", WorkerForm.workerID, date.Date);
+                                                    "Where WorkerID = '{0}' and NgayLamViec = '{1}' and TrangThai='Đã nhận'", WorkerForm.workerID, date.Date);
                 SqlCommand cmd = new SqlCommand(queryString, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
@@ -428,9 +429,9 @@ namespace WindowsFormsApp2
                     UCPost uc = new UCPost("Worker");
                     uc.MaCV = reader[0].ToString();
                     uc.HoTen.Text = reader[1].ToString();
-                    uc.CongViec.Text = reader[3].ToString();
+                    uc.CongViec.Text = "Yêu cầu: "+ reader[3].ToString();
                     uc.ChiTiet.Text = reader[4].ToString();
-                    uc.NgayLamViec.Text = reader.GetDateTime(5).ToString("dd/MM/yyyy");
+                    uc.NgayLamViec.Text = "Ngày làm việc:"+ reader.GetDateTime(5).ToString("dd/MM/yyyy");
                     if (!reader.IsDBNull(2))
                     {
                         object value = reader[2];

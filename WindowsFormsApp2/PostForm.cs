@@ -13,16 +13,18 @@ namespace WindowsFormsApp2
 {
     public partial class PostForm : Form
     {
+        public static PostForm instance;
         public string role;
         public static string userID;
         private List<Image> selectedImages = new List<Image>();
         public PostForm(string r)
         {
             role = r;
+            instance = this;
             InitializeComponent();
         }
 
-        private void PostForm_Load(object sender, EventArgs e)
+        public void PostForm_Load(object sender, EventArgs e)
         {
             panelAdd.Hide();
             flContainer.Controls.Clear();
@@ -51,6 +53,7 @@ namespace WindowsFormsApp2
         {
             CongViecUser cv = new CongViecUser(DateTime.Now.ToString(), userID, CongViecBox.Text, diaChiBox.Text, chitiet_txb.Text, date_lamviec.Value, selectedImages);
             UserDAO.ThemBaiDang(cv.MaCV, cv.UserID, cv.CongViec, cv.DiaChi, cv.ChiTiet, cv.NgayLamViec, cv.ImgList);
+            PostForm_Load(sender, e);
         }
         private void btn_filterDay_Click(object sender, EventArgs e)
         {

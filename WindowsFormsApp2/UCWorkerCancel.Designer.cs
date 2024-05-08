@@ -53,10 +53,9 @@
             this.lbl_Huy.AutoSize = true;
             this.lbl_Huy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_Huy.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Huy.Location = new System.Drawing.Point(16, 258);
-            this.lbl_Huy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Huy.Location = new System.Drawing.Point(12, 210);
             this.lbl_Huy.Name = "lbl_Huy";
-            this.lbl_Huy.Size = new System.Drawing.Size(157, 20);
+            this.lbl_Huy.Size = new System.Drawing.Size(125, 16);
             this.lbl_Huy.TabIndex = 14;
             this.lbl_Huy.Text = "Số khách Hàng đã hủy";
             // 
@@ -64,10 +63,9 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(16, 214);
-            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhone.Location = new System.Drawing.Point(12, 174);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(100, 20);
+            this.lblPhone.Size = new System.Drawing.Size(80, 16);
             this.lblPhone.TabIndex = 15;
             this.lblPhone.Text = "Số điện thoại:";
             // 
@@ -75,10 +73,9 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(16, 173);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(12, 141);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(57, 20);
+            this.lblName.Size = new System.Drawing.Size(45, 16);
             this.lblName.TabIndex = 16;
             this.lblName.Text = "Họ tên:";
             // 
@@ -86,26 +83,26 @@
             // 
             this.ptb_avt.Image = ((System.Drawing.Image)(resources.GetObject("ptb_avt.Image")));
             this.ptb_avt.ImageRotate = 0F;
-            this.ptb_avt.Location = new System.Drawing.Point(61, 4);
-            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptb_avt.Location = new System.Drawing.Point(46, 3);
             this.ptb_avt.Name = "ptb_avt";
-            this.ptb_avt.Size = new System.Drawing.Size(168, 144);
+            this.ptb_avt.Size = new System.Drawing.Size(126, 117);
             this.ptb_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_avt.TabIndex = 17;
             this.ptb_avt.TabStop = false;
             // 
             // UCWorkerCancel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ptb_avt);
             this.Controls.Add(this.lbl_Huy);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "UCWorkerCancel";
-            this.Size = new System.Drawing.Size(291, 336);
+            this.Size = new System.Drawing.Size(218, 273);
             this.Load += new System.EventHandler(this.UCWorkerCancel_Load);
+            this.Click += new System.EventHandler(this.UCWorkerCancel_Click);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -32,6 +32,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.flContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.lblNotifica = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -53,18 +54,30 @@
             this.guna2Elipse2.BorderRadius = 20;
             this.guna2Elipse2.TargetControl = this.flContainer;
             // 
+            // lblNotifica
+            // 
+            this.lblNotifica.AutoSize = true;
+            this.lblNotifica.Font = new System.Drawing.Font("UTM Alberta Heavy", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotifica.Location = new System.Drawing.Point(39, 7);
+            this.lblNotifica.Name = "lblNotifica";
+            this.lblNotifica.Size = new System.Drawing.Size(0, 28);
+            this.lblNotifica.TabIndex = 0;
+            this.lblNotifica.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // NotificationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(1081, 684);
+            this.Controls.Add(this.lblNotifica);
             this.Controls.Add(this.flContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NotificationForm";
             this.Text = "NotificationForm";
             this.Load += new System.EventHandler(this.NotificationForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -73,5 +86,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.FlowLayoutPanel flContainer;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private System.Windows.Forms.Label lblNotifica;
     }
 }

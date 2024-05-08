@@ -48,7 +48,7 @@ namespace WindowsFormsApp2
         {
             string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec, MaDatTho " +
                                                 "From CongViec inner join WorkerInfoDB on CongViec.WorkerID=WorkerInfoDB.WorkerID " +
-                                                "Where UserID='{0}' and TrangThai!='Cho nhan'", userID);
+                                                "Where UserID='{0}' and TrangThai!='Chờ nhận'", userID);
             return load_Tim_Kiem_Tho(queryStr, userID);
         }
         //Load danh sách công việc thợ
@@ -86,7 +86,7 @@ namespace WindowsFormsApp2
         {
             string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec,MaDatTho " +
                                                 "From CongViec inner join WorkerInfoDB on CongViec.WorkerID=WorkerInfoDB.WorkerID " +
-                                                "Where CongViec.UserID='{0}' and TrangThai!='Cho nhan' and HoTen Like '%{1}%'", userID, tentho);
+                                                "Where CongViec.UserID='{0}' and TrangThai!='Chờ nhận' and HoTen Like '%{1}%'", userID, tentho);
 
             return load_Tim_Kiem_Tho(queryStr, userID);
         }
@@ -96,7 +96,7 @@ namespace WindowsFormsApp2
         {
             string queryStr = string.Format("Select WorkerInfoDB.WorkerID, NgayLamViec, TrangThai, ThanhToan, CongViec.Rate, HoTen, Avatar, MaCongViec,MaDatTho " +
                                                 "From CongViec inner join WorkerInfoDB on CongViec.WorkerID=WorkerInfoDB.WorkerID " +
-                                                "Where CongViec.UserID='{0}' and TrangThai!='Cho nhan' and NgayLamViec Between '{1}' and '{2}'", userID, startDay.Date, endDay.Date);
+                                                "Where CongViec.UserID='{0}' and TrangThai!='Chờ nhận' and NgayLamViec Between '{1}' and '{2}'", userID, startDay, endDay);
 
             return load_Tim_Kiem_Tho(queryStr, userID);
         }
@@ -276,7 +276,7 @@ namespace WindowsFormsApp2
                 //load anh danh gia
                 foreach (UCComment comment in comments)
                 {
-                    string queryImg = string.Format("Select * From ImgDanhGia Where UserID='{0}' and WorkerID='{1}' and MaCongViec='{2}' and MaDon='{3}'", comment.UserID, comment.WorkerID, comment.CongViec,comment.Ma);
+                    string queryImg = string.Format("Select * From ImgDanhGia Where UserID='{0}' and WorkerID='{1}' and MaCongViec='{2}' and MaDon='{3}'", comment.UserID, comment.WorkerID, comment.CongViec, comment.Ma);
                     List<PictureBox> listImg = new List<PictureBox>();
                     SqlCommand cmd2 = new SqlCommand(queryImg, conn);
                     SqlDataReader reader2 = cmd2.ExecuteReader();
@@ -369,7 +369,7 @@ namespace WindowsFormsApp2
         public static void Danhgia_Worker(int rate, string danhgia, string workerID, string userID, string madat)
         {
             int thanhtoan = ThanhToan_Worker(workerID, userID, madat);
-            string queryString = string.Format("Update CongViec Set Rate='{0}', DanhGia='{1}', TrangThai = 'Da hoan thanh', ThanhToan = '{3}' " +
+            string queryString = string.Format("Update CongViec Set Rate='{0}', DanhGia='{1}', TrangThai = 'Đã hoàn thành', ThanhToan = '{3}' " +
                                                     " Where MaDatTho='{2}'", rate, danhgia, madat, thanhtoan);
             ppConnection.ThucThi(queryString);
             Average_Rate(workerID);
@@ -385,7 +385,7 @@ namespace WindowsFormsApp2
             try
             {
                 conn.Open();
-                string queryString = string.Format("Insert Into CongViec Values('{0}', '{1}', '{2}', '{3}', '{4}','Cho nhan', 0, 0, '{5}', ' ', '{6}', '{7}','{8}')",
+                string queryString = string.Format("Insert Into CongViec Values('{0}', '{1}', '{2}', '{3}', '{4}','Chờ nhận', 0, 0, '{5}', ' ', '{6}', '{7}','{8}')",
                                                     userID, congviec, ngaylamviec.Date, giolamviec, ghichi, workerID, diachi, giatien, uniqueOrderID);
                 SqlCommand cmd = new SqlCommand(queryString, conn);
                 if (cmd.ExecuteNonQuery() > 0)
@@ -453,7 +453,7 @@ namespace WindowsFormsApp2
                     uc.WorkerID = reader.GetString(0);
                     uc.LblName.Text = "Họ tên: " + reader.GetString(1);
                     uc.LblPhone.Text = "Số điện thoại: " + reader[2].ToString();
-                    uc.LblDiaChi.Text = "Địa chỉ: " + reader[4].ToString();
+                    uc.LblDiaChi.Text = "Địa chỉ: " + reader[5].ToString();
                     uc.Rating.Value = reader.GetInt32(3);
 
                     if (!reader.IsDBNull(4))
@@ -481,6 +481,30 @@ namespace WindowsFormsApp2
         {
             string queryString = string.Format("Insert into ThoYeuThich values('{0}', '{1}')", userID, workerID);
             ppConnection.ThucThi(queryString);
+        }
+        public static void Xoa_ThoYT(string userID, string WorkerID)
+        {
+            string queryString = string.Format("Delete From ThoYeuThich where UserID='{0}' and WorkerID_YT='{1}'", userID, WorkerID);
+            ppConnection.ThucThi(queryString);
+        }
+        public static bool checkYeuThich(string userID, string workerID)
+        {
+            int rowCount = 0;
+            string queryString = string.Format("Select Count(*) From ThoYeuThich Where UserID ='{0}' and WorkerID_YT='{1}'", userID, workerID);
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
+            conn.Open();
+            try
+            {
+                SqlCommand sqlCommand = new SqlCommand(queryString, conn);
+                rowCount = (int)sqlCommand.ExecuteScalar();
+                if (rowCount != 0)
+                    return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            return false;
         }
 
         // Lọc theo trạng thái công việc
@@ -552,7 +576,7 @@ namespace WindowsFormsApp2
             string queryStr = string.Format("SELECT w.WorkerID, cv.NgayLamViec, cv.TrangThai, cv.ThanhToan, cv.Rate, w.HoTen, w.Avatar, cv.MaCongViec,cv.MaDatTho " +
                                             "FROM CongViec cv " +
                                             "INNER JOIN WorkerInfoDB w ON cv.WorkerID = w.WorkerID " +
-                                            "WHERE cv.UserID = '{0}' AND(cv.TrangThai = 'Cho nhan' OR cv.TrangThai = 'Da nhan')", userID);
+                                            "WHERE cv.UserID = '{0}' AND(cv.TrangThai = 'Chờ nhận' OR cv.TrangThai = 'Đã nhận')", userID);
             SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
             conn.Open();
             try
@@ -595,7 +619,7 @@ namespace WindowsFormsApp2
         }
         public static void Huy_Worker(string userID, string workerID, string congviec, string ma, string lydo)
         {
-            string queryString = string.Format("Update CongViec Set TrangThai = 'Da huy' Where MaDatTho='{0}'\r\n" +
+            string queryString = string.Format("Update CongViec Set TrangThai = 'Đã hủy' Where MaDatTho='{0}'\r\n" +
                 "Insert into DSThoBiHuy Values ('{1}','{2}','{3}','{0}','{4}')", ma, userID, workerID, congviec, lydo);
             ppConnection.ThucThi(queryString);
 
@@ -603,9 +627,9 @@ namespace WindowsFormsApp2
         }
         public static List<UCWorker> TopDoanhThu_Worker(string congviec)
         {
-            string queryString = string.Format("SELECT DISTINCT WorkerInfoDB.WorkerID, WorkerInfoDB.HoTen, WorkerInfoDB.SDT, CongViecThoDB.KinhNghiem  " +
+            string queryString = string.Format("SELECT DISTINCT WorkerInfoDB.WorkerID, WorkerInfoDB.HoTen, WorkerInfoDB.SDT, CongViecThoDB.KinhNghiem,  " +
                                                 "CongViecThoDB.TienCong, WorkerInfoDB.Rate, WorkerInfoDB.Avatar, CongViecThoDB.ChiTietCV, WorkerInfoDB.DiaChi  \r\nFROM WorkerInfoDB \r\nINNER JOIN CongViecThoDB ON WorkerInfoDB.WorkerID = CongViecThoDB.WorkerID " +
-                                                "\r\nWHERE WorkerInfoDB.WorkerID = (\r\n    SELECT TOP 10 WorkerID\r\n    FROM (\r\n        SELECT WorkerID, SUM(CAST(ThanhToan AS INT)) AS ThuNhap \r\n        " +
+                                                "\r\nWHERE CongViecThoDB.CongViec='{0}' and  WorkerInfoDB.WorkerID = (\r\n    SELECT TOP 1 WorkerID\r\n    FROM (\r\n        SELECT WorkerID, SUM(CAST(ThanhToan AS INT)) AS ThuNhap \r\n        " +
                                                 "FROM CongViec \r\n        WHERE MaCongViec = '{0}' \r\n        GROUP BY WorkerID\r\n    ) AS Subquery\r\n    ORDER BY ThuNhap DESC\r\n)", congviec);
             return DanhSachTho(queryString, congviec);
         }
@@ -613,7 +637,7 @@ namespace WindowsFormsApp2
         //tim kiem top booking
         public static List<UCWorker> TopBooking(string congviec)
         {
-            string queryString = string.Format("Select Distinct A.WorkerID, A.HoTen, A.SDT, A.KinhNghiem, A.TienCong, A.Rate, Avatar, A.ChiTietCV, A.DiaChi  Solan\r\n" +
+            string queryString = string.Format("Select Distinct A.WorkerID, A.HoTen, A.SDT, A.KinhNghiem, A.TienCong, A.Rate, Avatar, A.ChiTietCV, A.DiaChi , Solan\r\n" +
                 "From (Select WorkerInfoDB.WorkerID, WorkerInfoDB.HoTen, WorkerInfoDB.SDT, CongViecThoDB.KinhNghiem, CongViecThoDB.TienCong, WorkerInfoDB.Rate, Avatar, CongViecThoDB.ChiTietCv, WorkerInfoDB.DiaChi  " +
                 "From WorkerInfoDB inner join CongViecThoDB on WorkerInfoDB.WorkerID = CongViecThoDB.WorkerID Where CongViec = '{0}') as A, " +
                 "(SELECT WorkerID, Count(WorkerID) as SoLan FROM CongViec GROUP BY WorkerID HAVING COUNT(*) = (SELECT MAX(counts) FROM (SELECT COUNT(*) AS counts " +
@@ -624,49 +648,52 @@ namespace WindowsFormsApp2
         public static List<UCWorkerCancel> XemThoBiHuy(string tho)
         {
             List<UCWorkerCancel> list = new List<UCWorkerCancel>();
-            SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
-
-
-            string query = @"SELECT w.WorkerID, w.HoTen, w.SDT, w.Avatar, cv.MaCongViec, COUNT(cv.CongViecID) AS CancelledJobsCount
-                         FROM CongViec cv
-                         INNER JOIN WorkerInfoDB w ON cv.WorkerID = w.WorkerID
-                         WHERE cv.TrangThai = 'Da huy' AND cv.MaCongViec = @MaCongViec
-                         GROUP BY w.WorkerID, w.HoTen, w.SDT, w.Avatar, cv.MaCongViec
-                         ORDER BY CancelledJobsCount DESC";
-
-            SqlCommand command = new SqlCommand(query, conn);
-            command.Parameters.AddWithValue("@MaCongViec", tho);
 
             try
             {
-                SqlCommand sqlCommand = new SqlCommand(query, conn);
-                SqlDataReader reader = sqlCommand.ExecuteReader();
-
-                while (reader.Read())
+                using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr))
                 {
-                    UCWorkerCancel uc = new UCWorkerCancel();
-                    uc.WorkerID = reader["WorkerID"].ToString();
-                    uc.Cv = reader["MaCongViec"].ToString();
-                    uc.LblName.Text = "Họ tên: " + reader["HoTen"].ToString();
-                    uc.LblPhone.Text = "Số điện thoại: " + reader["SDT"].ToString();
-                    uc.LblHuy.Text = "Số lượt bị hủy: " + reader["CancelledJobsCount"].ToString();
+                    conn.Open();
 
-                    if (reader["Avatar"] != DBNull.Value)
+                    string query = @"SELECT w.WorkerID, w.HoTen, w.SDT, w.Avatar, cv.MaCongViec, COUNT(cv.MaCongViec) AS CancelledJobsCount
+             FROM CongViec cv
+             INNER JOIN WorkerInfoDB w ON cv.WorkerID = w.WorkerID
+             WHERE cv.TrangThai = 'Đã hủy' AND cv.MaCongViec = @MaCongViec
+             GROUP BY w.WorkerID, w.HoTen, w.SDT, w.Avatar, cv.MaCongViec
+             ORDER BY CancelledJobsCount DESC";
+
+                    SqlCommand command = new SqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@MaCongViec", tho);
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
                     {
-                        byte[] avt = (byte[])reader["Avatar"];
-                        MemoryStream ms = new MemoryStream(avt);
-                        uc.Ptb_avt.Image = Image.FromStream(ms);
+                        UCWorkerCancel uc = new UCWorkerCancel();
+                        uc.WorkerID = reader["WorkerID"].ToString();
+                        uc.Cv = reader["MaCongViec"].ToString();
+                        uc.LblName.Text = "Họ tên: " + reader["HoTen"].ToString();
+                        uc.LblPhone.Text = "Số điện thoại: " + reader["SDT"].ToString();
+                        uc.LblHuy.Text = "Số lượt bị hủy: " + reader["CancelledJobsCount"].ToString();
+
+                        if (reader["Avatar"] != DBNull.Value)
+                        {
+                            byte[] avt = (byte[])reader["Avatar"];
+                            MemoryStream ms = new MemoryStream(avt);
+                            uc.Ptb_avt.Image = Image.FromStream(ms);
+                        }
+
+                        list.Add(uc);
                     }
 
-                    list.Add(uc);
+                    reader.Close();
                 }
-
-                reader.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
+
             return list;
         }
 
@@ -726,9 +753,9 @@ namespace WindowsFormsApp2
                     UCPost uc = new UCPost("User");
                     uc.MaCV = reader[0].ToString();
                     uc.HoTen.Text = reader[1].ToString();
-                    uc.CongViec.Text = reader[3].ToString();
-                    uc.ChiTiet.Text = reader[4].ToString();
-                    uc.NgayLamViec.Text = reader.GetDateTime(5).ToString("dd/MM/yyyy");
+                    uc.CongViec.Text = "Yêu cầu: "+ reader[3].ToString();
+                    uc.ChiTiet.Text =reader[4].ToString();
+                    uc.NgayLamViec.Text = "Ngày làm việc: " + reader.GetDateTime(5).ToString("dd/MM/yyyy");
                     if (!reader.IsDBNull(2))
                     {
                         object value = reader[2];
@@ -851,6 +878,13 @@ namespace WindowsFormsApp2
                                                 " From CongViecUser inner join UserInfoDB on CongViecUser.UserID=UserInfoDB.UserID" +
                                                 " Where CongViecUser.UserID = '{0}' and CongViecUser.CongViec='{1}'", userID, congViec);
             return DanhSachBaiDang(queryString);
+        }
+        public static List<UCWorker> ThoYeuThich(string userID,string tho)
+        {
+            string queryString = string.Format("Select WorkerInfoDB.WorkerID, WorkerInfoDB.HoTen, WorkerInfoDB.SDT, CongViecThoDB.KinhNghiem, CongViecThoDB.TienCong, WorkerInfoDB.Rate, Avatar, CongViecThoDB.ChiTietCV, WorkerInfoDB.DiaChi" +
+                                            " From WorkerInfoDB inner join CongViecThoDB on WorkerInfoDB.WorkerID=CongViecThoDB.WorkerID" +
+                                            " Where CongViecThoDB.CongViec='{1}' and WorkerInfoDB.WorkerID IN (Select WorkerID_YT From ThoYeuThich Where UserID='{0}')", userID, tho);
+            return DanhSachTho(queryString,tho);
         }
         public static List<UCHistoryWorker> load_Tim_Kiem_Tho(string queryStr, string userID)
         {

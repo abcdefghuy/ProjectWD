@@ -65,12 +65,16 @@ namespace WindowsFormsApp2
         {
             WorkerDAO.Accept_Order(UserID.Text, WorkerID,Madat);
             WorkerDAO.Load_ThongBao(workerID);
+            NotificationForm.workerID = workerID;
+            WorkerForm.instance.OpenForm(new NotificationForm());
         }
 
         private void btn_tuchoi_Click(object sender, EventArgs e)
         {
             WorkerDAO.Denine_Order(UserID.Text, WorkerID,Madat);
             WorkerDAO.Load_ThongBao(workerID);
+            NotificationForm.workerID = workerID;
+            WorkerForm.instance.OpenForm(new NotificationForm());
         }
     }
 }

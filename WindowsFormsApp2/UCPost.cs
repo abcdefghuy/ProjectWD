@@ -55,6 +55,7 @@ namespace WindowsFormsApp2
                 f.HoTen.Text = lbl_name.Text;
                 f.Avatar.Image = ptb_avt.Image;
                 f.Show();
+                
             }
             else 
             {

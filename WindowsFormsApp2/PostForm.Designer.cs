@@ -43,6 +43,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panelAdd = new Guna.UI2.WinForms.Guna2Panel();
+            this.date_lamviec = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.diaChiBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel_image = new System.Windows.Forms.FlowLayoutPanel();
             this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -52,12 +53,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.CongViecBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lbl_ngayLamViec = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.lbl_ngayLamViec = new System.Windows.Forms.Label();
-            this.date_lamviec = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panelPage.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             this.panelAdd.SuspendLayout();
@@ -267,6 +267,25 @@
             this.panelAdd.Size = new System.Drawing.Size(1097, 691);
             this.panelAdd.TabIndex = 4;
             // 
+            // date_lamviec
+            // 
+            this.date_lamviec.Animated = true;
+            this.date_lamviec.BackColor = System.Drawing.Color.Transparent;
+            this.date_lamviec.BorderRadius = 10;
+            this.date_lamviec.Checked = true;
+            this.date_lamviec.CustomFormat = "dd/MM/yyyy";
+            this.date_lamviec.FillColor = System.Drawing.Color.White;
+            this.date_lamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_lamviec.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.date_lamviec.Location = new System.Drawing.Point(516, 120);
+            this.date_lamviec.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.date_lamviec.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.date_lamviec.Name = "date_lamviec";
+            this.date_lamviec.Size = new System.Drawing.Size(289, 36);
+            this.date_lamviec.TabIndex = 62;
+            this.date_lamviec.UseTransparentBackground = true;
+            this.date_lamviec.Value = new System.DateTime(2024, 3, 10, 15, 59, 56, 382);
+            // 
             // diaChiBox
             // 
             this.diaChiBox.Animated = true;
@@ -416,22 +435,32 @@
             this.CongViecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CongViecBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CongViecBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CongViecBox.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CongViecBox.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F);
             this.CongViecBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.CongViecBox.ItemHeight = 30;
             this.CongViecBox.Items.AddRange(new object[] {
-            "ThoDien",
-            "Dien Lanh",
-            "Ong Nuoc",
-            "Tho Moc",
-            "Xay Dung",
-            "Thong Tac",
-            "Ve Sinh",
-            "Sua Nha"});
+            "Thợ Điện",
+            "Điện lạnh",
+            "Ống nước",
+            "Thợ mộc",
+            "Xây dựng",
+            "Thông tắc",
+            "Vệ Sinh",
+            "Sửa Nhà"});
             this.CongViecBox.Location = new System.Drawing.Point(516, 71);
             this.CongViecBox.Name = "CongViecBox";
             this.CongViecBox.Size = new System.Drawing.Size(289, 36);
             this.CongViecBox.TabIndex = 47;
+            // 
+            // lbl_ngayLamViec
+            // 
+            this.lbl_ngayLamViec.AutoSize = true;
+            this.lbl_ngayLamViec.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ngayLamViec.Location = new System.Drawing.Point(276, 126);
+            this.lbl_ngayLamViec.Name = "lbl_ngayLamViec";
+            this.lbl_ngayLamViec.Size = new System.Drawing.Size(101, 18);
+            this.lbl_ngayLamViec.TabIndex = 49;
+            this.lbl_ngayLamViec.Text = "Ngày làm việc:";
             // 
             // label16
             // 
@@ -457,35 +486,6 @@
             // 
             this.guna2Elipse4.BorderRadius = 25;
             this.guna2Elipse4.TargetControl = this.panel_image;
-            // 
-            // lbl_ngayLamViec
-            // 
-            this.lbl_ngayLamViec.AutoSize = true;
-            this.lbl_ngayLamViec.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ngayLamViec.Location = new System.Drawing.Point(276, 126);
-            this.lbl_ngayLamViec.Name = "lbl_ngayLamViec";
-            this.lbl_ngayLamViec.Size = new System.Drawing.Size(101, 18);
-            this.lbl_ngayLamViec.TabIndex = 49;
-            this.lbl_ngayLamViec.Text = "Ngày làm việc:";
-            // 
-            // date_lamviec
-            // 
-            this.date_lamviec.Animated = true;
-            this.date_lamviec.BackColor = System.Drawing.Color.Transparent;
-            this.date_lamviec.BorderRadius = 10;
-            this.date_lamviec.Checked = true;
-            this.date_lamviec.CustomFormat = "dd/MM/yyyy";
-            this.date_lamviec.FillColor = System.Drawing.Color.White;
-            this.date_lamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_lamviec.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_lamviec.Location = new System.Drawing.Point(516, 120);
-            this.date_lamviec.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.date_lamviec.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.date_lamviec.Name = "date_lamviec";
-            this.date_lamviec.Size = new System.Drawing.Size(289, 36);
-            this.date_lamviec.TabIndex = 62;
-            this.date_lamviec.UseTransparentBackground = true;
-            this.date_lamviec.Value = new System.DateTime(2024, 3, 10, 15, 59, 56, 382);
             // 
             // PostForm
             // 

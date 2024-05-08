@@ -95,7 +95,7 @@ namespace WindowsFormsApp2
                     flContainer.Controls.Add(uc);
                 }
             }
-            HistoryWorkerForm_Load(sender, e);
+            
         }
 
         private void cb_thoYT_CheckedChanged(object sender, EventArgs e)
@@ -138,13 +138,13 @@ namespace WindowsFormsApp2
         }
         private void btn_daHoanThanh_Click(object sender, EventArgs e)
         {
-            string state = "Da hoan thanh";
+            string state = "Đã hoàn thành";
             LocTheoTrangThai(state);
         }
 
         private void btn_danglam_Click(object sender, EventArgs e)
         {
-            string state = "Da nhan";
+            string state = "Đã nhận";
             LocTheoTrangThai(state);
         }
     }

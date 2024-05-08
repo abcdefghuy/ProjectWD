@@ -83,6 +83,8 @@ namespace WindowsFormsApp2
         private void btn_xoa_Click(object sender, EventArgs e)
         {
             UserDAO.XoaBaiDang(maCV);
+            PostForm.instance.PostForm_Load(sender, e);
+            this.Close();
         }
 
         private void btn_chinhsua_Click(object sender, EventArgs e)

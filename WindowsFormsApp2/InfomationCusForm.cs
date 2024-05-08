@@ -113,13 +113,16 @@ namespace WindowsFormsApp2
                 }
 
             }
-            if (role == "User")
+            if (imageData != null)
             {
-                UserDAO.Save_Anh(ID, imageData);
-            }
-            else
-            {
-                WorkerDAO.Save_Anh(ID, imageData);
+                if (role == "User")
+                {
+                    UserDAO.Save_Anh(ID, imageData);
+                }
+                else
+                {
+                    WorkerDAO.Save_Anh(ID, imageData);
+                }
             }
         }
         private void GioiTinh(string s)

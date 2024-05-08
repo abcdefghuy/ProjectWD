@@ -43,22 +43,20 @@
             // rating
             // 
             this.rating.BorderColor = System.Drawing.Color.Black;
-            this.rating.Location = new System.Drawing.Point(101, 280);
-            this.rating.Margin = new System.Windows.Forms.Padding(4);
+            this.rating.Location = new System.Drawing.Point(76, 228);
             this.rating.Name = "rating";
             this.rating.RatingColor = System.Drawing.Color.Yellow;
             this.rating.ReadOnly = true;
-            this.rating.Size = new System.Drawing.Size(160, 34);
+            this.rating.Size = new System.Drawing.Size(120, 28);
             this.rating.TabIndex = 13;
             // 
             // ptb_avt
             // 
             this.ptb_avt.Image = ((System.Drawing.Image)(resources.GetObject("ptb_avt.Image")));
             this.ptb_avt.ImageRotate = 0F;
-            this.ptb_avt.Location = new System.Drawing.Point(61, 4);
-            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4);
+            this.ptb_avt.Location = new System.Drawing.Point(46, 3);
             this.ptb_avt.Name = "ptb_avt";
-            this.ptb_avt.Size = new System.Drawing.Size(168, 144);
+            this.ptb_avt.Size = new System.Drawing.Size(126, 117);
             this.ptb_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_avt.TabIndex = 12;
             this.ptb_avt.TabStop = false;
@@ -67,10 +65,9 @@
             // 
             this.lblRating.AutoSize = true;
             this.lblRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRating.Location = new System.Drawing.Point(19, 288);
-            this.lblRating.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRating.Location = new System.Drawing.Point(14, 234);
             this.lblRating.Name = "lblRating";
-            this.lblRating.Size = new System.Drawing.Size(70, 18);
+            this.lblRating.Size = new System.Drawing.Size(60, 15);
             this.lblRating.TabIndex = 8;
             this.lblRating.Text = "Đánh giá:";
             // 
@@ -78,10 +75,9 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(19, 207);
-            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhone.Location = new System.Drawing.Point(14, 168);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(98, 18);
+            this.lblPhone.Size = new System.Drawing.Size(82, 15);
             this.lblPhone.TabIndex = 10;
             this.lblPhone.Text = "Số điện thoại:";
             // 
@@ -89,10 +85,9 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(19, 169);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(14, 137);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(56, 18);
+            this.lblName.Size = new System.Drawing.Size(46, 15);
             this.lblName.TabIndex = 11;
             this.lblName.Text = "Họ tên:";
             // 
@@ -103,16 +98,16 @@
             // 
             // lbl_diachi
             // 
-            this.lbl_diachi.AutoSize = true;
-            this.lbl_diachi.Location = new System.Drawing.Point(22, 240);
+            this.lbl_diachi.Location = new System.Drawing.Point(16, 195);
+            this.lbl_diachi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_diachi.Name = "lbl_diachi";
-            this.lbl_diachi.Size = new System.Drawing.Size(50, 16);
+            this.lbl_diachi.Size = new System.Drawing.Size(180, 30);
             this.lbl_diachi.TabIndex = 14;
             this.lbl_diachi.Text = "Địa chỉ ";
             // 
             // UCWorkerYT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.lbl_diachi);
@@ -121,9 +116,8 @@
             this.Controls.Add(this.lblRating);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCWorkerYT";
-            this.Size = new System.Drawing.Size(280, 320);
+            this.Size = new System.Drawing.Size(210, 260);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

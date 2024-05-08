@@ -66,7 +66,7 @@ namespace WindowsFormsApp2
 
         private void btn_chitiet_Click(object sender, EventArgs e)
         {
-            if(lbl_trangthai.Text != "Trạng thái: Da huy")
+            if(lbl_trangthai.Text != "Trạng thái: Đã hủy")
             {
                 HistoryWorker2Form form = new HistoryWorker2Form(userID, workerID, cv, madat);
                 form.ShowDialog();

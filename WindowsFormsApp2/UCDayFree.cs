@@ -33,12 +33,12 @@ namespace WindowsFormsApp2
                 conn.Open();
                 string queryString = string.Format("Select HoTen " +
                                                     "From UserInfoDB inner join CongViec on UserInfoDB.UserID=CongViec.UserID " +
-                                                    "Where WorkerID = '{0}' and NgayLamViec = '{1}' and TrangThai='Da nhan'", WorkerForm.workerID, date.Date);
+                                                    "Where WorkerID = '{0}' and NgayLamViec = '{1}' and TrangThai='Đã nhận'", WorkerForm.workerID, date.Date);
                 SqlCommand cmd = new SqlCommand(queryString, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    lbl_sukien.Text = "Da co khach";
+                    lbl_sukien.Text = "Đã có khách hàng";
                     this.BackColor = Color.MediumVioletRed;
                 }
 

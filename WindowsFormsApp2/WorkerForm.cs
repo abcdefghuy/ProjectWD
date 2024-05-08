@@ -16,10 +16,12 @@ namespace WindowsFormsApp2
         public WorkerForm()
         {
             InitializeComponent();
+            instance = this;
         }
         public static string workerID;
         private Form currentFormChild;
-        private void OpenForm(Form form)
+        public static WorkerForm instance;
+        public void OpenForm(Form form)
         {
             if (currentFormChild != null)
             {
@@ -74,6 +76,7 @@ namespace WindowsFormsApp2
         private void WorkerForm_Load(object sender, EventArgs e)
         {
             workerID = WorkerID_lbl.Text;
+            NotificationForm.workerID = WorkerID_lbl.Text;
             OpenForm(new NotificationForm());
             Worker w = WorkerDAO.Load_info_Worker(workerID);
             lbl_Ten.Text = w.Hoten;

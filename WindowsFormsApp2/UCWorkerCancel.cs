@@ -38,6 +38,11 @@ namespace WindowsFormsApp2
 
         private void UCWorkerCancel_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void UCWorkerCancel_Click(object sender, EventArgs e)
+        {
             FormCancel f = new FormCancel();
             f.WorkerID = workerID;
             f.Cv = cv;

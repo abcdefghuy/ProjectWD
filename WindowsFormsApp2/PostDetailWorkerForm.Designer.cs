@@ -36,11 +36,11 @@
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.panel_anh = new System.Windows.Forms.FlowLayoutPanel();
             this.lbl_Diachi = new System.Windows.Forms.Label();
+            this.lbl_ngaylamviec = new System.Windows.Forms.Label();
             this.lbl_Congviec = new System.Windows.Forms.Label();
             this.ptb_avt = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.txb_chitiet = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.lbl_ngaylamviec = new System.Windows.Forms.Label();
             this.panelPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_avt)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +67,7 @@
             this.panelPage1.Controls.Add(this.lbl_name);
             this.panelPage1.Location = new System.Drawing.Point(12, 13);
             this.panelPage1.Name = "panelPage1";
-            this.panelPage1.Size = new System.Drawing.Size(595, 758);
+            this.panelPage1.Size = new System.Drawing.Size(595, 486);
             this.panelPage1.TabIndex = 1;
             // 
             // btnBack
@@ -103,7 +103,7 @@
             this.btnAdd.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnAdd.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(207, 640);
+            this.btnAdd.Location = new System.Drawing.Point(209, 413);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(180, 45);
             this.btnAdd.TabIndex = 55;
@@ -114,9 +114,9 @@
             // panel_anh
             // 
             this.panel_anh.BackColor = System.Drawing.Color.Transparent;
-            this.panel_anh.Location = new System.Drawing.Point(24, 317);
+            this.panel_anh.Location = new System.Drawing.Point(24, 297);
             this.panel_anh.Name = "panel_anh";
-            this.panel_anh.Size = new System.Drawing.Size(558, 138);
+            this.panel_anh.Size = new System.Drawing.Size(558, 110);
             this.panel_anh.TabIndex = 53;
             // 
             // lbl_Diachi
@@ -128,6 +128,16 @@
             this.lbl_Diachi.Size = new System.Drawing.Size(51, 17);
             this.lbl_Diachi.TabIndex = 51;
             this.lbl_Diachi.Text = "Dia Chi";
+            // 
+            // lbl_ngaylamviec
+            // 
+            this.lbl_ngaylamviec.AutoSize = true;
+            this.lbl_ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ngaylamviec.Location = new System.Drawing.Point(258, 61);
+            this.lbl_ngaylamviec.Name = "lbl_ngaylamviec";
+            this.lbl_ngaylamviec.Size = new System.Drawing.Size(91, 17);
+            this.lbl_ngaylamviec.TabIndex = 52;
+            this.lbl_ngaylamviec.Text = "Ngay lam viec";
             // 
             // lbl_Congviec
             // 
@@ -191,21 +201,11 @@
             this.lbl_name.TabIndex = 48;
             this.lbl_name.Text = "Họ Tên";
             // 
-            // lbl_ngaylamviec
-            // 
-            this.lbl_ngaylamviec.AutoSize = true;
-            this.lbl_ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ngaylamviec.Location = new System.Drawing.Point(258, 61);
-            this.lbl_ngaylamviec.Name = "lbl_ngaylamviec";
-            this.lbl_ngaylamviec.Size = new System.Drawing.Size(91, 17);
-            this.lbl_ngaylamviec.TabIndex = 52;
-            this.lbl_ngaylamviec.Text = "Ngay lam viec";
-            // 
             // PostDetailWorkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 783);
+            this.ClientSize = new System.Drawing.Size(620, 511);
             this.Controls.Add(this.panelPage1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PostDetailWorkerForm";
