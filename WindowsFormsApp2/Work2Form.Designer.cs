@@ -67,9 +67,10 @@
             // 
             this.panelWork.Controls.Add(this.btnAdd);
             this.panelWork.Controls.Add(this.flContainer);
-            this.panelWork.Location = new System.Drawing.Point(6, 1);
+            this.panelWork.Location = new System.Drawing.Point(8, 1);
+            this.panelWork.Margin = new System.Windows.Forms.Padding(4);
             this.panelWork.Name = "panelWork";
-            this.panelWork.Size = new System.Drawing.Size(1073, 676);
+            this.panelWork.Size = new System.Drawing.Size(1431, 832);
             this.panelWork.TabIndex = 0;
             // 
             // btnAdd
@@ -77,18 +78,19 @@
             this.btnAdd.Animated = true;
             this.btnAdd.AutoRoundedCorners = true;
             this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.BorderRadius = 21;
+            this.btnAdd.BorderRadius = 26;
             this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAdd.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(443, 613);
+            this.btnAdd.Location = new System.Drawing.Point(591, 754);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.BorderRadius = 25;
             this.btnAdd.ShadowDecoration.Enabled = true;
-            this.btnAdd.Size = new System.Drawing.Size(180, 45);
+            this.btnAdd.Size = new System.Drawing.Size(240, 55);
             this.btnAdd.TabIndex = 45;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseTransparentBackground = true;
@@ -97,9 +99,10 @@
             // flContainer
             // 
             this.flContainer.AutoScroll = true;
-            this.flContainer.Location = new System.Drawing.Point(17, 18);
+            this.flContainer.Location = new System.Drawing.Point(23, 22);
+            this.flContainer.Margin = new System.Windows.Forms.Padding(4);
             this.flContainer.Name = "flContainer";
-            this.flContainer.Size = new System.Drawing.Size(1039, 589);
+            this.flContainer.Size = new System.Drawing.Size(1385, 725);
             this.flContainer.TabIndex = 44;
             // 
             // panelAdd
@@ -126,11 +129,12 @@
             this.panelAdd.Controls.Add(this.day_end);
             this.panelAdd.Controls.Add(this.kn_num);
             this.panelAdd.FillColor = System.Drawing.Color.White;
-            this.panelAdd.Location = new System.Drawing.Point(6, 1);
+            this.panelAdd.Location = new System.Drawing.Point(8, 1);
+            this.panelAdd.Margin = new System.Windows.Forms.Padding(4);
             this.panelAdd.Name = "panelAdd";
             this.panelAdd.Radius = 13;
             this.panelAdd.ShadowColor = System.Drawing.Color.Black;
-            this.panelAdd.Size = new System.Drawing.Size(1073, 676);
+            this.panelAdd.Size = new System.Drawing.Size(1431, 832);
             this.panelAdd.TabIndex = 42;
             // 
             // btnBack
@@ -142,11 +146,12 @@
             this.btnBack.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnBack.ImageRotate = 0F;
             this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBack.Location = new System.Drawing.Point(23, 14);
+            this.btnBack.Location = new System.Drawing.Point(31, 17);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.PressedState.Image = global::WindowsFormsApp2.Properties.Resources.arrow;
             this.btnBack.PressedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBack.Size = new System.Drawing.Size(40, 38);
+            this.btnBack.Size = new System.Drawing.Size(53, 47);
             this.btnBack.TabIndex = 40;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -164,14 +169,14 @@
             this.chitiet_txb.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chitiet_txb.ForeColor = System.Drawing.Color.Black;
             this.chitiet_txb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chitiet_txb.Location = new System.Drawing.Point(536, 424);
-            this.chitiet_txb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chitiet_txb.Location = new System.Drawing.Point(715, 490);
+            this.chitiet_txb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chitiet_txb.Multiline = true;
             this.chitiet_txb.Name = "chitiet_txb";
             this.chitiet_txb.PasswordChar = '\0';
             this.chitiet_txb.PlaceholderText = "";
             this.chitiet_txb.SelectedText = "";
-            this.chitiet_txb.Size = new System.Drawing.Size(289, 121);
+            this.chitiet_txb.Size = new System.Drawing.Size(385, 207);
             this.chitiet_txb.TabIndex = 39;
             // 
             // btn_Save
@@ -179,18 +184,19 @@
             this.btn_Save.Animated = true;
             this.btn_Save.AutoRoundedCorners = true;
             this.btn_Save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Save.BorderRadius = 21;
+            this.btn_Save.BorderRadius = 26;
             this.btn_Save.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Save.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Save.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Save.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Save.Font = new System.Drawing.Font("UTM Alexander", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Save.ForeColor = System.Drawing.Color.White;
-            this.btn_Save.Location = new System.Drawing.Point(443, 595);
+            this.btn_Save.Location = new System.Drawing.Point(591, 732);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.ShadowDecoration.BorderRadius = 25;
             this.btn_Save.ShadowDecoration.Enabled = true;
-            this.btn_Save.Size = new System.Drawing.Size(180, 45);
+            this.btn_Save.Size = new System.Drawing.Size(240, 55);
             this.btn_Save.TabIndex = 38;
             this.btn_Save.Text = "Lưu";
             this.btn_Save.UseTransparentBackground = true;
@@ -209,13 +215,13 @@
             this.tienCongBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tienCongBox.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tienCongBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tienCongBox.Location = new System.Drawing.Point(536, 208);
-            this.tienCongBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tienCongBox.Location = new System.Drawing.Point(715, 256);
+            this.tienCongBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tienCongBox.Name = "tienCongBox";
             this.tienCongBox.PasswordChar = '\0';
             this.tienCongBox.PlaceholderText = "";
             this.tienCongBox.SelectedText = "";
-            this.tienCongBox.Size = new System.Drawing.Size(148, 29);
+            this.tienCongBox.Size = new System.Drawing.Size(197, 36);
             this.tienCongBox.TabIndex = 38;
             // 
             // tc_num
@@ -233,9 +239,10 @@
             this.tc_num.Items.AddRange(new object[] {
             "/Giờ",
             "/Ngày"});
-            this.tc_num.Location = new System.Drawing.Point(690, 208);
+            this.tc_num.Location = new System.Drawing.Point(920, 256);
+            this.tc_num.Margin = new System.Windows.Forms.Padding(4);
             this.tc_num.Name = "tc_num";
-            this.tc_num.Size = new System.Drawing.Size(135, 36);
+            this.tc_num.Size = new System.Drawing.Size(179, 36);
             this.tc_num.TabIndex = 24;
             // 
             // label9
@@ -243,9 +250,10 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(296, 424);
+            this.label9.Location = new System.Drawing.Point(395, 522);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 18);
+            this.label9.Size = new System.Drawing.Size(122, 23);
             this.label9.TabIndex = 36;
             this.label9.Text = "Mô Tả Chi Tiết";
             // 
@@ -254,9 +262,10 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(668, 288);
+            this.label10.Location = new System.Drawing.Point(891, 354);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 18);
+            this.label10.Size = new System.Drawing.Size(39, 23);
             this.label10.TabIndex = 35;
             this.label10.Text = "Đến";
             // 
@@ -265,9 +274,10 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(668, 353);
+            this.label11.Location = new System.Drawing.Point(891, 434);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 18);
+            this.label11.Size = new System.Drawing.Size(39, 23);
             this.label11.TabIndex = 34;
             this.label11.Text = "Đến";
             // 
@@ -276,9 +286,10 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(296, 217);
+            this.label12.Location = new System.Drawing.Point(395, 267);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 18);
+            this.label12.Size = new System.Drawing.Size(88, 23);
             this.label12.TabIndex = 33;
             this.label12.Text = "Tiền Công";
             // 
@@ -291,21 +302,22 @@
             this.CongViecBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CongViecBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CongViecBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CongViecBox.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CongViecBox.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F);
             this.CongViecBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.CongViecBox.ItemHeight = 30;
             this.CongViecBox.Items.AddRange(new object[] {
-            "ThoDien",
-            "Dien Lanh",
-            "Ong Nuoc",
-            "Tho Moc",
-            "Xay Dung",
-            "Thong Tac",
-            "Ve Sinh",
-            "Sua Nha"});
-            this.CongViecBox.Location = new System.Drawing.Point(536, 56);
+            "Thợ Điện",
+            "Điện lạnh",
+            "Ống nước",
+            "Thợ mộc",
+            "Xây dựng",
+            "Thông tắc",
+            "Vệ Sinh",
+            "Sửa Nhà"});
+            this.CongViecBox.Location = new System.Drawing.Point(715, 69);
+            this.CongViecBox.Margin = new System.Windows.Forms.Padding(4);
             this.CongViecBox.Name = "CongViecBox";
-            this.CongViecBox.Size = new System.Drawing.Size(289, 36);
+            this.CongViecBox.Size = new System.Drawing.Size(384, 36);
             this.CongViecBox.TabIndex = 28;
             // 
             // label13
@@ -313,9 +325,10 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(296, 353);
+            this.label13.Location = new System.Drawing.Point(395, 434);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(195, 18);
+            this.label13.Size = new System.Drawing.Size(238, 23);
             this.label13.TabIndex = 32;
             this.label13.Text = "Thời gian làm việc trong ngày";
             // 
@@ -324,9 +337,10 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(296, 288);
+            this.label14.Location = new System.Drawing.Point(395, 354);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(193, 18);
+            this.label14.Size = new System.Drawing.Size(235, 23);
             this.label14.TabIndex = 37;
             this.label14.Text = "Thời gian làm việc trong tuần";
             // 
@@ -335,9 +349,10 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(296, 144);
+            this.label15.Location = new System.Drawing.Point(395, 177);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(92, 18);
+            this.label15.Size = new System.Drawing.Size(109, 23);
             this.label15.TabIndex = 31;
             this.label15.Text = "Kinh Nghiệm";
             // 
@@ -368,9 +383,10 @@
             "18h",
             "19h",
             "20h"});
-            this.hour_start.Location = new System.Drawing.Point(536, 344);
+            this.hour_start.Location = new System.Drawing.Point(715, 423);
+            this.hour_start.Margin = new System.Windows.Forms.Padding(4);
             this.hour_start.Name = "hour_start";
-            this.hour_start.Size = new System.Drawing.Size(126, 36);
+            this.hour_start.Size = new System.Drawing.Size(167, 36);
             this.hour_start.TabIndex = 27;
             // 
             // day_start
@@ -393,9 +409,10 @@
             "Thứ sáu ",
             "Thứ bảy",
             "Chủ nhật"});
-            this.day_start.Location = new System.Drawing.Point(536, 279);
+            this.day_start.Location = new System.Drawing.Point(715, 343);
+            this.day_start.Margin = new System.Windows.Forms.Padding(4);
             this.day_start.Name = "day_start";
-            this.day_start.Size = new System.Drawing.Size(126, 36);
+            this.day_start.Size = new System.Drawing.Size(167, 36);
             this.day_start.TabIndex = 26;
             // 
             // KinhNghiemBox
@@ -451,18 +468,20 @@
             "38",
             "39",
             "40"});
-            this.KinhNghiemBox.Location = new System.Drawing.Point(536, 135);
+            this.KinhNghiemBox.Location = new System.Drawing.Point(715, 166);
+            this.KinhNghiemBox.Margin = new System.Windows.Forms.Padding(4);
             this.KinhNghiemBox.Name = "KinhNghiemBox";
-            this.KinhNghiemBox.Size = new System.Drawing.Size(129, 36);
+            this.KinhNghiemBox.Size = new System.Drawing.Size(171, 36);
             this.KinhNghiemBox.TabIndex = 25;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("UTM Alberta Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(296, 65);
+            this.label16.Location = new System.Drawing.Point(395, 80);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(72, 18);
+            this.label16.Size = new System.Drawing.Size(87, 23);
             this.label16.TabIndex = 30;
             this.label16.Text = "Công Việc";
             // 
@@ -493,9 +512,10 @@
             "18h",
             "19h",
             "20h"});
-            this.hour_end.Location = new System.Drawing.Point(706, 344);
+            this.hour_end.Location = new System.Drawing.Point(941, 423);
+            this.hour_end.Margin = new System.Windows.Forms.Padding(4);
             this.hour_end.Name = "hour_end";
-            this.hour_end.Size = new System.Drawing.Size(119, 36);
+            this.hour_end.Size = new System.Drawing.Size(157, 36);
             this.hour_end.TabIndex = 23;
             // 
             // day_end
@@ -518,9 +538,10 @@
             "Thứ sáu ",
             "Thứ bảy",
             "Chủ nhật"});
-            this.day_end.Location = new System.Drawing.Point(706, 279);
+            this.day_end.Location = new System.Drawing.Point(941, 343);
+            this.day_end.Margin = new System.Windows.Forms.Padding(4);
             this.day_end.Name = "day_end";
-            this.day_end.Size = new System.Drawing.Size(119, 36);
+            this.day_end.Size = new System.Drawing.Size(157, 36);
             this.day_end.TabIndex = 29;
             // 
             // kn_num
@@ -538,20 +559,22 @@
             this.kn_num.Items.AddRange(new object[] {
             "Tháng",
             "Năm"});
-            this.kn_num.Location = new System.Drawing.Point(671, 135);
+            this.kn_num.Location = new System.Drawing.Point(895, 166);
+            this.kn_num.Margin = new System.Windows.Forms.Padding(4);
             this.kn_num.Name = "kn_num";
-            this.kn_num.Size = new System.Drawing.Size(154, 36);
+            this.kn_num.Size = new System.Drawing.Size(204, 36);
             this.kn_num.TabIndex = 22;
             // 
             // Work2Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(1091, 689);
+            this.ClientSize = new System.Drawing.Size(1455, 848);
             this.Controls.Add(this.panelAdd);
             this.Controls.Add(this.panelWork);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Work2Form";
             this.Text = "Work2Form";
             this.Load += new System.EventHandler(this.Work2Form_Load);

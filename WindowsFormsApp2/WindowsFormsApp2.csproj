@@ -468,6 +468,7 @@
     <Compile Include="WorkForm.Designer.cs">
       <DependentUpon>WorkForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="XuLyAnh.cs" />
     <EmbeddedResource Include="Activiti2Form.resx">
       <DependentUpon>Activiti2Form.cs</DependentUpon>
     </EmbeddedResource>

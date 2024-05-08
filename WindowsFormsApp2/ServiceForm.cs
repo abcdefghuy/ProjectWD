@@ -36,7 +36,7 @@ namespace WindowsFormsApp2
         }
         private void btnElectric_Click(object sender, EventArgs e)
         {
-            tho = "ThoDien";
+            tho = "Thợ Điện";
             LoadTho(tho);      
         }
 
@@ -47,43 +47,43 @@ namespace WindowsFormsApp2
 
         private void btnRefriger_Click(object sender, EventArgs e)
         {
-            tho = "Dien lanh";
+            tho = "Điện lạnh";
             LoadTho(tho);
         }
 
         private void btnPipe_Click(object sender, EventArgs e)
         {
-            tho = "Ong nuoc";
+            tho = "Ống nước";
             LoadTho(tho);
         }
 
         private void btnCarpen_Click(object sender, EventArgs e)
         {
-            tho = "Tho moc";
+            tho = "Thợ mộc";
             LoadTho(tho);
         }
 
         private void btnBuilder_Click(object sender, EventArgs e)
         {
-            tho = "Xay dung";
+            tho = "Xây dựng";
             LoadTho(tho);
         }
 
         private void btnUnclog_Click(object sender, EventArgs e)
         {
-            tho = "Thong tac";
+            tho = "Thông tắc";
             LoadTho(tho);
         }
 
         private void btnClean_Click(object sender, EventArgs e)
         {
-            tho = "Ve sinh";
+            tho = "Vệ Sinh";
             LoadTho(tho);
         }
 
         private void btnFixing_Click(object sender, EventArgs e)
         {
-            tho = "Sua nha";
+            tho = "Sửa Nhà";
             LoadTho(tho);
         }
 

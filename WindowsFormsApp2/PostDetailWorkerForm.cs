@@ -81,7 +81,7 @@ namespace WindowsFormsApp2
             {
                 PictureBox pictureBox = new PictureBox();
                 pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureBox.Click += ppConnection.ZoomImage;
+                pictureBox.Click += XuLyAnh.ZoomImage;
                 pictureBox.Image = img;
                 panel_anh.Controls.Add(pictureBox);
             }

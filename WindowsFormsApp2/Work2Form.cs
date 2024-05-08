@@ -46,7 +46,7 @@ namespace WindowsFormsApp2
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            WorkerDAO.Dangviec(workerID, CongViecBox.Text, KinhNghiemBox.Text + " " + kn_num.Text, tienCongBox.Text, day_start.Text + " den " + day_end.Text, hour_start.Text + " den " + hour_end.Text, chitiet_txb.Text, tc_num.Text);
+            WorkerDAO.Dangviec(workerID, CongViecBox.Text, KinhNghiemBox.Text + " " + kn_num.Text, tienCongBox.Text, day_start.Text + " đến " + day_end.Text, hour_start.Text + " đến " + hour_end.Text, chitiet_txb.Text, tc_num.Text);
             
         }
     }
