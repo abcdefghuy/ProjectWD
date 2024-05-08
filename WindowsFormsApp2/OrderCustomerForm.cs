@@ -13,6 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class OrderCustomerForm : Form
     {
+        
         public OrderCustomerForm()
         {
             InitializeComponent();
@@ -20,7 +21,9 @@ namespace WindowsFormsApp2
 
         int month, year;
         public static int static_month, static_year;
-       
+        private string workerID;
+
+        public string WorkerID { get => workerID; set => workerID = value; }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
@@ -48,7 +51,9 @@ namespace WindowsFormsApp2
             for (int i = 1; i <= days; i++)
             {
                 UCDayFree ucday = new UCDayFree();
+                ucday.workerID = WorkerID;
                 ucday.days(i);
+                
                 flowLayoutPanel1.Controls.Add((ucday));
             }
         }
@@ -84,9 +89,15 @@ namespace WindowsFormsApp2
             for (int i = 1; i <= days; i++)
             {
                 UCDayFree ucday = new UCDayFree();
+                ucday.workerID = WorkerID;
                 ucday.days(i);
                 flowLayoutPanel1.Controls.Add((ucday));
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void displaDays()
@@ -111,6 +122,7 @@ namespace WindowsFormsApp2
             for (int i = 1; i <= days; i++)
             {
                 UCDayFree ucday = new UCDayFree();
+                ucday.workerID = WorkerID;
                 ucday.days(i);
                 flowLayoutPanel1.Controls.Add((ucday));
             }

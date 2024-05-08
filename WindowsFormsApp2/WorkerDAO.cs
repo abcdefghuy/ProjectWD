@@ -432,6 +432,7 @@ namespace WindowsFormsApp2
                     uc.CongViec.Text = "Yêu cầu: "+ reader[3].ToString();
                     uc.ChiTiet.Text = reader[4].ToString();
                     uc.NgayLamViec.Text = "Ngày làm việc:"+ reader.GetDateTime(5).ToString("dd/MM/yyyy");
+                    uc.Cv= reader[3].ToString();
                     if (!reader.IsDBNull(2))
                     {
                         object value = reader[2];

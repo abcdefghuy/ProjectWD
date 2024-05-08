@@ -42,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblText = new System.Windows.Forms.Label();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -51,9 +52,10 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(17, 69);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(23, 85);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1056, 609);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1408, 750);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // guna2Elipse2
@@ -72,9 +74,10 @@
             this.btnNext.FillColor = System.Drawing.Color.White;
             this.btnNext.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F);
             this.btnNext.ForeColor = System.Drawing.Color.Black;
-            this.btnNext.Location = new System.Drawing.Point(925, 10);
+            this.btnNext.Location = new System.Drawing.Point(1233, 12);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(148, 33);
+            this.btnNext.Size = new System.Drawing.Size(197, 41);
             this.btnNext.TabIndex = 13;
             this.btnNext.Text = "Tháng sau";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
@@ -92,9 +95,10 @@
             this.btnBack.FillColor = System.Drawing.Color.White;
             this.btnBack.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(17, 10);
+            this.btnBack.Location = new System.Drawing.Point(23, 12);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(148, 33);
+            this.btnBack.Size = new System.Drawing.Size(197, 41);
             this.btnBack.TabIndex = 14;
             this.btnBack.Text = "Tháng trước";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -103,7 +107,8 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(962, 49);
+            this.label7.Location = new System.Drawing.Point(1283, 60);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 20);
             this.label7.TabIndex = 6;
@@ -113,7 +118,8 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(814, 49);
+            this.label6.Location = new System.Drawing.Point(1085, 60);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 20);
             this.label6.TabIndex = 7;
@@ -123,7 +129,8 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(659, 49);
+            this.label5.Location = new System.Drawing.Point(879, 60);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 20);
             this.label5.TabIndex = 8;
@@ -133,7 +140,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(515, 49);
+            this.label4.Location = new System.Drawing.Point(687, 60);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 20);
             this.label4.TabIndex = 9;
@@ -143,7 +151,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(366, 46);
+            this.label3.Location = new System.Drawing.Point(488, 57);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 20);
             this.label3.TabIndex = 10;
@@ -153,7 +162,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(215, 46);
+            this.label2.Location = new System.Drawing.Point(287, 57);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 11;
@@ -163,7 +173,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(57, 46);
+            this.label1.Location = new System.Drawing.Point(76, 57);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 20);
             this.label1.TabIndex = 12;
@@ -173,18 +184,41 @@
             // 
             this.lblText.AutoSize = true;
             this.lblText.Font = new System.Drawing.Font("UTM Alberta Heavy", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText.Location = new System.Drawing.Point(468, 10);
+            this.lblText.Location = new System.Drawing.Point(624, 12);
+            this.lblText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(146, 28);
             this.lblText.TabIndex = 5;
             this.lblText.Text = "MONTH YEAR";
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnClose.HoverState.Image = global::WindowsFormsApp2.Properties.Resources.close2;
+            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClose.Image = global::WindowsFormsApp2.Properties.Resources.close2;
+            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnClose.ImageRotate = 0F;
+            this.btnClose.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnClose.IndicateFocus = true;
+            this.btnClose.Location = new System.Drawing.Point(1150, 9);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.PressedState.Image = global::WindowsFormsApp2.Properties.Resources.close2;
+            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClose.Size = new System.Drawing.Size(47, 44);
+            this.btnClose.TabIndex = 15;
+            this.btnClose.UseTransparentBackground = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // OrderCustomerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(201)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(1091, 689);
+            this.ClientSize = new System.Drawing.Size(1455, 848);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnBack);
@@ -197,6 +231,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblText);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "OrderCustomerForm";
             this.Text = "OrderCustomerForm";
             this.Load += new System.EventHandler(this.OrderCustomerForm_Load);
@@ -220,5 +255,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblText;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2ImageButton btnClose;
     }
 }

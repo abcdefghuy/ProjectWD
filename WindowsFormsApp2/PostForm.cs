@@ -94,11 +94,11 @@ namespace WindowsFormsApp2
 
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.Image = image;
-                    pictureBox.SizeMode = PictureBoxSizeMode.Zoom; // Adjust image size as needed
-                    pictureBox.Cursor = Cursors.Hand; // Set cursor to indicate interaction
+                    pictureBox.SizeMode = PictureBoxSizeMode.Zoom; 
+                    pictureBox.Cursor = Cursors.Hand; 
                     pictureBox.Click += pictureZoom_Click;
 
-                    // Add close icon (optional) and event handler (explained later)
+                    
                     AddCloseIcon(pictureBox);
                     panel_image.Controls.Add(pictureBox);
                 }
@@ -111,38 +111,37 @@ namespace WindowsFormsApp2
 
         private void AddCloseIcon(PictureBox pictureBox)
         {
-            // Create a close icon PictureBox
+            
             PictureBox closeIcon = new PictureBox();
-            closeIcon.Image = Properties.Resources.close; // Assuming your close icon image resource is named "close_icon"
-            closeIcon.Size = new Size(20, 20); // Adjust size as needed
+            closeIcon.Image = Properties.Resources.close; 
+            closeIcon.Size = new Size(20, 20); 
             closeIcon.SizeMode = PictureBoxSizeMode.Zoom;
-            closeIcon.Cursor = Cursors.Hand; // Set cursor to indicate interaction
-            closeIcon.Click += pictureBox_Click; // Attach click event handler for deletion
+            closeIcon.Cursor = Cursors.Hand; 
+            closeIcon.Click += pictureBox_Click; 
 
-            // Position the close icon on top-right corner (adjust as needed)
             closeIcon.Location = new Point(pictureBox.Width - closeIcon.Width, 0);
 
-            // Add the close icon as the first child of the PictureBox
+            
             pictureBox.Controls.Add(closeIcon);
         }
         private void DeletePreviewImage(PictureBox pictureBox)
         {
-            // Remove image from selectedImages list
+           
             selectedImages.Remove(pictureBox.Image);
 
-            // Remove PictureBox from FlowLayoutPanel
+            
             panel_image.Controls.Remove(pictureBox);
 
-            // Dispose of the image object (optional)
+            
             pictureBox.Image?.Dispose();
         }
         private void pictureBox_Click(object sender, EventArgs e)
         {
-            PictureBox pictureBox = (PictureBox)sender; // Cast sender to PictureBox (the close icon)
+            PictureBox pictureBox = (PictureBox)sender; 
 
-            if (pictureBox.Parent is PictureBox imagePictureBox) // Check if parent is a PictureBox
+            if (pictureBox.Parent is PictureBox imagePictureBox) 
             {
-                // Remove image from selectedImages list and FlowLayoutPanel
+                
                 DeletePreviewImage(imagePictureBox);
             }
         }
@@ -150,25 +149,25 @@ namespace WindowsFormsApp2
         {
             PictureBox pictureBox = (PictureBox)sender;
 
-            // Check if close icon is clicked (optional, skip zooming if close icon)
+            
 
-            // Create a new Form for zooming
+           
             Form zoomForm = new Form();
             zoomForm.Height = 400;
             zoomForm.Width = 600;
-            //zoomForm.WindowState = FormWindowState.Maximized; // Maximize zoom form
+            
             zoomForm.StartPosition = FormStartPosition.CenterScreen;
             zoomForm.Name = "Image";
-            // Create a larger PictureBox for zoomed image
+            
             PictureBox zoomedPictureBox = new PictureBox();
-            zoomedPictureBox.Image = pictureBox.Image; // Assign image from clicked PictureBox
-            zoomedPictureBox.SizeMode = PictureBoxSizeMode.Zoom; // Adjust size as needed
-            zoomedPictureBox.Dock = DockStyle.Fill; // Fill the entire zoom form
+            zoomedPictureBox.Image = pictureBox.Image; 
+            zoomedPictureBox.SizeMode = PictureBoxSizeMode.Zoom; 
+            zoomedPictureBox.Dock = DockStyle.Fill; 
 
-            // Add zoomedPictureBox to the zoomForm
+            
             zoomForm.Controls.Add(zoomedPictureBox);
 
-            // Show the zoom form
+            
             zoomForm.Show();
         }
 

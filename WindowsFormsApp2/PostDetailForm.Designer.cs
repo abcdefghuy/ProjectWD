@@ -67,18 +67,20 @@
             this.panelPage1.Controls.Add(this.ptb_avt);
             this.panelPage1.Controls.Add(this.txb_chitiet);
             this.panelPage1.Controls.Add(this.lbl_name);
-            this.panelPage1.Location = new System.Drawing.Point(12, 12);
+            this.panelPage1.Location = new System.Drawing.Point(16, 15);
+            this.panelPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelPage1.Name = "panelPage1";
-            this.panelPage1.Size = new System.Drawing.Size(595, 587);
+            this.panelPage1.Size = new System.Drawing.Size(793, 722);
             this.panelPage1.TabIndex = 0;
             // 
             // panelPage2
             // 
             this.panelPage2.Controls.Add(this.btnBack2);
             this.panelPage2.Controls.Add(this.flContainer);
-            this.panelPage2.Location = new System.Drawing.Point(3, 0);
+            this.panelPage2.Location = new System.Drawing.Point(4, 0);
+            this.panelPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelPage2.Name = "panelPage2";
-            this.panelPage2.Size = new System.Drawing.Size(596, 587);
+            this.panelPage2.Size = new System.Drawing.Size(795, 722);
             this.panelPage2.TabIndex = 58;
             // 
             // btnBack2
@@ -91,11 +93,12 @@
             this.btnBack2.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnBack2.ImageRotate = 0F;
             this.btnBack2.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBack2.Location = new System.Drawing.Point(3, 3);
+            this.btnBack2.Location = new System.Drawing.Point(4, 4);
+            this.btnBack2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack2.Name = "btnBack2";
             this.btnBack2.PressedState.Image = global::WindowsFormsApp2.Properties.Resources.arrow;
             this.btnBack2.PressedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBack2.Size = new System.Drawing.Size(41, 45);
+            this.btnBack2.Size = new System.Drawing.Size(55, 55);
             this.btnBack2.TabIndex = 57;
             this.btnBack2.UseTransparentBackground = true;
             this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
@@ -103,9 +106,10 @@
             // flContainer
             // 
             this.flContainer.AutoScroll = true;
-            this.flContainer.Location = new System.Drawing.Point(3, 60);
+            this.flContainer.Location = new System.Drawing.Point(4, 74);
+            this.flContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flContainer.Name = "flContainer";
-            this.flContainer.Size = new System.Drawing.Size(589, 504);
+            this.flContainer.Size = new System.Drawing.Size(785, 620);
             this.flContainer.TabIndex = 0;
             // 
             // btn_viewWorker
@@ -113,7 +117,7 @@
             this.btn_viewWorker.Animated = true;
             this.btn_viewWorker.AutoRoundedCorners = true;
             this.btn_viewWorker.BackColor = System.Drawing.Color.Transparent;
-            this.btn_viewWorker.BorderRadius = 21;
+            this.btn_viewWorker.BorderRadius = 26;
             this.btn_viewWorker.CustomImages.Image = global::WindowsFormsApp2.Properties.Resources.right_arrow;
             this.btn_viewWorker.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_viewWorker.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -122,9 +126,10 @@
             this.btn_viewWorker.FillColor = System.Drawing.Color.Gainsboro;
             this.btn_viewWorker.Font = new System.Drawing.Font("UTM Alberta Heavy", 8.25F);
             this.btn_viewWorker.ForeColor = System.Drawing.Color.Black;
-            this.btn_viewWorker.Location = new System.Drawing.Point(427, 3);
+            this.btn_viewWorker.Location = new System.Drawing.Point(569, 4);
+            this.btn_viewWorker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_viewWorker.Name = "btn_viewWorker";
-            this.btn_viewWorker.Size = new System.Drawing.Size(165, 45);
+            this.btn_viewWorker.Size = new System.Drawing.Size(220, 55);
             this.btn_viewWorker.TabIndex = 57;
             this.btn_viewWorker.Text = "Xem Thợ Quan Tâm";
             this.btn_viewWorker.UseTransparentBackground = true;
@@ -140,11 +145,12 @@
             this.btnBack.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnBack.ImageRotate = 0F;
             this.btnBack.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBack.Location = new System.Drawing.Point(3, 3);
+            this.btnBack.Location = new System.Drawing.Point(4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
             this.btnBack.PressedState.Image = global::WindowsFormsApp2.Properties.Resources.arrow;
             this.btnBack.PressedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBack.Size = new System.Drawing.Size(41, 45);
+            this.btnBack.Size = new System.Drawing.Size(55, 55);
             this.btnBack.TabIndex = 56;
             this.btnBack.UseTransparentBackground = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -154,7 +160,7 @@
             this.btn_xoa.Animated = true;
             this.btn_xoa.AutoRoundedCorners = true;
             this.btn_xoa.BackColor = System.Drawing.Color.Transparent;
-            this.btn_xoa.BorderRadius = 21;
+            this.btn_xoa.BorderRadius = 26;
             this.btn_xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -162,9 +168,10 @@
             this.btn_xoa.FillColor = System.Drawing.Color.Red;
             this.btn_xoa.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
             this.btn_xoa.ForeColor = System.Drawing.Color.White;
-            this.btn_xoa.Location = new System.Drawing.Point(205, 542);
+            this.btn_xoa.Location = new System.Drawing.Point(273, 667);
+            this.btn_xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(180, 45);
+            this.btn_xoa.Size = new System.Drawing.Size(240, 55);
             this.btn_xoa.TabIndex = 54;
             this.btn_xoa.Text = "Xóa bài";
             this.btn_xoa.UseTransparentBackground = true;
@@ -173,16 +180,18 @@
             // panel_anh
             // 
             this.panel_anh.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_anh.Location = new System.Drawing.Point(24, 317);
+            this.panel_anh.Location = new System.Drawing.Point(32, 390);
+            this.panel_anh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_anh.Name = "panel_anh";
-            this.panel_anh.Size = new System.Drawing.Size(558, 138);
+            this.panel_anh.Size = new System.Drawing.Size(744, 170);
             this.panel_anh.TabIndex = 53;
             // 
             // lbl_Diachi
             // 
             this.lbl_Diachi.AutoSize = true;
             this.lbl_Diachi.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Diachi.Location = new System.Drawing.Point(258, 83);
+            this.lbl_Diachi.Location = new System.Drawing.Point(344, 102);
+            this.lbl_Diachi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Diachi.Name = "lbl_Diachi";
             this.lbl_Diachi.Size = new System.Drawing.Size(51, 17);
             this.lbl_Diachi.TabIndex = 51;
@@ -192,7 +201,8 @@
             // 
             this.lbl_ngaylamviec.AutoSize = true;
             this.lbl_ngaylamviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ngaylamviec.Location = new System.Drawing.Point(258, 60);
+            this.lbl_ngaylamviec.Location = new System.Drawing.Point(344, 74);
+            this.lbl_ngaylamviec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ngaylamviec.Name = "lbl_ngaylamviec";
             this.lbl_ngaylamviec.Size = new System.Drawing.Size(95, 17);
             this.lbl_ngaylamviec.TabIndex = 52;
@@ -202,7 +212,8 @@
             // 
             this.lbl_Congviec.AutoSize = true;
             this.lbl_Congviec.Font = new System.Drawing.Font("UTM Alberta Heavy", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Congviec.Location = new System.Drawing.Point(258, 39);
+            this.lbl_Congviec.Location = new System.Drawing.Point(344, 48);
+            this.lbl_Congviec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Congviec.Name = "lbl_Congviec";
             this.lbl_Congviec.Size = new System.Drawing.Size(58, 17);
             this.lbl_Congviec.TabIndex = 52;
@@ -214,10 +225,11 @@
             this.ptb_avt.FillColor = System.Drawing.SystemColors.Control;
             this.ptb_avt.Image = global::WindowsFormsApp2.Properties.Resources.user;
             this.ptb_avt.ImageRotate = 0F;
-            this.ptb_avt.Location = new System.Drawing.Point(37, 39);
+            this.ptb_avt.Location = new System.Drawing.Point(49, 48);
+            this.ptb_avt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_avt.Name = "ptb_avt";
             this.ptb_avt.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ptb_avt.Size = new System.Drawing.Size(39, 36);
+            this.ptb_avt.Size = new System.Drawing.Size(52, 44);
             this.ptb_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_avt.TabIndex = 50;
             this.ptb_avt.TabStop = false;
@@ -238,8 +250,8 @@
             this.txb_chitiet.Font = new System.Drawing.Font("UTM Alberta Heavy", 11.25F);
             this.txb_chitiet.ForeColor = System.Drawing.Color.Black;
             this.txb_chitiet.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_chitiet.Location = new System.Drawing.Point(24, 118);
-            this.txb_chitiet.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txb_chitiet.Location = new System.Drawing.Point(32, 145);
+            this.txb_chitiet.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txb_chitiet.Multiline = true;
             this.txb_chitiet.Name = "txb_chitiet";
             this.txb_chitiet.PasswordChar = '\0';
@@ -247,14 +259,15 @@
             this.txb_chitiet.PlaceholderText = "";
             this.txb_chitiet.ReadOnly = true;
             this.txb_chitiet.SelectedText = "";
-            this.txb_chitiet.Size = new System.Drawing.Size(558, 171);
+            this.txb_chitiet.Size = new System.Drawing.Size(744, 210);
             this.txb_chitiet.TabIndex = 49;
             // 
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
             this.lbl_name.Font = new System.Drawing.Font("UTM Alberta Heavy", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(34, 83);
+            this.lbl_name.Location = new System.Drawing.Point(45, 102);
+            this.lbl_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(45, 16);
             this.lbl_name.TabIndex = 48;
@@ -262,13 +275,14 @@
             // 
             // PostDetailForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(620, 619);
+            this.ClientSize = new System.Drawing.Size(827, 762);
             this.Controls.Add(this.panelPage1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PostDetailForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PostDetailForm";

@@ -41,6 +41,9 @@ namespace WindowsFormsApp2
 
         private string maCV;
         public string MaCV { get => maCV; set => maCV = value; }
+        public string Cv { get => cv; set => cv = value; }
+
+        private string cv;
         public UCPost(string r)
         {
             role = r;
@@ -51,7 +54,7 @@ namespace WindowsFormsApp2
         {
             if (role == "User")
             {
-                PostDetailForm f = new PostDetailForm(maCV,lbl_Congviec.Text);
+                PostDetailForm f = new PostDetailForm(maCV,Cv);
                 f.HoTen.Text = lbl_name.Text;
                 f.Avatar.Image = ptb_avt.Image;
                 f.Show();

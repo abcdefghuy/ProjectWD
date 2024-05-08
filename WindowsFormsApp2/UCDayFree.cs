@@ -8,12 +8,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.SessionState;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
     public partial class UCDayFree : UserControl
     {
+        public string workerID;
         public UCDayFree()
         {
             InitializeComponent();
@@ -33,13 +35,13 @@ namespace WindowsFormsApp2
                 conn.Open();
                 string queryString = string.Format("Select HoTen " +
                                                     "From UserInfoDB inner join CongViec on UserInfoDB.UserID=CongViec.UserID " +
-                                                    "Where WorkerID = '{0}' and NgayLamViec = '{1}' and TrangThai='Đã nhận'", WorkerForm.workerID, date.Date);
+                                                    "Where WorkerID = '{0}' and NgayLamViec = '{1}' and TrangThai='Đã nhận'", workerID, date.Date);
                 SqlCommand cmd = new SqlCommand(queryString, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
                     lbl_sukien.Text = "Đã có khách hàng";
-                    this.BackColor = Color.MediumVioletRed;
+                    this.BackColor = Color.Salmon;
                 }
 
             }
@@ -49,7 +51,7 @@ namespace WindowsFormsApp2
             }
             finally { conn.Close(); }
             
-            if(this.BackColor == Color.MediumVioletRed)
+            if(this.BackColor == Color.Salmon)
             {
                 btn_datlich.Visible = false;
             }

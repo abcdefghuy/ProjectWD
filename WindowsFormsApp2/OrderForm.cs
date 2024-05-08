@@ -66,6 +66,7 @@ namespace WindowsFormsApp2
         private void ngaylamviec_Click(object sender, EventArgs e)
         {
             OrderCustomerForm f = new OrderCustomerForm();
+            f.WorkerID = WorkerID;
             f.Show();
         }
         public void CapNhatDateTimePicker(DateTime selectedDate)
