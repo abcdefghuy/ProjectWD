@@ -60,11 +60,11 @@ namespace WindowsFormsApp2
             return DanhSachTho(queryStr, tho);
         }
         // tìm kiếm thợ theo tên
-        public static List<UCWorker> tim_kiem_Tho(string tho, string tentho)
+        public static List<UCWorker> tim_kiem_Tho(string tho, string diachi)
         {
             string queryStr = string.Format("Select WorkerInfoDB.WorkerID, WorkerInfoDB.HoTen, WorkerInfoDB.SDT, CongViecThoDB.KinhNghiem, CongViecThoDB.TienCong, WorkerInfoDB.Rate, Avatar, CongViecThoDB.ChiTietCV, WorkerInfoDB.DiaChi  " +
                               " From WorkerInfoDB, CongViecThoDB" +
-                              " Where WorkerInfoDB.WorkerID = CongViecThoDB.WorkerID and CongViecThoDB.CongViec = '{0}' and HoTen Like '%{1}%'", tho, tentho);
+                              " Where WorkerInfoDB.WorkerID = CongViecThoDB.WorkerID and CongViecThoDB.CongViec = '{0}' and DiaChi  Like '%{1}%'", tho, diachi);
             return DanhSachTho(queryStr, tho);
         }
         //Tim kiem theo so sao
